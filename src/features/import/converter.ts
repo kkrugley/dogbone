@@ -1,6 +1,6 @@
 import type { Contour, FileState, Segment, ToolParams, Vertex } from "@/types/cad"
 import { uid } from "@/utils/id"
-import { buildContour, findGaps, splitIntoSeparateContours } from "@/geometry/contour"
+import { findGaps, splitIntoSeparateContours } from "@/geometry/contour"
 import { generateAllDogbones } from "@/geometry/dogbone"
 
 interface DxfParsedEntity {

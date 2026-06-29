@@ -1,7 +1,6 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
 import {
   Dialog,
   DialogContent,
@@ -9,19 +8,11 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Separator } from "@/components/ui/separator"
 import { FloppyDisk, Trash, Plus, Gear } from "@phosphor-icons/react"
 import { useCADStore } from "@/store/cadStore"
 import { uid } from "@/utils/id"
-import type { ToolParams } from "@/types/cad"
 
 export function PresetsDialog() {
   const presets = useCADStore((s) => s.presets)

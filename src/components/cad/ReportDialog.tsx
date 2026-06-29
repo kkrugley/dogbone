@@ -10,7 +10,7 @@ import {
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import { ScrollArea } from "@/components/ui/scroll-area"
-import { ClipboardText, Check, Warning, File } from "@phosphor-icons/react"
+import { ClipboardText, Warning, File } from "@phosphor-icons/react"
 import { useCADStore } from "@/store/cadStore"
 import type { ValidationReport } from "@/types/cad"
 
@@ -26,7 +26,6 @@ function computeReport(): ValidationReport | null {
   const gaps = file.gaps.length
   const fixableGaps = file.gaps.filter((g) => g.canAutoFix).length
   const dogbonesAdded = file.dogbones.length
-  const enabledDogbones = file.dogbones.filter((d) => d.enabled).length
   const warnings: string[] = []
 
   if (openContours > 0) {

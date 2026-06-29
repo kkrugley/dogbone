@@ -1,5 +1,5 @@
 import type { Application } from "pixi.js"
-import type { Contour, Dogbone, Viewport } from "@/types/cad"
+import type { Contour, Dogbone, Viewport, Vertex } from "@/types/cad"
 
 const MIN_SCALE = 0.05
 const MAX_SCALE = 50

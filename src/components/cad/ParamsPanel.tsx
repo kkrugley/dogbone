@@ -28,9 +28,10 @@ export function ParamsPanel() {
       if (!file.rawDxfText) continue
       try {
         const dxfData = parseDxfFromBuffer(file.rawDxfText)
-        const layerNames = getDxfLayers(dxfData as Parameters<typeof getDxfLayers>[0])
+        if (!dxfData) continue
+        const layerNames = getDxfLayers(dxfData as any)
         const result = convertDxfToFileState(
-          dxfData as Parameters<typeof convertDxfToFileState>[0],
+          dxfData as any,
           file.originalName,
           layerNames,
           toolParams,

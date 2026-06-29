@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest"
-import { isContourClosed, findGaps, buildContour, extractVerticesFlat } from "@/geometry/contour"
-import { isInternalCorner, findInternalCorners, calculateBisectorAngle } from "@/geometry/corner"
+import { findGaps, buildContour, extractVerticesFlat } from "@/geometry/contour"
+import { findInternalCorners, calculateBisectorAngle } from "@/geometry/corner"
 import { generateDogbone, generateAllDogbones, calculateDogboneCircles } from "@/geometry/dogbone"
 import { validateContour, repairContour } from "@/geometry/repair"
 import { uid } from "@/utils/id"
@@ -126,6 +126,7 @@ describe("dogbone", () => {
       tolerance: 0.01,
       minAngle: 120,
       overcut: 0.1,
+      ignoredLayers: [],
     }
     const dbs = generateAllDogbones(contour, params)
     expect(dbs.length).toBe(4)
@@ -152,6 +153,7 @@ describe("dogbone", () => {
       tolerance: 0.01,
       minAngle: 30,
       overcut: 0.1,
+      ignoredLayers: [],
     }
     const dbs = generateAllDogbones(contour, params)
     expect(dbs.length).toBe(4)

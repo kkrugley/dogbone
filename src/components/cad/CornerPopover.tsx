@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react"
+import { useCallback } from "react"
 import {
   Popover,
   PopoverContent,
@@ -35,8 +35,6 @@ export function CornerPopover({
   const toolParams = useCADStore((s) => s.toolParams)
   const addDogbone = useCADStore((s) => s.addDogbone)
   const removeDogbone = useCADStore((s) => s.removeDogbone)
-  const [showPopover, setShowPopover] = useState(false)
-
   const file = files.find((f) => f.id === fileId)
   const existingDogbone = file?.dogbones.find(
     (d) => d.vertexIndex === vertexIndex && d.contourId === contourId,

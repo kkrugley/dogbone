@@ -1,6 +1,6 @@
 import { Graphics } from "pixi.js"
 import type { Container } from "pixi.js"
-import type { Contour, Viewport, Vertex } from "@/types/cad"
+import type { Contour, Viewport } from "@/types/cad"
 
 const CLOSED_COLOR = 0x1a1a2e
 const OPEN_COLOR = 0xef4444

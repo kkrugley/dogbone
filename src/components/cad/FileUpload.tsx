@@ -39,9 +39,10 @@ export function FileUpload({ children }: FileUploadProps) {
       try {
         const rawText = await file.text()
         const dxfData = await parseDxf(file)
-        const layerNames = getDxfLayers(dxfData)
+        if (!dxfData) { setFileStatus(fileId, "error"); continue }
+        const layerNames = getDxfLayers(dxfData as any)
         const fileState = convertDxfToFileState(
-          dxfData,
+          dxfData as any,
           file.name,
           layerNames,
           toolParams,
