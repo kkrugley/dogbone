@@ -7,6 +7,12 @@ const CIRCLE_SEGMENTS = 48
 
 type Ring = [number, number][]
 
+const cache = new Map<string, Ring[]>()
+
+export function clearCache(): void {
+  cache.clear()
+}
+
 function circleToPolygon(center: Vertex, r: number): Polygon {
   const ring: Ring = []
   for (let i = 0; i < CIRCLE_SEGMENTS; i++) {
@@ -40,8 +46,14 @@ export function subtractDogbones(
 ): Ring[] {
   const enabled = dogbones.filter((d) => d.enabled)
 
+  const key = `${contour.id}/${enabled.map((d) => d.id).sort().join(",")}`
+  const cached = cache.get(key)
+  if (cached) return cached
+
   if (enabled.length === 0) {
-    return [contour.vertices.map((v) => [v.x, v.y] as [number, number])]
+    const result = [contour.vertices.map((v) => [v.x, v.y] as [number, number])]
+    cache.set(key, result)
+    return result
   }
 
   let subject: Polygon | MultiPolygon | null = contourToPolygon(contour)
@@ -58,7 +70,9 @@ export function subtractDogbones(
 
   if (subject === null) return []
 
-  return flattenRings(subject)
+  const result = flattenRings(subject)
+  cache.set(key, result)
+  return result
 }
 
 export function polygonToVertices(poly: Ring): Vertex[] {

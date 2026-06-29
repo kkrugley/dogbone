@@ -32,12 +32,12 @@ function savePresets(presets: Preset[]): void {
 }
 
 const DEFAULT_TOOL_PARAMS: ToolParams = {
-  toolDiameter: 3,
-  reliefType: "dogbone",
+  toolDiameter: 2,
   tolerance: 0.01,
   minAngle: 120,
-  overcut: 0.1,
   ignoredLayers: [],
+  filterLargeContours: true,
+  contourMaxThickness: 30,
 }
 
 const DEFAULT_VIEWPORT: Viewport = {

@@ -99,7 +99,7 @@ interface HitDetectionCallbacks {
   getContours: () => Contour[]
   getViewport: () => Viewport
   onHover: (vertexIndex: number | null) => void
-  onClick: (vertexIndex: number | null) => void
+  onDogboneClick: (dogboneId: string | null) => void
   onVertexClick?: (info: { vertexIndex: number; contourId: string; vertex: Vertex; screenX: number; screenY: number } | null) => void
 }
 
@@ -112,7 +112,7 @@ export function setupHitDetection(
   function findDogboneAt(
     clientX: number,
     clientY: number,
-  ): number | null {
+  ): string | null {
     const rect = canvas.getBoundingClientRect()
     const mx = clientX - rect.left
     const my = clientY - rect.top
@@ -127,7 +127,7 @@ export function setupHitDetection(
       const dy = worldY - db.vertex.y
       const dist = Math.sqrt(dx * dx + dy * dy)
       if (dist <= db.radius + 4 / vp.scale) {
-        return db.vertexIndex
+        return db.id
       }
     }
     return null
@@ -165,19 +165,19 @@ export function setupHitDetection(
   }
 
   function onPointerMove(e: PointerEvent): void {
-    const dogIdx = findDogboneAt(e.clientX, e.clientY)
-    callbacks.onHover(dogIdx)
+    const dbId = findDogboneAt(e.clientX, e.clientY)
+    callbacks.onHover(dbId !== null ? 0 : null)
   }
 
   function onPointerDown(e: PointerEvent): void {
-    const dbIdx = findDogboneAt(e.clientX, e.clientY)
-    if (dbIdx !== null) {
-      callbacks.onClick(dbIdx)
+    const dbId = findDogboneAt(e.clientX, e.clientY)
+    if (dbId !== null) {
+      callbacks.onDogboneClick(dbId)
     } else if (callbacks.onVertexClick) {
       const vertInfo = findVertexAt(e.clientX, e.clientY)
       callbacks.onVertexClick(vertInfo)
     } else {
-      callbacks.onClick(null)
+      callbacks.onDogboneClick(null)
     }
   }
 

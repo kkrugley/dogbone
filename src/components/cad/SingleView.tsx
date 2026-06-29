@@ -59,9 +59,9 @@ export function SingleView() {
           />
         </div>
 
-        <div className="flex w-72 shrink-0 flex-col border-l bg-card">
-          <Tabs defaultValue="dogbones" className="flex flex-1 flex-col">
-            <TabsList className="mx-3 mt-3">
+        <div className="flex w-72 shrink-0 flex-col overflow-hidden border-l bg-card">
+          <Tabs defaultValue="dogbones" className="relative flex min-h-0 flex-1 flex-col">
+            <TabsList className="mx-3 mt-3 shrink-0">
               <TabsTrigger value="dogbones" className="flex-1">
                 Dogbones
               </TabsTrigger>
@@ -72,10 +72,10 @@ export function SingleView() {
 
             <TabsContent
               value="dogbones"
-              className="flex-1 px-3 pb-3 pt-0"
+              className="relative flex-1 px-3 pb-3 pt-0"
             >
-              <Card className="h-full">
-                <CardContent className="p-3">
+              <Card className="absolute inset-0">
+                <CardContent className="h-full overflow-y-auto p-3">
                   <DogboneList />
                 </CardContent>
               </Card>
@@ -83,10 +83,10 @@ export function SingleView() {
 
             <TabsContent
               value="gaps"
-              className="flex-1 px-3 pb-3 pt-0"
+              className="relative flex-1 px-3 pb-3 pt-0"
             >
-              <Card className="h-full">
-                <CardContent className="p-3">
+              <Card className="absolute inset-0">
+                <CardContent className="h-full overflow-y-auto p-3">
                   <GapPanel />
                 </CardContent>
               </Card>

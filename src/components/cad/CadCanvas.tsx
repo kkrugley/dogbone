@@ -56,7 +56,7 @@ export function CadCanvas({
       }
     }
 
-    renderContours(layers.originalLayer, file.contours, vp)
+    renderContours(layers.originalLayer, file.contours, vp, file.dogbones)
     renderDogbones(
       layers.dogboneLayer,
       file.dogbones,
@@ -109,7 +109,13 @@ export function CadCanvas({
           onHover: (vertexIndex) => {
             useCADStore.getState().setHoveredVertex(vertexIndex)
           },
-          onClick: () => {},
+          onDogboneClick: (dogboneId) => {
+            if (dogboneId) {
+              useCADStore.getState().setSelectedDogbone(dogboneId)
+            } else {
+              useCADStore.getState().setSelectedDogbone(null)
+            }
+          },
           onVertexClick: (info) => {
             if (info) {
               setCornerPopover(info)

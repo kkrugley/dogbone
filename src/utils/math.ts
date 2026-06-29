@@ -1,7 +1,24 @@
 import type { Vertex } from "@/types/cad"
 
+export function subtract(a: Vertex, b: Vertex): Vertex {
+  return { x: a.x - b.x, y: a.y - b.y }
+}
+
+export function normalize(v: Vertex): Vertex {
+  const len = Math.sqrt(v.x * v.x + v.y * v.y) || 1
+  return { x: v.x / len, y: v.y / len }
+}
+
+export function cross2d(a: Vertex, b: Vertex): number {
+  return a.x * b.y - a.y * b.x
+}
+
+export function dot2d(a: Vertex, b: Vertex): number {
+  return a.x * b.x + a.y * b.y
+}
+
 export function distance(a: Vertex, b: Vertex): number {
-  return Math.sqrt((b.x - a.x) ** 2 + (b.y - a.y) ** 2)
+  return Math.sqrt((a.x - b.x) ** 2 + (a.y - b.y) ** 2)
 }
 
 export function angleBetween(a: Vertex, b: Vertex, c: Vertex): number {
@@ -12,21 +29,15 @@ export function angleBetween(a: Vertex, b: Vertex, c: Vertex): number {
   return Math.atan2(Math.abs(cross), dot)
 }
 
-export function midpoint(a: Vertex, b: Vertex): Vertex {
-  return {
-    x: (a.x + b.x) / 2,
-    y: (a.y + b.y) / 2,
+export function polygonArea(vertices: Vertex[]): number {
+  let area = 0
+  const n = vertices.length
+  for (let i = 0; i < n; i++) {
+    const j = (i + 1) % n
+    area += vertices[i].x * vertices[j].y
+    area -= vertices[j].x * vertices[i].y
   }
-}
-
-export function normalize(v: Vertex): Vertex {
-  const len = Math.sqrt(v.x * v.x + v.y * v.y)
-  if (len === 0) return { x: 0, y: 0 }
-  return { x: v.x / len, y: v.y / len }
-}
-
-export function subtract(a: Vertex, b: Vertex): Vertex {
-  return { x: a.x - b.x, y: a.y - b.y }
+  return area / 2
 }
 
 export function add(a: Vertex, b: Vertex): Vertex {
@@ -35,6 +46,13 @@ export function add(a: Vertex, b: Vertex): Vertex {
 
 export function scale(v: Vertex, s: number): Vertex {
   return { x: v.x * s, y: v.y * s }
+}
+
+export function midpoint(a: Vertex, b: Vertex): Vertex {
+  return {
+    x: (a.x + b.x) / 2,
+    y: (a.y + b.y) / 2,
+  }
 }
 
 export function perpClockwise(v: Vertex): Vertex {
@@ -49,16 +67,16 @@ export function dot(a: Vertex, b: Vertex): number {
   return a.x * b.x + a.y * b.y
 }
 
-export function cross2d(a: Vertex, b: Vertex): number {
-  return a.x * b.y - a.y * b.x
-}
-
-export function polygonArea(vertices: Vertex[]): number {
-  let area = 0
-  for (let i = 0; i < vertices.length; i++) {
-    const j = (i + 1) % vertices.length
-    area += vertices[i].x * vertices[j].y
-    area -= vertices[j].x * vertices[i].y
+export function getContourThickness(contour: { vertices: Vertex[] }): number {
+  if (contour.vertices.length < 2) return 0
+  let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity
+  for (const v of contour.vertices) {
+    if (v.x < minX) minX = v.x
+    if (v.y < minY) minY = v.y
+    if (v.x > maxX) maxX = v.x
+    if (v.y > maxY) maxY = v.y
   }
-  return area / 2
+  const w = maxX - minX
+  const h = maxY - minY
+  return Math.min(w, h)
 }

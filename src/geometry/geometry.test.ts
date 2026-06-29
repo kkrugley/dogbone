@@ -1,7 +1,9 @@
-import { describe, it, expect } from "vitest"
+import { describe, it, expect, beforeEach } from "vitest"
 import { findGaps, buildContour, extractVerticesFlat } from "@/geometry/contour"
 import { findInternalCorners, calculateBisectorAngle } from "@/geometry/corner"
 import { generateDogbone, generateAllDogbones, calculateDogboneCircles } from "@/geometry/dogbone"
+import { applyDogboneCutouts } from "@/geometry/cutout"
+import { subtractDogbones, clearCache } from "@/geometry/boolean"
 import { validateContour, repairContour } from "@/geometry/repair"
 import { uid } from "@/utils/id"
 import type { Contour, Segment, ToolParams } from "@/types/cad"
@@ -193,5 +195,205 @@ describe("repair", () => {
     const gaps = findGaps(contour, 100)
     const repaired = repairContour(contour, gaps, 100)
     expect(repaired.closed).toBe(true)
+  })
+})
+
+describe("boolean", () => {
+  beforeEach(() => {
+    clearCache()
+  })
+
+  it("returns original vertices when no dogbones provided", () => {
+    const contour: Contour = {
+      id: "c1",
+      closed: true,
+      layer: "0",
+      segments: [],
+      vertices: [
+        { x: 0, y: 0 },
+        { x: 10, y: 0 },
+        { x: 10, y: 10 },
+        { x: 0, y: 10 },
+      ],
+    }
+    const rings = subtractDogbones(contour, [])
+    expect(rings.length).toBe(1)
+    expect(rings[0].length).toBe(4)
+  })
+
+  it("ignores disabled dogbones", () => {
+    const contour: Contour = {
+      id: "c1",
+      closed: true,
+      layer: "0",
+      segments: [],
+      vertices: [
+        { x: 0, y: 0 },
+        { x: 10, y: 0 },
+        { x: 10, y: 10 },
+        { x: 0, y: 10 },
+      ],
+    }
+    const db = generateDogbone(
+      { x: 10, y: 0 }, 1, "c1", 1.5, Math.PI / 2, -Math.PI / 4, "dogbone",
+    )
+    db.enabled = false
+    const rings = subtractDogbones(contour, [db])
+    expect(rings.length).toBe(1)
+    expect(rings[0].length).toBe(4)
+  })
+
+  it("subtracting a dogbone increases vertex count", () => {
+    const contour: Contour = {
+      id: "c1",
+      closed: true,
+      layer: "0",
+      segments: [],
+      vertices: [
+        { x: 0, y: 0 },
+        { x: 10, y: 0 },
+        { x: 10, y: 10 },
+        { x: 0, y: 10 },
+      ],
+    }
+    const db = generateDogbone(
+      { x: 10, y: 0 }, 1, "c1", 1.5, Math.PI / 2, -Math.PI / 4, "dogbone",
+    )
+    const rings = subtractDogbones(contour, [db])
+    expect(rings.length).toBe(1)
+    expect(rings[0].length).toBeGreaterThan(4)
+  })
+
+  it("subtracting dogbone produces valid rings", () => {
+    const contour: Contour = {
+      id: "c1",
+      closed: true,
+      layer: "0",
+      segments: [],
+      vertices: [
+        { x: 0, y: 0 },
+        { x: 100, y: 0 },
+        { x: 100, y: 100 },
+        { x: 0, y: 100 },
+      ],
+    }
+    const db = generateDogbone(
+      { x: 100, y: 0 }, 1, "c1", 20, Math.PI / 2, (3 * Math.PI) / 4, "dogbone",
+    )
+    const rings = subtractDogbones(contour, [db])
+    expect(rings.length).toBeGreaterThan(0)
+    for (const ring of rings) {
+      expect(ring.length).toBeGreaterThan(2)
+      const hasDistinct =
+        ring.some((p) => p[0] !== ring[0][0] || p[1] !== ring[0][1])
+      expect(hasDistinct).toBe(true)
+    }
+  })
+
+  it("caches results for repeated calls", () => {
+    const contour: Contour = {
+      id: "c1",
+      closed: true,
+      layer: "0",
+      segments: [],
+      vertices: [
+        { x: 0, y: 0 },
+        { x: 10, y: 0 },
+        { x: 10, y: 10 },
+        { x: 0, y: 10 },
+      ],
+    }
+    const db = generateDogbone(
+      { x: 10, y: 0 }, 1, "c1", 1.5, Math.PI / 2, -Math.PI / 4, "dogbone",
+    )
+    const first = subtractDogbones(contour, [db])
+    const second = subtractDogbones(contour, [db])
+    expect(second).toBe(first)
+  })
+})
+
+describe("cutout", () => {
+  it("returns original vertices when no dogbones", () => {
+    const contour: Contour = {
+      id: "c1", closed: true, layer: "0", segments: [],
+      vertices: [
+        { x: 0, y: 0 }, { x: 10, y: 0 },
+        { x: 10, y: 10 }, { x: 0, y: 10 },
+      ],
+    }
+    const pts = applyDogboneCutouts(contour, [])
+    expect(pts.length).toBe(4)
+    expect(pts[0]).toEqual({ x: 0, y: 0 })
+  })
+
+  it("ignores disabled dogbones", () => {
+    const contour: Contour = {
+      id: "c1", closed: true, layer: "0", segments: [],
+      vertices: [
+        { x: 0, y: 0 }, { x: 10, y: 0 },
+        { x: 10, y: 10 }, { x: 0, y: 10 },
+      ],
+    }
+    const db = generateDogbone(
+      { x: 10, y: 0 }, 1, "c1", 1.5, Math.PI / 2, (3 * Math.PI) / 4, "dogbone",
+    )
+    db.enabled = false
+    const pts = applyDogboneCutouts(contour, [db])
+    expect(pts.length).toBe(4)
+  })
+
+  it("adds arc points at the dogbone corner", () => {
+    const contour: Contour = {
+      id: "c1", closed: true, layer: "0", segments: [],
+      vertices: [
+        { x: 0, y: 0 }, { x: 10, y: 0 },
+        { x: 10, y: 10 }, { x: 0, y: 10 },
+      ],
+    }
+    const db = generateDogbone(
+      { x: 10, y: 0 }, 1, "c1", 1.5, Math.PI / 2, (3 * Math.PI) / 4, "dogbone",
+    )
+    const pts = applyDogboneCutouts(contour, [db])
+    expect(pts.length).toBeGreaterThan(4)
+    expect(pts[0].x).toBeLessThan(10)
+    expect(pts[pts.length - 1].y).toBeGreaterThan(0)
+  })
+
+  it("handles multiple dogbones on different corners", () => {
+    const contour: Contour = {
+      id: "c1", closed: true, layer: "0", segments: [],
+      vertices: [
+        { x: 0, y: 0 }, { x: 10, y: 0 },
+        { x: 10, y: 10 }, { x: 0, y: 10 },
+      ],
+    }
+    const db1 = generateDogbone(
+      { x: 10, y: 0 }, 1, "c1", 1.5, Math.PI / 2, (3 * Math.PI) / 4, "dogbone",
+    )
+    const db2 = generateDogbone(
+      { x: 0, y: 10 }, 3, "c1", 1.5, Math.PI / 2, (5 * Math.PI) / 4, "dogbone",
+    )
+    const pts = applyDogboneCutouts(contour, [db1, db2])
+    expect(pts.length).toBeGreaterThan(6)
+  })
+
+  it("handles dogbones on adjacent vertices", () => {
+    const contour: Contour = {
+      id: "c1", closed: true, layer: "0", segments: [],
+      vertices: [
+        { x: 0, y: 0 }, { x: 10, y: 0 },
+        { x: 10, y: 10 }, { x: 0, y: 10 },
+      ],
+    }
+    const db0 = generateDogbone(
+      { x: 0, y: 0 }, 0, "c1", 1.5, Math.PI / 2, Math.PI / 4, "dogbone",
+    )
+    const db1 = generateDogbone(
+      { x: 10, y: 0 }, 1, "c1", 1.5, Math.PI / 2, (3 * Math.PI) / 4, "dogbone",
+    )
+    const pts = applyDogboneCutouts(contour, [db0, db1])
+    expect(pts.length).toBeGreaterThan(6)
+    const allFinite = pts.every((p) => isFinite(p.x) && isFinite(p.y))
+    expect(allFinite).toBe(true)
   })
 })

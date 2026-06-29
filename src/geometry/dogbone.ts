@@ -1,6 +1,7 @@
 import type { Contour, Dogbone, ToolParams, Vertex } from "@/types/cad"
 import { uid } from "@/utils/id"
 import { findInternalCorners } from "@/geometry/corner"
+import { getContourThickness } from "@/utils/math"
 
 export function generateDogbone(
   vertex: Vertex,
@@ -9,7 +10,6 @@ export function generateDogbone(
   toolRadius: number,
   angle: number,
   bisectorAngle: number,
-  reliefType: "dogbone" | "tbone" | "bone-offset",
 ): Dogbone {
   const direction: Vertex = {
     x: Math.cos(bisectorAngle),
@@ -25,7 +25,7 @@ export function generateDogbone(
     angle,
     bisectorAngle,
     direction,
-    type: reliefType,
+    type: "dogbone",
     enabled: true,
   }
 }
@@ -34,6 +34,13 @@ export function generateAllDogbones(
   contour: Contour,
   params: ToolParams,
 ): Dogbone[] {
+  if (
+    params.filterLargeContours &&
+    getContourThickness(contour) > params.contourMaxThickness
+  ) {
+    return []
+  }
+
   const toolRadius = params.toolDiameter / 2
   const corners = findInternalCorners(contour, params.minAngle)
 
@@ -45,7 +52,6 @@ export function generateAllDogbones(
       toolRadius,
       c.angle,
       c.bisectorAngle,
-      params.reliefType,
     ),
   )
 }

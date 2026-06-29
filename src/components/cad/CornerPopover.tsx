@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Plus, Trash } from "@phosphor-icons/react"
 import { useCADStore } from "@/store/cadStore"
 import { generateDogbone } from "@/geometry/dogbone"
+import { calculateBisectorAngle } from "@/geometry/corner"
 import type { Vertex } from "@/types/cad"
 
 interface CornerPopoverProps {
@@ -41,18 +42,23 @@ export function CornerPopover({
   )
 
   const handleAdd = useCallback(() => {
+    const contour = file?.contours.find((c) => c.id === contourId)
+    const n = contour?.vertices.length ?? 0
+    const prev = n > 0 ? contour!.vertices[(vertexIndex - 1 + n) % n] : vertex
+    const next = n > 0 ? contour!.vertices[(vertexIndex + 1) % n] : vertex
+    const bisectorAngle = calculateBisectorAngle(prev, vertex, next)
+
     const db = generateDogbone(
       vertex,
       vertexIndex,
       contourId,
       toolParams.toolDiameter / 2,
       Math.PI / 2,
-      Math.PI / 4,
-      toolParams.reliefType,
+      bisectorAngle,
     )
     addDogbone(fileId, db)
     onClose()
-  }, [vertex, vertexIndex, contourId, toolParams, fileId, addDogbone, onClose])
+  }, [vertex, vertexIndex, contourId, toolParams, fileId, addDogbone, onClose, file])
 
   const handleRemove = useCallback(() => {
     if (existingDogbone) {

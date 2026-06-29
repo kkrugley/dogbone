@@ -11,6 +11,7 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 import { Slider } from "@/components/ui/slider"
+import { Switch } from "@/components/ui/switch"
 import { Separator } from "@/components/ui/separator"
 import { X, Plus } from "@phosphor-icons/react"
 import { useCADStore } from "@/store/cadStore"
@@ -83,27 +84,6 @@ export function ParamsPanel() {
             </div>
 
             <div className="flex flex-col gap-1.5">
-              <Label className="text-xs">Relief Type</Label>
-              <Select
-                value={toolParams.reliefType}
-                onValueChange={(v) =>
-                  setToolParams({
-                    reliefType: v as typeof toolParams.reliefType,
-                  })
-                }
-              >
-                <SelectTrigger className="h-8 text-xs">
-                  <SelectValue />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="dogbone">Dogbone</SelectItem>
-                  <SelectItem value="tbone">T-bone</SelectItem>
-                  <SelectItem value="bone-offset">Bone Offset</SelectItem>
-                </SelectContent>
-              </Select>
-            </div>
-
-            <div className="flex flex-col gap-1.5">
               <Label className="text-xs">Tolerance</Label>
               <Input
                 type="number"
@@ -143,21 +123,6 @@ export function ParamsPanel() {
                   className="h-7 w-14 text-xs"
                 />
               </div>
-            </div>
-
-            <div className="flex flex-col gap-1.5">
-              <Label className="text-xs">Overcut</Label>
-              <Input
-                type="number"
-                min={0}
-                max={1}
-                step={0.01}
-                value={toolParams.overcut}
-                onChange={(e) =>
-                  setToolParams({ overcut: Number(e.target.value) })
-                }
-                className="h-8 text-xs"
-              />
             </div>
 
             <div className="flex flex-col gap-1.5">
@@ -244,6 +209,47 @@ export function ParamsPanel() {
                 </Button>
               </div>
             </div>
+
+            <Separator />
+
+            <div className="flex items-center justify-between">
+              <Label className="text-xs">Ignore Large Contours</Label>
+              <Switch
+                checked={toolParams.filterLargeContours}
+                onCheckedChange={(v) =>
+                  setToolParams({ filterLargeContours: v })
+                }
+              />
+            </div>
+
+            {toolParams.filterLargeContours && (
+              <div className="flex flex-col gap-1.5">
+                <Label className="text-xs">Contour Max Thickness (mm)</Label>
+                <div className="flex items-center gap-2">
+                  <Slider
+                    value={[toolParams.contourMaxThickness]}
+                    min={1}
+                    max={200}
+                    step={1}
+                    onValueChange={([v]) =>
+                      v != null && setToolParams({ contourMaxThickness: v })
+                    }
+                    className="flex-1"
+                  />
+                  <Input
+                    type="number"
+                    min={1}
+                    max={200}
+                    step={1}
+                    value={toolParams.contourMaxThickness}
+                    onChange={(e) =>
+                      setToolParams({ contourMaxThickness: Number(e.target.value) })
+                    }
+                    className="h-7 w-16 text-xs"
+                  />
+                </div>
+              </div>
+            )}
 
             <Separator />
 

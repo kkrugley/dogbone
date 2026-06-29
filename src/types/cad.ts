@@ -51,11 +51,11 @@ export interface Dogbone {
 
 export interface ToolParams {
   toolDiameter: number
-  reliefType: "dogbone" | "tbone" | "bone-offset"
   tolerance: number
   minAngle: number
-  overcut: number
   ignoredLayers: string[]
+  filterLargeContours: boolean
+  contourMaxThickness: number
 }
 
 export interface Preset {

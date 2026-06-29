@@ -1,5 +1,8 @@
 import { PreviewCell } from "@/components/cad/PreviewCell"
+import { FileUpload } from "@/components/cad/FileUpload"
 import { useCADStore } from "@/store/cadStore"
+import { Card, CardContent } from "@/components/ui/card"
+import { Plus } from "@phosphor-icons/react"
 
 export function PreviewGrid() {
   const files = useCADStore((s) => s.files)
@@ -34,6 +37,21 @@ export function PreviewGrid() {
           onClick={() => handleCellClick(file.id)}
         />
       ))}
+      <FileUpload>
+        <Card className="flex min-h-[310px] cursor-pointer items-center justify-center transition-colors hover:border-primary/50 hover:bg-muted/30">
+          <CardContent className="flex flex-col items-center gap-3 p-8">
+            <div className="flex size-14 items-center justify-center rounded-full bg-muted">
+              <Plus size={24} className="text-muted-foreground" />
+            </div>
+            <div className="text-center">
+              <div className="text-sm font-medium">Add File</div>
+              <div className="mt-0.5 text-xs text-muted-foreground">
+                Click to import another DXF
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </FileUpload>
     </div>
   )
 }

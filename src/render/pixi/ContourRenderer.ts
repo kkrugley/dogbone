@@ -1,6 +1,7 @@
 import { Graphics } from "pixi.js"
 import type { Container } from "pixi.js"
-import type { Contour, Viewport } from "@/types/cad"
+import type { Contour, Dogbone, Viewport } from "@/types/cad"
+import { applyDogboneCutouts } from "@/geometry/cutout"
 
 const CLOSED_COLOR = 0x1a1a2e
 const OPEN_COLOR = 0xef4444
@@ -52,11 +53,22 @@ export function renderContours(
   container: Container,
   contours: Contour[],
   viewport: Viewport,
+  dogbones: Dogbone[],
 ): void {
   container.removeChildren()
 
   const g = new Graphics()
   const { x: vx, y: vy, scale } = viewport
+
+  const dogbonesByContour = new Map<string, Dogbone[]>()
+  for (const db of dogbones) {
+    let arr = dogbonesByContour.get(db.contourId)
+    if (!arr) {
+      arr = []
+      dogbonesByContour.set(db.contourId, arr)
+    }
+    arr.push(db)
+  }
 
   for (const contour of contours) {
     const { vertices, closed } = contour
@@ -65,19 +77,27 @@ export function renderContours(
     const color = closed ? CLOSED_COLOR : OPEN_COLOR
     g.setStrokeStyle({ color, width: STROKE_WIDTH })
 
-    for (let i = 0; i < vertices.length - 1; i++) {
-      const a = vertices[i]
-      const b = vertices[i + 1]
-      g.moveTo(a.x * scale + vx, a.y * scale + vy)
-      g.lineTo(b.x * scale + vx, b.y * scale + vy)
-      g.stroke()
-    }
+    const contourDogbones = dogbonesByContour.get(contour.id)
+    const hasEnabledDogbones = contourDogbones?.some((d) => d.enabled) ?? false
 
-    if (closed && vertices.length >= 2) {
-      const first = vertices[0]
-      const last = vertices[vertices.length - 1]
-      g.moveTo(last.x * scale + vx, last.y * scale + vy)
-      g.lineTo(first.x * scale + vx, first.y * scale + vy)
+    if (closed && hasEnabledDogbones && contourDogbones) {
+      const pts = applyDogboneCutouts(contour, contourDogbones)
+      if (pts.length >= 2) {
+        g.moveTo(pts[0].x * scale + vx, pts[0].y * scale + vy)
+        for (let i = 1; i < pts.length; i++) {
+          g.lineTo(pts[i].x * scale + vx, pts[i].y * scale + vy)
+        }
+        g.lineTo(pts[0].x * scale + vx, pts[0].y * scale + vy)
+        g.stroke()
+      }
+    } else {
+      g.moveTo(vertices[0].x * scale + vx, vertices[0].y * scale + vy)
+      for (let i = 1; i < vertices.length; i++) {
+        g.lineTo(vertices[i].x * scale + vx, vertices[i].y * scale + vy)
+      }
+      if (closed) {
+        g.lineTo(vertices[0].x * scale + vx, vertices[0].y * scale + vy)
+      }
       g.stroke()
     }
   }
