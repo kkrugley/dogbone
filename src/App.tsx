@@ -28,6 +28,7 @@ function App() {
   const activeFileId = useCADStore((s) => s.activeFileId)
   const toolParams = useCADStore((s) => s.toolParams)
 
+  const viewMode = useCADStore((s) => s.viewMode)
   const activeFile = files.find((f) => f.id === activeFileId)
 
   const handleExportCurrent = async () => {
