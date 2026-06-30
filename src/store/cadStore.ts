@@ -35,7 +35,7 @@ const DEFAULT_TOOL_PARAMS: ToolParams = {
   toolDiameter: 2,
   tolerance: 0.01,
   minAngle: 120,
-  ignoredLayers: [],
+  ignoredLayers: ["text", "mark"],
   filterLargeContours: true,
   contourMaxThickness: 30,
 }

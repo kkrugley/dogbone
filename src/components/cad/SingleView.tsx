@@ -94,21 +94,6 @@ export function SingleView() {
           </Tabs>
         </div>
       </div>
-
-      <div className="flex items-center gap-4 border-t px-4 py-1.5 text-xs text-muted-foreground">
-        <span>
-          {file.contours.length} contours
-        </span>
-        <span>&middot;</span>
-        <span>
-          {file.dogbones.length} dogbones (
-          {file.dogbones.filter((d) => d.enabled).length} enabled)
-        </span>
-        <span>&middot;</span>
-        <span>
-          {file.gaps.length} gaps
-        </span>
-      </div>
     </div>
   )
 }

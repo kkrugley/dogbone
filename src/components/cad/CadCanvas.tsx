@@ -9,6 +9,10 @@ import { renderGaps } from "@/render/pixi/GapRenderer"
 import { setupZoomPan, setupHitDetection } from "@/render/pixi/Interaction"
 import { useCADStore } from "@/store/cadStore"
 import { CornerPopover } from "@/components/cad/CornerPopover"
+import { DogbonePopover } from "@/components/cad/DogbonePopover"
+import { Toolbar } from "@/components/cad/Toolbar"
+import { generateDogbone } from "@/geometry/dogbone"
+import { calculateBisectorAngle } from "@/geometry/corner"
 import type { Vertex } from "@/types/cad"
 
 interface CadCanvasProps {
@@ -37,6 +41,11 @@ export function CadCanvas({
   const cleanupRef = useRef<(() => void)[]>([])
   const readyRef = useRef(false)
   const [cornerPopover, setCornerPopover] = useState<VertexInfo | null>(null)
+  const [dogbonePopover, setDogbonePopover] = useState<{
+    dogboneId: string
+    screenX: number
+    screenY: number
+  } | null>(null)
 
   const renderAll = useCallback(() => {
     const layers = layersRef.current
@@ -109,19 +118,59 @@ export function CadCanvas({
           onHover: (vertexIndex) => {
             useCADStore.getState().setHoveredVertex(vertexIndex)
           },
-          onDogboneClick: (dogboneId) => {
-            if (dogboneId) {
-              useCADStore.getState().setSelectedDogbone(dogboneId)
-            } else {
+          onDogboneClick: (info) => {
+            if (!info) {
               useCADStore.getState().setSelectedDogbone(null)
+              setDogbonePopover(null)
+              return
             }
+            const tool = useCADStore.getState().tool
+            if (tool === "pan") return
+            if (tool === "remove-dogbone") {
+              useCADStore.getState().removeDogbone(fileId, info.dogboneId)
+              return
+            }
+            useCADStore.getState().setSelectedDogbone(info.dogboneId)
+            setDogbonePopover({
+              dogboneId: info.dogboneId,
+              screenX: info.screenX,
+              screenY: info.screenY,
+            })
           },
           onVertexClick: (info) => {
-            if (info) {
-              setCornerPopover(info)
-            } else {
+            if (!info) {
               setCornerPopover(null)
+              return
             }
+            const tool = useCADStore.getState().tool
+            if (tool === "pan") return
+            if (tool === "add-dogbone") {
+              const file = useCADStore.getState().files.find((f) => f.id === fileId)
+              const contour = file?.contours.find((c) => c.id === info.contourId)
+              if (contour) {
+                const n = contour.vertices.length
+                const prev = contour.vertices[(info.vertexIndex - 1 + n) % n]
+                const next = contour.vertices[(info.vertexIndex + 1) % n]
+                const bisectorAngle = calculateBisectorAngle(prev, info.vertex, next)
+                const toolParams = useCADStore.getState().toolParams
+                const db = generateDogbone(
+                  info.vertex,
+                  info.vertexIndex,
+                  info.contourId,
+                  toolParams.toolDiameter / 2,
+                  Math.PI / 2,
+                  bisectorAngle,
+                )
+                const existing = file?.dogbones.find(
+                  (d) => d.vertexIndex === info.vertexIndex && d.contourId === info.contourId,
+                )
+                if (!existing) {
+                  useCADStore.getState().addDogbone(fileId, db)
+                }
+              }
+              return
+            }
+            setCornerPopover(info)
           },
         })
         cleanupRef.current.push(hitCleanup)
@@ -187,9 +236,19 @@ export function CadCanvas({
           onClose={() => setCornerPopover(null)}
         />
       )}
+      {dogbonePopover && (
+        <DogbonePopover
+          fileId={fileId}
+          dogboneId={dogbonePopover.dogboneId}
+          open={true}
+          screenX={dogbonePopover.screenX}
+          screenY={dogbonePopover.screenY}
+          onClose={() => setDogbonePopover(null)}
+        />
+      )}
       {interactive && (
-        <div className="pointer-events-none absolute bottom-2 right-2 z-10 rounded bg-background/80 px-2 py-1 text-xs text-muted-foreground">
-          Scroll to zoom &middot; Drag to pan
+        <div className="pointer-events-none absolute left-2 top-2 z-10">
+          <Toolbar />
         </div>
       )}
     </div>
