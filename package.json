@@ -1,7 +1,8 @@
 {
-  "name": "dogbone-temp",
+  "name": "dogbone-cnc",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://dogbone-cnc.vercel.app",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -28,6 +29,7 @@
     "@tailwindcss/vite": "^4.3.1",
     "@tanstack/react-router": "^1.170.16",
     "@tarikjabiri/dxf": "^2.8.9",
+    "@vercel/og": "^0.11.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "dxf-parser": "^1.1.2",
