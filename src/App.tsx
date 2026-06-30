@@ -14,7 +14,6 @@ import {
   Cube,
   Download,
   Upload,
-  ArrowLeft,
 } from "@phosphor-icons/react"
 import { exportToDxfFile } from "@/features/export/writer"
 import { createZipArchive, downloadZip } from "@/features/export/zipper"
@@ -73,42 +72,33 @@ function App() {
             <>
               <Separator orientation="vertical" className="h-6 mx-1" />
 
-              <Button
-                variant="ghost"
-                size="sm"
-                onClick={() => {
-                  setActiveFile(null)
-                  setViewMode("grid")
-                }}
-              >
-                <ArrowLeft size={16} className="mr-1" />
-                To all
-              </Button>
+              <div className="flex items-center gap-2">
+                <PresetsDialog />
+                <ReportDialog />
+              </div>
 
-              <Button
-                variant="ghost"
-                size="sm"
-                onClick={handleExportCurrent}
-                disabled={!activeFile || activeFile.status !== "ready"}
-              >
-                <Download size={16} className="mr-1" />
-                Export
-              </Button>
-
-              {files.length > 1 && (
+              <div className="ml-auto flex items-center gap-2">
                 <Button
                   variant="ghost"
                   size="sm"
-                  onClick={handleExportAll}
+                  onClick={handleExportCurrent}
+                  disabled={!activeFile || activeFile.status !== "ready"}
                 >
                   <Download size={16} className="mr-1" />
-                  Export All (ZIP)
+                  Export
                 </Button>
-              )}
 
-              <div className="ml-auto flex items-center gap-2">
-                <PresetsDialog />
-                <ReportDialog />
+                {files.length > 1 && (
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    onClick={handleExportAll}
+                  >
+                    <Download size={16} className="mr-1" />
+                    Export All (ZIP)
+                  </Button>
+                )}
+
                 <Badge variant="secondary" className="text-xs">
                   {files.length} file{files.length > 1 ? "s" : ""}
                 </Badge>
