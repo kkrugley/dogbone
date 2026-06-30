@@ -2,7 +2,6 @@ import { useCADStore } from "@/store/cadStore"
 import { TooltipProvider } from "@/components/ui/tooltip"
 import { PreviewGrid } from "@/components/cad/PreviewGrid"
 import { SingleView } from "@/components/cad/SingleView"
-import { FileUpload } from "@/components/cad/FileUpload"
 import { PresetsDialog } from "@/components/cad/PresetsDialog"
 import { ReportDialog } from "@/components/cad/ReportDialog"
 import { ParamsPanel } from "@/components/cad/ParamsPanel"
@@ -27,9 +26,6 @@ function App() {
 
   const files = useCADStore((s) => s.files)
   const activeFileId = useCADStore((s) => s.activeFileId)
-  const viewMode = useCADStore((s) => s.viewMode)
-  const setViewMode = useCADStore((s) => s.setViewMode)
-  const setActiveFile = useCADStore((s) => s.setActiveFile)
   const toolParams = useCADStore((s) => s.toolParams)
 
   const activeFile = files.find((f) => f.id === activeFileId)

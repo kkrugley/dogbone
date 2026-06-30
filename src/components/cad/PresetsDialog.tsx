@@ -83,8 +83,7 @@ export function PresetsDialog() {
                       {p.name}
                     </div>
                     <div className="mt-0.5 text-xs text-muted-foreground">
-                      Tool: {p.params.toolDiameter}mm &middot;
-                      {p.params.reliefType} &middot; Angle &lt;
+                      Tool: {p.params.toolDiameter}mm &middot; Angle &lt;
                       {p.params.minAngle}&deg;
                     </div>
                   </div>

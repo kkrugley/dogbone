@@ -6,7 +6,7 @@ import { applyDogboneCutouts } from "@/geometry/cutout"
 import { subtractDogbones, clearCache } from "@/geometry/boolean"
 import { validateContour, repairContour } from "@/geometry/repair"
 import { uid } from "@/utils/id"
-import type { Contour, Segment, ToolParams } from "@/types/cad"
+import type { Contour, Segment } from "@/types/cad"
 
 function makeLine(x1: number, y1: number, x2: number, y2: number, layer = "0"): Segment {
   return { id: uid(), type: "line", start: { x: x1, y: y1 }, end: { x: x2, y: y2 }, layer }
@@ -90,7 +90,7 @@ describe("dogbone", () => {
   it("generates dogbone with correct radius", () => {
     const vertex = { x: 10, y: 0 }
     const db = generateDogbone(
-      vertex, 1, "c1", 1.5, Math.PI / 2, Math.PI / 4, "dogbone",
+      vertex, 1, "c1", 1.5, Math.PI / 2, Math.PI / 4,
     )
     expect(db.radius).toBe(1.5)
     expect(db.vertexIndex).toBe(1)
@@ -101,7 +101,7 @@ describe("dogbone", () => {
 
   it("calculates dogbone circles", () => {
     const db = generateDogbone(
-      { x: 0, y: 0 }, 0, "c1", 2, Math.PI / 2, Math.PI / 4, "dogbone",
+      { x: 0, y: 0 }, 0, "c1", 2, Math.PI / 2, Math.PI / 4,
     )
     const circles = calculateDogboneCircles(db)
     expect(circles.length).toBe(1)
@@ -122,13 +122,13 @@ describe("dogbone", () => {
       segments: [],
       vertices,
     }
-    const params: ToolParams = {
+    const params = {
       toolDiameter: 3,
-      reliefType: "dogbone",
       tolerance: 0.01,
       minAngle: 120,
-      overcut: 0.1,
       ignoredLayers: [],
+      filterLargeContours: false,
+      contourMaxThickness: 30,
     }
     const dbs = generateAllDogbones(contour, params)
     expect(dbs.length).toBe(4)
@@ -149,13 +149,13 @@ describe("dogbone", () => {
       segments: [],
       vertices,
     }
-    const params: ToolParams = {
+    const params = {
       toolDiameter: 3,
-      reliefType: "dogbone",
       tolerance: 0.01,
       minAngle: 30,
-      overcut: 0.1,
       ignoredLayers: [],
+      filterLargeContours: false,
+      contourMaxThickness: 30,
     }
     const dbs = generateAllDogbones(contour, params)
     expect(dbs.length).toBe(4)
@@ -235,7 +235,7 @@ describe("boolean", () => {
       ],
     }
     const db = generateDogbone(
-      { x: 10, y: 0 }, 1, "c1", 1.5, Math.PI / 2, -Math.PI / 4, "dogbone",
+      { x: 10, y: 0 }, 1, "c1", 1.5, Math.PI / 2, -Math.PI / 4,
     )
     db.enabled = false
     const rings = subtractDogbones(contour, [db])
@@ -257,7 +257,7 @@ describe("boolean", () => {
       ],
     }
     const db = generateDogbone(
-      { x: 10, y: 0 }, 1, "c1", 1.5, Math.PI / 2, -Math.PI / 4, "dogbone",
+      { x: 10, y: 0 }, 1, "c1", 1.5, Math.PI / 2, -Math.PI / 4,
     )
     const rings = subtractDogbones(contour, [db])
     expect(rings.length).toBe(1)
@@ -278,7 +278,7 @@ describe("boolean", () => {
       ],
     }
     const db = generateDogbone(
-      { x: 100, y: 0 }, 1, "c1", 20, Math.PI / 2, (3 * Math.PI) / 4, "dogbone",
+      { x: 100, y: 0 }, 1, "c1", 20, Math.PI / 2, (3 * Math.PI) / 4,
     )
     const rings = subtractDogbones(contour, [db])
     expect(rings.length).toBeGreaterThan(0)
@@ -304,7 +304,7 @@ describe("boolean", () => {
       ],
     }
     const db = generateDogbone(
-      { x: 10, y: 0 }, 1, "c1", 1.5, Math.PI / 2, -Math.PI / 4, "dogbone",
+      { x: 10, y: 0 }, 1, "c1", 1.5, Math.PI / 2, -Math.PI / 4,
     )
     const first = subtractDogbones(contour, [db])
     const second = subtractDogbones(contour, [db])
@@ -335,7 +335,7 @@ describe("cutout", () => {
       ],
     }
     const db = generateDogbone(
-      { x: 10, y: 0 }, 1, "c1", 1.5, Math.PI / 2, (3 * Math.PI) / 4, "dogbone",
+      { x: 10, y: 0 }, 1, "c1", 1.5, Math.PI / 2, (3 * Math.PI) / 4,
     )
     db.enabled = false
     const pts = applyDogboneCutouts(contour, [db])
@@ -351,7 +351,7 @@ describe("cutout", () => {
       ],
     }
     const db = generateDogbone(
-      { x: 10, y: 0 }, 1, "c1", 1.5, Math.PI / 2, (3 * Math.PI) / 4, "dogbone",
+      { x: 10, y: 0 }, 1, "c1", 1.5, Math.PI / 2, (3 * Math.PI) / 4,
     )
     const pts = applyDogboneCutouts(contour, [db])
     expect(pts.length).toBeGreaterThan(4)
@@ -368,10 +368,10 @@ describe("cutout", () => {
       ],
     }
     const db1 = generateDogbone(
-      { x: 10, y: 0 }, 1, "c1", 1.5, Math.PI / 2, (3 * Math.PI) / 4, "dogbone",
+      { x: 10, y: 0 }, 1, "c1", 1.5, Math.PI / 2, (3 * Math.PI) / 4,
     )
     const db2 = generateDogbone(
-      { x: 0, y: 10 }, 3, "c1", 1.5, Math.PI / 2, (5 * Math.PI) / 4, "dogbone",
+      { x: 0, y: 10 }, 3, "c1", 1.5, Math.PI / 2, (5 * Math.PI) / 4,
     )
     const pts = applyDogboneCutouts(contour, [db1, db2])
     expect(pts.length).toBeGreaterThan(6)
@@ -386,10 +386,10 @@ describe("cutout", () => {
       ],
     }
     const db0 = generateDogbone(
-      { x: 0, y: 0 }, 0, "c1", 1.5, Math.PI / 2, Math.PI / 4, "dogbone",
+      { x: 0, y: 0 }, 0, "c1", 1.5, Math.PI / 2, Math.PI / 4,
     )
     const db1 = generateDogbone(
-      { x: 10, y: 0 }, 1, "c1", 1.5, Math.PI / 2, (3 * Math.PI) / 4, "dogbone",
+      { x: 10, y: 0 }, 1, "c1", 1.5, Math.PI / 2, (3 * Math.PI) / 4,
     )
     const pts = applyDogboneCutouts(contour, [db0, db1])
     expect(pts.length).toBeGreaterThan(6)

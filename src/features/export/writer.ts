@@ -1,7 +1,6 @@
 import { DxfWriter, LWPolylineFlags } from "@tarikjabiri/dxf"
-import type { Contour, Dogbone, FileState, ToolParams, Vertex } from "@/types/cad"
+import type { Dogbone, FileState, ToolParams, Vertex } from "@/types/cad"
 import { applyDogboneCutoutsForExport } from "@/geometry/cutout"
-import type { ExportVertex } from "@/geometry/cutout"
 
 const z3 = (v: Vertex) => ({ x: v.x, y: v.y, z: 0 })
 const z2 = (v: Vertex) => ({ x: v.x, y: v.y })
