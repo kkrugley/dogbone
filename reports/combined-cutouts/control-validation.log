@@ -1,0 +1,15 @@
+cozy-3mm-sheet-1-D2 invalid 0 hole widths [3.2, 3.4] narrow 0 unreachable 0 max lost 0
+cozy-3mm-sheet-1-D2.5 invalid 0 hole widths [3.2, 3.4] narrow 0 unreachable 0 max lost 0
+cozy-3mm-sheet-1-D3 invalid 0 hole widths [3.2, 3.4] narrow 0 unreachable 0 max lost 0
+cozy-3mm-sheet-1-D3.175 invalid 0 hole widths [3.2, 3.4] narrow 0 unreachable 0 max lost 0
+cozy-3mm-sheet-1-D4 invalid 0 hole widths [3.2, 3.4] narrow 47 unreachable 47 max lost 108.351
+cozy-6mm-sheet-1-D2 invalid 0 hole widths [6.2, 6.4] narrow 0 unreachable 0 max lost 0
+cozy-6mm-sheet-1-D3 invalid 0 hole widths [6.2, 6.4] narrow 0 unreachable 0 max lost 0
+cozy-6mm-sheet-1-D3.175 invalid 0 hole widths [6.2, 6.4] narrow 0 unreachable 0 max lost 0
+cozy-6mm-sheet-1-D4 invalid 0 hole widths [6.2, 6.4] narrow 0 unreachable 0 max lost 0
+cozy-6mm-sheet-1-D6 invalid 0 hole widths [6.2, 6.4] narrow 0 unreachable 0 max lost 0
+family-6mm-sheet-1-D2 invalid 0 hole widths [6.4] narrow 0 unreachable 0 max lost 0
+family-6mm-sheet-1-D3 invalid 0 hole widths [6.4] narrow 0 unreachable 0 max lost 0
+family-6mm-sheet-1-D3.175 invalid 0 hole widths [6.4] narrow 0 unreachable 0 max lost 0
+family-6mm-sheet-1-D4 invalid 0 hole widths [6.4] narrow 0 unreachable 0 max lost 0
+family-6mm-sheet-1-D6 invalid 0 hole widths [6.4] narrow 0 unreachable 0 max lost 0

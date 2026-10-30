@@ -1,0 +1,81 @@
+{
+  "checks": [
+    {
+      "step": "process-export",
+      "file": "cozy-3mm-sheet-1",
+      "diameter": 3.175,
+      "kinds": {
+        "dogbone": 152,
+        "tbone": 168,
+        "arcRelief": 2
+      },
+      "report": "Processing Report\nCutter clearance verified for Ø3.175 mm.\nTotal Contours\n139\nClosed / Open\n96 / 43\nDogbones Added\n322\nGaps / Fixable\n0 (0 fixable)\nClose",
+      "download": "cozy-3mm-sheet-1_processed.dxf"
+    },
+    {
+      "step": "oversized-cutter",
+      "diameter": 4,
+      "exportBlocked": true,
+      "report": "Processing Report\nProcessing is incomplete. Review the warnings before exporting.\nTotal Contours\n139\nClosed / Open\n96 / 43\nDogbones Added\n322\nGaps / Fixable\n0 (0 fixable)\nWarnings\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nA Ø4 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient.\nClose"
+    },
+    {
+      "step": "reimport",
+      "file": "cozy-3mm-sheet-1",
+      "diameter": 3.175,
+      "newReliefs": 0,
+      "exportEnabled": true
+    },
+    {
+      "step": "process-export",
+      "file": "cozy-6mm-sheet-1",
+      "diameter": 6,
+      "kinds": {
+        "dogbone": 166,
+        "tbone": 106,
+        "arcRelief": 0
+      },
+      "report": "Processing Report\nCutter clearance verified for Ø6 mm.\nTotal Contours\n117\nClosed / Open\n117 / 0\nDogbones Added\n272\nGaps / Fixable\n0 (0 fixable)\nClose",
+      "download": "cozy-6mm-sheet-1_processed.dxf"
+    },
+    {
+      "step": "reimport",
+      "file": "cozy-6mm-sheet-1",
+      "diameter": 6,
+      "newReliefs": 0,
+      "exportEnabled": true
+    },
+    {
+      "step": "process-export",
+      "file": "family-6mm-sheet-1",
+      "diameter": 6,
+      "kinds": {
+        "dogbone": 85,
+        "tbone": 33,
+        "arcRelief": 0
+      },
+      "report": "Processing Report\nCutter clearance verified for Ø6 mm.\nTotal Contours\n117\nClosed / Open\n116 / 1\nDogbones Added\n118\nGaps / Fixable\n0 (0 fixable)\nClose",
+      "download": "family-6mm-sheet-1_processed.dxf"
+    },
+    {
+      "step": "reimport",
+      "file": "family-6mm-sheet-1",
+      "diameter": 6,
+      "newReliefs": 0,
+      "exportEnabled": true
+    },
+    {
+      "step": "batch-export",
+      "diameter": 6,
+      "files": 2,
+      "download": "processed_files.zip"
+    },
+    {
+      "step": "oversized-input",
+      "rejected": true,
+      "exportBlocked": true
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "cspViolations": []
+}

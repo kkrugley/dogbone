@@ -1,0 +1,26 @@
+[
+  {
+    "step": "report",
+    "text": "Processing Report\nTotal Contours\n139\nClosed / Open\n96 / 43\nDogbones Added\n310\nGaps / Fixable\n0 (0 fixable)\nWarnings\n43 contours not closed\nContour mvuczmqc-11a-b8skvg has fewer than 3 vertices\nContour mvuczmqd-11n-ptzoi8 has fewer than 3 vertices\nContour mvuczmqj-12r-03eeci has fewer than 3 vertices\nContour mvuczmqj-12u-asfx7r has fewer than 3 vertices\nContour mvuczmqj-130-axnh03 has fewer than 3 vertices\nContour mvuczmqj-133-9152p4 has fewer than 3 vertices\nClose"
+  },
+  {
+    "step": "disable and export",
+    "file": "cozy-3mm-sheet-1_processed.dxf"
+  },
+  {
+    "step": "4mm tool",
+    "text": "Processing Report\nTotal Contours\n139\nClosed / Open\n96 / 43\nDogbones Added\n118\nGaps / Fixable\n0 (0 fixable)\nWarnings\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n4 corners cannot safely fit this tool; use a smaller diameter.\n2 corners cannot safely fit this tool; use a smaller diameter.\n2 corners cannot safely fit this tool; use a smaller diameter.\n43 contours not closed\nContour mvuczsgl-2d4-isndan has fewer than 3 vertices\nContour mvuczsgm-2dh-mpk22j has fewer than 3 vertices\nContour mvuczsgo-2el-xnbm5m has fewer than 3 vertices\nContour mvuczsgo-2eo-7z3sig has fewer than 3 vertices\nContour mvuczsgo-2eu-e4bpcw has fewer than 3 vertices\nContour mvuczsgo-2ex-fw6fpb has fewer than 3 vertices\nClose"
+  },
+  {
+    "step": "restore diameter and export",
+    "file": "cozy-3mm-sheet-1_processed.dxf"
+  },
+  {
+    "step": "reimport and batch",
+    "text": "DogBone\nPresets\nReport\nExport\nExport All (ZIP)\n3 files\nui-cozy-3mm-processed\n139 contours\n·\n0 dogbones\n·\n0 gaps\nReady\ncozy-6mm-sheet-1\n117 contours\n·\n262 dogbones\n·\n0 gaps\nReady\nfamily-6mm-sheet-1\n117 contours\n·\n103 dogbones\n·\n0 gaps\nReady\nAdd File\nClick to import another DXF\nTool Parameters\nTool Diameter\nTolerance\nMin Angle (°)\nIgnore Layers\ntext\nmark\nlogo\nengraving\ntext\nmark\nIgnore Large Holes\nContour Max Thickness (mm)\nApply & Re-process\nui-cozy-3mm-processed.dxf\n139 contours\n0 dogbones\n0 gaps"
+  },
+  {
+    "step": "console",
+    "errors": []
+  }
+]

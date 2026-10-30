@@ -44,3 +44,9 @@ test-files/
 
 # OS
 Thumbs.db
+# Large reproducible intermediate geometry from the cutter audit
+reports/combined-cutouts/*-raw.json
+reports/tool-diameters/*-raw.json
+reports/tool-diameters/*.dxf
+reports/combined-cutouts/*-verified.dxf
+reports/combined-cutouts/*-DIAGNOSTIC.dxf

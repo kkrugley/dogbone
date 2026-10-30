@@ -1,0 +1,2 @@
+# Preserve CAD fixtures byte-for-byte, including their original line endings.
+*.dxf -text -diff

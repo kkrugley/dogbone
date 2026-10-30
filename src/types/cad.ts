@@ -1,3 +1,5 @@
+import type { MachiningCheck } from "@/geometry/toolFit"
+
 export interface Vertex {
   x: number
   y: number
@@ -23,6 +25,9 @@ export interface Contour {
   layer: string
   segments: Segment[]
   vertices: Vertex[]
+  /** Outgoing edge metadata, indexed by its start vertex. */
+  bulges?: number[]
+  isHole?: boolean
   edgeTypes?: Array<"line" | "arc">
 }
 
@@ -45,14 +50,18 @@ export interface Dogbone {
   angle: number
   bisectorAngle: number
   direction: Vertex
-  type: "dogbone" | "tbone" | "bone-offset"
+  type: "dogbone" | "tbone" | "bone-offset" | "arc-relief"
   enabled: boolean
+  requiresBoolean?: boolean
+  center?: Vertex
 }
 
 export interface ToolParams {
   toolDiameter: number
   tolerance: number
+  /** Legacy preset field, retained for compatibility. */
   minAngle: number
+  maxCornerAngle?: number
   ignoredLayers: string[]
   filterLargeContours: boolean
   contourMaxThickness: number
@@ -73,7 +82,10 @@ export interface FileState {
   contours: Contour[]
   dogbones: Dogbone[]
   gaps: Gap[]
-  status: "idle" | "processing" | "ready" | "error"
+  status: "idle" | "processing" | "ready" | "review" | "error"
+  machining?: MachiningCheck
+  warnings?: string[]
+  errorMessage?: string
   rawDxfData?: string
   rawDxfText?: string
 }

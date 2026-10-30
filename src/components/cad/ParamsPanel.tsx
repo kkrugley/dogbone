@@ -34,6 +34,9 @@ export function ParamsPanel() {
           contours: result.contours,
           dogbones: result.dogbones,
           gaps: result.gaps,
+          warnings: result.warnings,
+          machining: result.machining,
+          status: result.status,
         })
       } catch (e) {
         console.error("Reprocess failed for", file.name, e)
@@ -92,28 +95,28 @@ export function ParamsPanel() {
             </div>
 
             <div className="flex flex-col gap-1.5">
-              <Label className="text-xs">Min Angle (&deg;)</Label>
+              <Label className="text-xs">Maximum Corner Angle (&deg;)</Label>
               <div className="flex items-center gap-2">
                 <Slider
-                  value={[toolParams.minAngle]}
+                  value={[toolParams.maxCornerAngle ?? 170]}
                   min={30}
-                  max={180}
+                  max={175}
                   step={1}
                   onValueChange={([v]) =>
-                    v != null && setToolParams({ minAngle: v })
+                    v != null && setToolParams({ maxCornerAngle: v })
                   }
                   className="flex-1"
                 />
                 <Input
                   type="number"
                   min={30}
-                  max={180}
+                  max={175}
                   step={1}
-                  value={toolParams.minAngle}
+                  value={toolParams.maxCornerAngle ?? 170}
                   onChange={(e) =>
-                    setToolParams({ minAngle: Number(e.target.value) })
+                    setToolParams({ maxCornerAngle: Number(e.target.value) })
                   }
-                  className="h-7 w-14 text-xs"
+                  className="h-7 w-16 text-xs"
                 />
               </div>
             </div>
@@ -206,7 +209,7 @@ export function ParamsPanel() {
             <Separator />
 
             <div className="flex items-center justify-between">
-              <Label className="text-xs">Ignore Large Contours</Label>
+              <Label className="text-xs">Skip Large Corner Features</Label>
               <Switch
                 checked={toolParams.filterLargeContours}
                 onCheckedChange={(v) =>
@@ -217,7 +220,7 @@ export function ParamsPanel() {
 
             {toolParams.filterLargeContours && (
               <div className="flex flex-col gap-1.5">
-                <Label className="text-xs">Contour Max Thickness (mm)</Label>
+                <Label className="text-xs">Minimum Adjacent Wall Length (mm)</Label>
                 <div className="flex items-center gap-2">
                   <Slider
                     value={[toolParams.contourMaxThickness]}

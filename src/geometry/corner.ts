@@ -23,12 +23,9 @@ export function calculateBisectorAngle(
   return Math.atan2(bisector.y, bisector.x)
 }
 
-const RIGHT_ANGLE = Math.PI / 2
-const ANGLE_TOLERANCE = 0.1
-
 export function findInternalCorners(
   contour: Contour,
-  _minAngle?: number,
+  maxAngle: number = 170,
 ): Array<{
   vertexIndex: number
   vertex: Vertex
@@ -38,7 +35,7 @@ export function findInternalCorners(
   const { vertices, edgeTypes } = contour
   const n = vertices.length
 
-  if (n < 3) return []
+  if (!contour.closed || n < 3) return []
 
   const area = polygonArea(vertices)
   const isCW = area < 0
@@ -52,8 +49,8 @@ export function findInternalCorners(
 
   for (let i = 0; i < n; i++) {
     if (edgeTypes) {
-      const prevEdge = edgeTypes[i]
-      const nextEdge = edgeTypes[(i + 1) % n]
+      const prevEdge = edgeTypes[(i - 1 + n) % n]
+      const nextEdge = edgeTypes[i]
       if (prevEdge !== "line" || nextEdge !== "line") continue
     }
 
@@ -66,13 +63,14 @@ export function findInternalCorners(
     const cross = cross2d(ba, cb)
 
     const isRightTurn = cross < 0
-    const isInternal = isCW ? isRightTurn : !isRightTurn
+    const convex = isCW ? isRightTurn : !isRightTurn
+    const isInternal = contour.isHole === true ? convex : !convex
 
     if (!isInternal) continue
 
     const angle = angleBetween(a, b, c)
 
-    if (Math.abs(angle - RIGHT_ANGLE) > ANGLE_TOLERANCE) continue
+    if (angle < Math.PI / 180 * 5 || angle > Math.PI / 180 * Math.min(175, maxAngle)) continue
 
     const bisectorAngle = calculateBisectorAngle(a, b, c)
 

@@ -71,7 +71,8 @@ export function renderContours(
   }
 
   for (const contour of contours) {
-    const { vertices, closed } = contour
+    const { closed } = contour
+    const vertices = applyDogboneCutouts(contour, [])
     if (vertices.length < 2) continue
 
     const color = closed ? CLOSED_COLOR : OPEN_COLOR
@@ -81,7 +82,9 @@ export function renderContours(
     const hasEnabledDogbones = contourDogbones?.some((d) => d.enabled) ?? false
 
     if (closed && hasEnabledDogbones && contourDogbones) {
-      const pts = applyDogboneCutouts(contour, contourDogbones)
+      let pts = vertices
+      try { pts = applyDogboneCutouts(contour, contourDogbones) }
+      catch { g.setStrokeStyle({ color: OPEN_COLOR, width: STROKE_WIDTH }) }
       if (pts.length >= 2) {
         g.moveTo(pts[0].x * scale + vx, pts[0].y * scale + vy)
         for (let i = 1; i < pts.length; i++) {

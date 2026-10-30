@@ -21,6 +21,7 @@ export function PreviewCell({ file, onClick }: PreviewCellProps) {
         <div className="flex items-center justify-between p-3">
           <div className="min-w-0 flex-1">
             <div className="truncate text-sm font-medium">{file.name}</div>
+            {file.errorMessage && <p role="alert" className="mt-1 text-xs text-destructive">{file.errorMessage}</p>}
             <div className="mt-0.5 flex items-center gap-2 text-xs text-muted-foreground">
               <span>{file.contours.length} contours</span>
               <span>&middot;</span>

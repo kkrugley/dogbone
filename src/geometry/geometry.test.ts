@@ -67,7 +67,7 @@ describe("corner", () => {
     expect(angle).toBeCloseTo(Math.PI / 4, 4)
   })
 
-  it("finds internal corners in clockwise square", () => {
+  it("finds internal corners of a rectangular hole", () => {
     const vertices = [
       { x: 0, y: 0 },
       { x: 10, y: 0 },
@@ -77,6 +77,7 @@ describe("corner", () => {
     const contour: Contour = {
       id: "c1",
       closed: true,
+      isHole: true,
       layer: "0",
       segments: [],
       vertices,
@@ -118,6 +119,7 @@ describe("dogbone", () => {
     const contour: Contour = {
       id: "c1",
       closed: true,
+      isHole: true,
       layer: "0",
       segments: [],
       vertices,
@@ -145,6 +147,7 @@ describe("dogbone", () => {
     const contour: Contour = {
       id: "c1",
       closed: true,
+      isHole: true,
       layer: "0",
       segments: [],
       vertices,

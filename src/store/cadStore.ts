@@ -1,3 +1,4 @@
+import { assessMachining } from "@/geometry/toolFit"
 import { create } from "zustand"
 import { temporal } from "zundo"
 import type {
@@ -11,6 +12,11 @@ import type {
   ToolParams,
   Viewport,
 } from "@/types/cad"
+
+function reviewed(file: FileState, params: ToolParams): FileState {
+  const machining = assessMachining(file.contours, file.dogbones, params)
+  return { ...file, machining, status: machining.complete ? "ready" : "review" }
+}
 
 const PRESETS_KEY = "dogbone-presets"
 
@@ -35,6 +41,7 @@ const DEFAULT_TOOL_PARAMS: ToolParams = {
   toolDiameter: 2,
   tolerance: 0.01,
   minAngle: 120,
+  maxCornerAngle: 170,
   ignoredLayers: ["text", "mark"],
   filterLargeContours: true,
   contourMaxThickness: 30,
@@ -89,7 +96,7 @@ export interface CADStore {
 }
 
 export const useCADStore = create<CADStore>()(
-  temporal(
+  temporal<CADStore, [], [], Pick<CADStore, "files">>(
     (set, _get) => ({
       files: [],
       activeFileId: null,
@@ -110,7 +117,7 @@ export const useCADStore = create<CADStore>()(
 
       updateFile: (id, updates) =>
         set((s) => ({
-          files: s.files.map((f) => (f.id === id ? { ...f, ...updates } : f)),
+          files: s.files.map((f) => (f.id === id ? ((updates.contours || updates.dogbones) && !updates.machining ? reviewed({ ...f, ...updates }, s.toolParams) : { ...f, ...updates }) : f)),
         })),
 
       tool: "select",
@@ -129,7 +136,10 @@ export const useCADStore = create<CADStore>()(
 
       toolParams: DEFAULT_TOOL_PARAMS,
       setToolParams: (params) =>
-        set((s) => ({ toolParams: { ...s.toolParams, ...params } })),
+        set((s) => ({ toolParams: { ...s.toolParams, ...params },
+          files: s.files.map((f) => ({ ...f, status: "review" as const,
+            machining: { complete: false, toolDiameter: params.toolDiameter ?? s.toolParams.toolDiameter,
+              issues: [{ contourId: "", code: "tool-size" as const, message: "Parameters changed. Apply & Re-process before exporting." }] } })) })),
 
       presets: loadPresets(),
       addPreset: (preset) =>
@@ -150,14 +160,16 @@ export const useCADStore = create<CADStore>()(
         set((s) => {
           const preset = s.presets.find((p) => p.id === id)
           if (!preset) return {}
-          return { toolParams: { ...preset.params } }
+          return { toolParams: { ...preset.params }, files: s.files.map((f) => ({ ...f, status: "review" as const,
+            machining: { complete: false, toolDiameter: preset.params.toolDiameter, issues: [{ contourId: "", code: "tool-size" as const,
+              message: "Preset changed. Apply & Re-process before exporting." }] } })) }
         }),
 
       addDogbone: (fileId, dogbone) =>
         set((s) => ({
           files: s.files.map((f) =>
             f.id === fileId
-              ? { ...f, dogbones: [...f.dogbones, dogbone] }
+              ? reviewed({ ...f, dogbones: [...f.dogbones, dogbone] }, s.toolParams)
               : f,
           ),
         })),
@@ -166,10 +178,10 @@ export const useCADStore = create<CADStore>()(
         set((s) => ({
           files: s.files.map((f) =>
             f.id === fileId
-              ? {
+              ? reviewed({
                   ...f,
                   dogbones: f.dogbones.filter((d) => d.id !== dogboneId),
-                }
+                }, s.toolParams)
               : f,
           ),
           selectedDogboneId:
@@ -182,12 +194,12 @@ export const useCADStore = create<CADStore>()(
         set((s) => ({
           files: s.files.map((f) =>
             f.id === fileId
-              ? {
+              ? reviewed({
                   ...f,
                   dogbones: f.dogbones.map((d) =>
                     d.id === dogboneId ? { ...d, enabled: !d.enabled } : d,
                   ),
-                }
+                }, s.toolParams)
               : f,
           ),
         })),
@@ -195,14 +207,14 @@ export const useCADStore = create<CADStore>()(
       setContours: (fileId, contours) =>
         set((s) => ({
           files: s.files.map((f) =>
-            f.id === fileId ? { ...f, contours } : f,
+            f.id === fileId ? reviewed({ ...f, contours }, s.toolParams) : f,
           ),
         })),
 
       setDogbones: (fileId, dogbones) =>
         set((s) => ({
           files: s.files.map((f) =>
-            f.id === fileId ? { ...f, dogbones } : f,
+            f.id === fileId ? reviewed({ ...f, dogbones }, s.toolParams) : f,
           ),
         })),
 
@@ -227,6 +239,8 @@ export const useCADStore = create<CADStore>()(
       setBatchProgress: (progress) => set({ batchProgress: progress }),
     }),
     {
+      limit: 20,
+      equality: (previous, current) => previous.files === current.files,
       partialize: (state) => {
         const { files, ...rest } = state as CADStore & Record<string, unknown>
         void rest

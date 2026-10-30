@@ -25,7 +25,7 @@ export class ErrorBoundary extends Component<Props, State> {
           }}>
             {this.state.error.message}
           </pre>
-          <pre style={{
+          {import.meta.env.DEV && <pre style={{
             whiteSpace: "pre-wrap",
             background: "#f5f5f5",
             padding: 16,
@@ -36,7 +36,8 @@ export class ErrorBoundary extends Component<Props, State> {
             overflow: "auto",
           }}>
             {this.state.error.stack}
-          </pre>
+          </pre>}
+          <button onClick={() => window.location.reload()}>Reload application</button>
         </div>
       )
     }

@@ -1,13 +1,17 @@
 import type { Contour, FileState, Segment, ToolParams, Vertex } from "@/types/cad"
+import { distance } from "@/utils/math"
 import { uid } from "@/utils/id"
 import { findGaps, splitIntoSeparateContours } from "@/geometry/contour"
+import { assessMachining } from "@/geometry/toolFit"
+import { findInternalCorners } from "@/geometry/corner"
+import { classifyContours } from "@/geometry/topology"
 import { generateAllDogbones } from "@/geometry/dogbone"
 
 interface DxfParsedEntity {
   type: string
   layer?: string
   handle?: number
-  vertices?: Array<{ x: number; y: number; z?: number }>
+  vertices?: Array<{ x: number; y: number; z?: number; bulge?: number }>
   center?: { x: number; y: number; z?: number }
   radius?: number
   startAngle?: number
@@ -61,6 +65,7 @@ function entityToSegment(entity: DxfParsedEntity): Segment | null {
           x: entity.center.x + entity.radius * Math.cos(entity.endAngle),
           y: entity.center.y + entity.radius * Math.sin(entity.endAngle),
         },
+        bulge: Math.tan((((entity.endAngle - entity.startAngle) % (2 * Math.PI) + 2 * Math.PI) % (2 * Math.PI)) / 4),
         center: pointToVertex(entity.center),
         radius: entity.radius,
         startAngle: (entity.startAngle * 180) / Math.PI,
@@ -105,14 +110,8 @@ function entityToSegment(entity: DxfParsedEntity): Segment | null {
 export function getDxfLayers(dxfData: DxfParsedData): string[] {
   const layers = new Set<string>()
 
-  if (dxfData.tables?.layers) {
-    for (const name of Object.keys(dxfData.tables.layers)) {
-      if (name && name !== "0") layers.add(name)
-    }
-  }
-
   for (const ent of Object.values(dxfData.entities)) {
-    if (ent.layer) layers.add(ent.layer)
+    layers.add(ent.layer ?? "0")
   }
 
   return Array.from(layers).sort()
@@ -128,30 +127,59 @@ export function convertDxfToFileState(
   const segments: Segment[] = []
 
   for (const ent of Object.values(dxfData.entities)) {
-    if (!ent.layer) continue
-    if (selectedLayers.length > 0 && !selectedLayers.includes(ent.layer)) continue
+    if (selectedLayers.length > 0 && !selectedLayers.includes(ent.layer ?? "0")) continue
 
     const seg = entityToSegment(ent)
-    if (seg) segments.push(seg)
+    if (seg?.type === "polyline" && ent.vertices) {
+      const v = ent.vertices
+      const count = ent.shape ? v.length : v.length - 1
+      for (let i = 0; i < count; i++) {
+        const a = v[i], b = v[(i + 1) % v.length]
+        const bulge = a.bulge ?? 0
+        if (!bulge) segments.push({ id: uid(), type: "line", start: pointToVertex(a), end: pointToVertex(b), layer: seg.layer })
+        else {
+          const dx = b.x - a.x, dy = b.y - a.y
+          const center = { x: (a.x + b.x) / 2 - dy * (1 - bulge * bulge) / (4 * bulge),
+            y: (a.y + b.y) / 2 + dx * (1 - bulge * bulge) / (4 * bulge) }
+          const start = Math.atan2(a.y - center.y, a.x - center.x) * 180 / Math.PI
+          const end = Math.atan2(b.y - center.y, b.x - center.x) * 180 / Math.PI
+          segments.push({ id: uid(), type: "arc", start: pointToVertex(a), end: pointToVertex(b), layer: seg.layer,
+            bulge, center, radius: Math.hypot(a.x - center.x, a.y - center.y),
+            startAngle: bulge > 0 ? start : end, endAngle: bulge > 0 ? end : start })
+        }
+      }
+    } else if (seg) segments.push(seg)
   }
 
-  const ignoredSet = new Set(params.ignoredLayers)
+  const ignoredSet = new Set(params.ignoredLayers.map((name) => name.toLowerCase()))
 
+  const warnings: string[] = []
   const contours: Contour[] = []
   const allDogbones: ReturnType<typeof generateAllDogbones> = []
   const allGaps: ReturnType<typeof findGaps> = []
 
-  const parts = splitIntoSeparateContours(segments, "default", 0.5)
+  const parts = splitIntoSeparateContours(segments, "default", params.tolerance)
+  classifyContours(parts.filter((c) => !ignoredSet.has(c.layer.toLowerCase())))
 
   for (const contour of parts) {
     contours.push(contour)
-    const hasIgnored = contour.segments.some((s) => ignoredSet.has(s.layer))
+    const hasIgnored = contour.segments.some((s) => ignoredSet.has(s.layer.toLowerCase()))
     if (!hasIgnored) {
-      allDogbones.push(...generateAllDogbones(contour, params))
+      const dogbones = generateAllDogbones(contour, params)
+      allDogbones.push(...dogbones)
+      if (contour.isHole && params.filterLargeContours) {
+        const excluded = findInternalCorners(contour, params.maxCornerAngle ?? 170).filter((corner) => {
+          const i = corner.vertexIndex, n = contour.vertices.length
+          return Math.min(distance(contour.vertices[(i - 1 + n) % n], corner.vertex),
+            distance(corner.vertex, contour.vertices[(i + 1) % n])) > params.contourMaxThickness
+        }).length
+        if (excluded) warnings.push(`${excluded} large corner features were excluded by the size filter.`)
+      }
       allGaps.push(...findGaps(contour, params.tolerance))
     }
   }
 
+  const machining = assessMachining(contours, allDogbones, params)
   return {
     id: uid(),
     name: fileName.replace(/\.dxf$/i, ""),
@@ -161,6 +189,8 @@ export function convertDxfToFileState(
     contours,
     dogbones: allDogbones,
     gaps: allGaps,
-    status: "ready",
+    status: machining.complete ? "ready" : "review",
+    machining,
+    warnings,
   }
 }

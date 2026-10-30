@@ -2,7 +2,7 @@ import { useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { Upload } from "@phosphor-icons/react"
 import { useCADStore } from "@/store/cadStore"
-import { parseDxf } from "@/features/import/parser"
+import { parseDxfFromBuffer, readDxfText } from "@/features/import/parser"
 import { convertDxfToFileState, getDxfLayers } from "@/features/import/converter"
 import type { FileState } from "@/types/cad"
 
@@ -37,8 +37,8 @@ export function FileUpload({ children }: FileUploadProps) {
       addFile(placeholder)
 
       try {
-        const rawText = await file.text()
-        const dxfData = await parseDxf(file)
+        const rawText = await readDxfText(file)
+        const dxfData = parseDxfFromBuffer(rawText)
         if (!dxfData) { setFileStatus(fileId, "error"); continue }
         const layerNames = getDxfLayers(dxfData as any)
         const fileState = convertDxfToFileState(
@@ -52,13 +52,12 @@ export function FileUpload({ children }: FileUploadProps) {
           id: fileId,
           name: file.name.replace(".dxf", ""),
           originalName: file.name,
-          status: "ready",
-          rawDxfData: JSON.stringify(dxfData),
+          status: fileState.status,
           rawDxfText: rawText,
         })
       } catch (err) {
         console.error("Failed to parse DXF:", err)
-        setFileStatus(fileId, "error")
+        updateFile(fileId, { status: "error", errorMessage: err instanceof Error ? err.message : "Unable to read this DXF file." })
       }
     }
   }

@@ -1,0 +1,2587 @@
+[
+  {
+    "key": "cozy-3mm-Sheet_1-D3",
+    "file": "cozy-3mm-Sheet_1",
+    "source_path": "/workspace/scratch/safepaws/cozy3/Parts-Ready-to-cut/DXF/Sheet_1.dxf",
+    "diameter": 3,
+    "candidates": 310,
+    "generated": 118,
+    "applied": 118,
+    "skipped": 192,
+    "tbones": 70,
+    "maxRadiusError": 2.2737367544323206e-13,
+    "closedCut": 63,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      3.2,
+      3.4
+    ],
+    "rectangular_holes": 47,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [
+      {
+        "id": "mvujhhsv-zh-73l2ro",
+        "lost_area_mm2": 1.932126185401252,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-zi-j9hjpj",
+        "lost_area_mm2": 1.9321261854012484,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-zj-39eexy",
+        "lost_area_mm2": 1.9321261854012484,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-zk-q6si3d",
+        "lost_area_mm2": 1.9321261854012604,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-zl-ac61tr",
+        "lost_area_mm2": 1.9321261854012581,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-zm-ujmted",
+        "lost_area_mm2": 1.932126185401248,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-zn-7d6cqt",
+        "lost_area_mm2": 1.9321261854012493,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-zo-9xd2au",
+        "lost_area_mm2": 1.9321261854012373,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-zp-y11p6s",
+        "lost_area_mm2": 1.9321261854012373,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-zq-1p2aek",
+        "lost_area_mm2": 1.9321261854012581,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-zr-4n5t47",
+        "lost_area_mm2": 1.9321261854012604,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-zs-efqhdd",
+        "lost_area_mm2": 1.932126185401248,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-zt-zz8ife",
+        "lost_area_mm2": 1.932126185401248,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-zu-q8n68n",
+        "lost_area_mm2": 1.9321261854012515,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-zv-jlzzjg",
+        "lost_area_mm2": 1.9321261854012408,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-102-qkvc94",
+        "lost_area_mm2": 1.9321261854013183,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-103-g35x32",
+        "lost_area_mm2": 1.9321261854013154,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-104-voqfvo",
+        "lost_area_mm2": 1.9321261854013192,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-105-9dql8u",
+        "lost_area_mm2": 1.932126185401307,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-106-sd4sav",
+        "lost_area_mm2": 1.9321261854013192,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-107-ggksl3",
+        "lost_area_mm2": 1.9321261854013192,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-108-o6isvv",
+        "lost_area_mm2": 1.9321261854013196,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-109-z35pfb",
+        "lost_area_mm2": 1.9321261854013192,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-10a-y2l92e",
+        "lost_area_mm2": 1.932126185401307,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-10b-bzl852",
+        "lost_area_mm2": 1.9321261854013088,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-10c-cb7tun",
+        "lost_area_mm2": 1.9321261854013088,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-10d-5ikxwh",
+        "lost_area_mm2": 1.932126185401307,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-10e-k2dsiy",
+        "lost_area_mm2": 1.9321261854013139,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-10f-evcuan",
+        "lost_area_mm2": 1.9321261854013139,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-10g-j8mjx3",
+        "lost_area_mm2": 1.9321261854013176,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-10h-2kjw9y",
+        "lost_area_mm2": 1.9321261854013176,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-10i-2vlyym",
+        "lost_area_mm2": 1.9321261854013176,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-10j-r080ha",
+        "lost_area_mm2": 1.932126185401307,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-10k-y17ydb",
+        "lost_area_mm2": 1.9321261854012795,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-10l-t4bqkd",
+        "lost_area_mm2": 1.9321261854012777,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-10m-usvy2l",
+        "lost_area_mm2": 1.9321261854012899,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-10n-spg16o",
+        "lost_area_mm2": 1.9321261854012595,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-10o-nbbmlo",
+        "lost_area_mm2": 1.9321261854012564,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-10p-8xvkd3",
+        "lost_area_mm2": 1.9321261854012606,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-10q-xs42pk",
+        "lost_area_mm2": 1.9321261854012484,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-10r-nqhsbh",
+        "lost_area_mm2": 1.9321261854012484,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-10s-dh4z59",
+        "lost_area_mm2": 1.9321261854012484,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-10t-5dwzm7",
+        "lost_area_mm2": 1.932126185401255,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-10u-qj5kbw",
+        "lost_area_mm2": 1.9321261854012586,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-10v-bds053",
+        "lost_area_mm2": 1.9321261854012879,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-10w-u1g8tz",
+        "lost_area_mm2": 1.9321261854012586,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhsv-10x-9olvpy",
+        "lost_area_mm2": 1.932126185401255,
+        "reliefs": 0
+      }
+    ],
+    "external_contours_with_unreachable_area": [
+      {
+        "id": "mvujhhsw-114-kx8oak",
+        "lost_area_mm2": 0.9660630927006293,
+        "largest_component_mm2": 0.4830315463503147
+      },
+      {
+        "id": "mvujhhsx-11b-u369vq",
+        "lost_area_mm2": 0.20796226388609307,
+        "largest_component_mm2": 0.048496288514599806
+      },
+      {
+        "id": "mvujhhsy-11h-rgp6oi",
+        "lost_area_mm2": 0.9660630927006293,
+        "largest_component_mm2": 0.4830315463503147
+      },
+      {
+        "id": "mvujhhsy-11o-tc4x0n",
+        "lost_area_mm2": 0.2079622619996671,
+        "largest_component_mm2": 0.048496288514599806
+      }
+    ]
+  },
+  {
+    "key": "cozy-3mm-Sheet_1-D3.175",
+    "file": "cozy-3mm-Sheet_1",
+    "source_path": "/workspace/scratch/safepaws/cozy3/Parts-Ready-to-cut/DXF/Sheet_1.dxf",
+    "diameter": 3.175,
+    "candidates": 310,
+    "generated": 118,
+    "applied": 118,
+    "skipped": 192,
+    "tbones": 72,
+    "maxRadiusError": 1.8207657603852567e-13,
+    "closedCut": 63,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      3.2,
+      3.4
+    ],
+    "rectangular_holes": 47,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [
+      {
+        "id": "mvujhhuf-3pr-p0tzkx",
+        "lost_area_mm2": 2.1641155030787953,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhuf-3ps-y4mdj0",
+        "lost_area_mm2": 2.164115503078764,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhuf-3pt-4et2ls",
+        "lost_area_mm2": 2.164115503078764,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhuf-3pu-oqrtip",
+        "lost_area_mm2": 2.1641155030789756,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhuf-3pv-46pf0y",
+        "lost_area_mm2": 2.1641155030789805,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhuf-3pw-5mtrsq",
+        "lost_area_mm2": 2.1641155030788135,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhuf-3px-9g4n2h",
+        "lost_area_mm2": 2.164115503078809,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhuf-3py-yvupmp",
+        "lost_area_mm2": 2.164115503078598,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhuf-3pz-vrw94w",
+        "lost_area_mm2": 2.164115503078598,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhuf-3q0-w5dlyx",
+        "lost_area_mm2": 2.1641155030788752,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhuf-3q1-ewffzx",
+        "lost_area_mm2": 2.1641155030788704,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhuf-3q2-al1s58",
+        "lost_area_mm2": 2.1641155030786594,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhuf-3q3-iglssr",
+        "lost_area_mm2": 2.1641155030786594,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhuf-3q4-lloy1f",
+        "lost_area_mm2": 2.1641155030786896,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhuf-3q5-9kh607",
+        "lost_area_mm2": 2.1641155030786283,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhuf-3qc-npgw9b",
+        "lost_area_mm2": 2.1641155030795773,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhuf-3qd-cp4z4g",
+        "lost_area_mm2": 2.164115503079623,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhuf-3qe-hx9a3o",
+        "lost_area_mm2": 2.164115503079616,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhuf-3qf-0qg3vt",
+        "lost_area_mm2": 2.164115503079405,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhuf-3qg-sa242c",
+        "lost_area_mm2": 2.164115503079616,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhuf-3qh-ahgc1f",
+        "lost_area_mm2": 2.164115503079616,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhuf-3qi-6b6clu",
+        "lost_area_mm2": 2.164115503079616,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhuf-3qj-wqta0l",
+        "lost_area_mm2": 2.164115503079616,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhuf-3qk-0mlkzg",
+        "lost_area_mm2": 2.164115503079405,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhuf-3ql-xdzms8",
+        "lost_area_mm2": 2.164115503079405,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhuf-3qm-s19xbm",
+        "lost_area_mm2": 2.164115503079405,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhuf-3qn-xrxij4",
+        "lost_area_mm2": 2.164115503079405,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhuf-3qo-a4fhl3",
+        "lost_area_mm2": 2.1641155030794357,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhuf-3qp-vmtib9",
+        "lost_area_mm2": 2.1641155030794357,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhug-3qq-j1p54o",
+        "lost_area_mm2": 2.164115503079466,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhug-3qr-jswknn",
+        "lost_area_mm2": 2.164115503079466,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhug-3qs-q1xyk3",
+        "lost_area_mm2": 2.164115503079466,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhug-3qt-4bv82i",
+        "lost_area_mm2": 2.164115503079405,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhug-3qu-5985p7",
+        "lost_area_mm2": 2.164115503079032,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhug-3qv-w1vj7z",
+        "lost_area_mm2": 2.164115503079032,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhug-3qw-g1x9b4",
+        "lost_area_mm2": 2.164115503079243,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhug-3qx-vi8qfy",
+        "lost_area_mm2": 2.16411550307883,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhug-3qy-mv4atc",
+        "lost_area_mm2": 2.1641155030788766,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhug-3qz-k53uvb",
+        "lost_area_mm2": 2.16411550307887,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhug-3r0-c1am94",
+        "lost_area_mm2": 2.164115503078659,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhug-3r1-2suiyw",
+        "lost_area_mm2": 2.164115503078659,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhug-3r2-w2z6l8",
+        "lost_area_mm2": 2.164115503078659,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhug-3r3-9h42r7",
+        "lost_area_mm2": 2.1641155030786896,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhug-3r4-xin8wb",
+        "lost_area_mm2": 2.1641155030787202,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhug-3r5-1x0mad",
+        "lost_area_mm2": 2.1641155030790933,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhug-3r6-tv6q9w",
+        "lost_area_mm2": 2.1641155030787202,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhug-3r7-3llhsa",
+        "lost_area_mm2": 2.1641155030786896,
+        "reliefs": 0
+      }
+    ],
+    "external_contours_with_unreachable_area": [
+      {
+        "id": "mvujhhug-3re-4bfhgz",
+        "lost_area_mm2": 1.0820577515393601,
+        "largest_component_mm2": 0.5410288757696802
+      },
+      {
+        "id": "mvujhhug-3rl-z8gmui",
+        "lost_area_mm2": 0.23366418608783435,
+        "largest_component_mm2": 0.05431921093426007
+      },
+      {
+        "id": "mvujhhuh-3rr-qvjl9j",
+        "lost_area_mm2": 1.0820577515393601,
+        "largest_component_mm2": 0.5410288757696802
+      },
+      {
+        "id": "mvujhhuh-3ry-iaegx3",
+        "lost_area_mm2": 0.23366418622829002,
+        "largest_component_mm2": 0.05431921093426007
+      }
+    ]
+  },
+  {
+    "key": "cozy-3mm-Sheet_2-D3",
+    "file": "cozy-3mm-Sheet_2",
+    "source_path": "/workspace/scratch/safepaws/cozy3/Parts-Ready-to-cut/DXF/Sheet_2.dxf",
+    "diameter": 3,
+    "candidates": 182,
+    "generated": 166,
+    "applied": 166,
+    "skipped": 16,
+    "tbones": 104,
+    "maxRadiusError": 2.2737367544323206e-13,
+    "closedCut": 15,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      3.2
+    ],
+    "rectangular_holes": 4,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [
+      {
+        "id": "mvujhhvu-65z-2s285p",
+        "lost_area_mm2": 1.9321261854012497,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhvu-660-0przcj",
+        "lost_area_mm2": 1.932126185401251,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhvu-661-lhy3et",
+        "lost_area_mm2": 1.9321261854012453,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhvu-662-1zek37",
+        "lost_area_mm2": 1.932126185401239,
+        "reliefs": 0
+      }
+    ],
+    "external_contours_with_unreachable_area": []
+  },
+  {
+    "key": "cozy-3mm-Sheet_2-D3.175",
+    "file": "cozy-3mm-Sheet_2",
+    "source_path": "/workspace/scratch/safepaws/cozy3/Parts-Ready-to-cut/DXF/Sheet_2.dxf",
+    "diameter": 3.175,
+    "candidates": 182,
+    "generated": 166,
+    "applied": 166,
+    "skipped": 16,
+    "tbones": 124,
+    "maxRadiusError": 1.4077627952246985e-13,
+    "closedCut": 15,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      3.2
+    ],
+    "rectangular_holes": 4,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [
+      {
+        "id": "mvujhhwi-7zc-jvv1ic",
+        "lost_area_mm2": 2.164115503078794,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhwi-7zd-pjc1aj",
+        "lost_area_mm2": 2.1641155030788095,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhwi-7ze-hk1yy1",
+        "lost_area_mm2": 2.164115503078704,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhwi-7zf-sd5jnf",
+        "lost_area_mm2": 2.164115503078598,
+        "reliefs": 0
+      }
+    ],
+    "external_contours_with_unreachable_area": []
+  },
+  {
+    "key": "cozy-3mm-Sheet_3-D3",
+    "file": "cozy-3mm-Sheet_3",
+    "source_path": "/workspace/scratch/safepaws/cozy3/Parts-Ready-to-cut/DXF/Sheet_3.dxf",
+    "diameter": 3,
+    "candidates": 182,
+    "generated": 162,
+    "applied": 162,
+    "skipped": 20,
+    "tbones": 114,
+    "maxRadiusError": 4.831690603168681e-13,
+    "closedCut": 13,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      3.2
+    ],
+    "rectangular_holes": 5,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [
+      {
+        "id": "mvujhhx4-9r7-qie1ia",
+        "lost_area_mm2": 1.9321261854012586,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhx4-9r8-dbakfb",
+        "lost_area_mm2": 1.9321261854012608,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhx4-9r9-x16soe",
+        "lost_area_mm2": 1.9321261854012608,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhx4-9ra-6mz7uc",
+        "lost_area_mm2": 1.9321261854012608,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhx4-9rb-o2ubko",
+        "lost_area_mm2": 1.9321261854012608,
+        "reliefs": 0
+      }
+    ],
+    "external_contours_with_unreachable_area": []
+  },
+  {
+    "key": "cozy-3mm-Sheet_3-D3.175",
+    "file": "cozy-3mm-Sheet_3",
+    "source_path": "/workspace/scratch/safepaws/cozy3/Parts-Ready-to-cut/DXF/Sheet_3.dxf",
+    "diameter": 3.175,
+    "candidates": 182,
+    "generated": 162,
+    "applied": 162,
+    "skipped": 20,
+    "tbones": 114,
+    "maxRadiusError": 2.7267077484793845e-13,
+    "closedCut": 13,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      3.2
+    ],
+    "rectangular_holes": 5,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [
+      {
+        "id": "mvujhhxh-bg3-9r2zes",
+        "lost_area_mm2": 2.1641155030787202,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhxh-bg4-jc3vvc",
+        "lost_area_mm2": 2.16411550307887,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhxh-bg5-qqflpe",
+        "lost_area_mm2": 2.16411550307887,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhxh-bg6-a3x81l",
+        "lost_area_mm2": 2.16411550307887,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhhxh-bg7-91iprl",
+        "lost_area_mm2": 2.16411550307887,
+        "reliefs": 0
+      }
+    ],
+    "external_contours_with_unreachable_area": []
+  },
+  {
+    "key": "cozy-6mm-1500x750-1-D3.175",
+    "file": "cozy-6mm-1500x750-1",
+    "source_path": "/workspace/scratch/safepaws/cozy6/1500x750/1500x750-1.dxf",
+    "diameter": 3.175,
+    "candidates": 262,
+    "generated": 262,
+    "applied": 262,
+    "skipped": 0,
+    "tbones": 2,
+    "maxRadiusError": 1.0169642905566434e-13,
+    "closedCut": 57,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.2,
+      6.4
+    ],
+    "rectangular_holes": 47,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [],
+    "external_contours_with_unreachable_area": [
+      {
+        "id": "mvujhhz9-k2f-qc3o6l",
+        "lost_area_mm2": 0.21727684373676756,
+        "largest_component_mm2": 0.05431921093426007
+      },
+      {
+        "id": "mvujhhza-k2o-82gp7i",
+        "lost_area_mm2": 0.21727684373685402,
+        "largest_component_mm2": 0.05431921093425606
+      }
+    ]
+  },
+  {
+    "key": "cozy-6mm-1500x750-1-D4",
+    "file": "cozy-6mm-1500x750-1",
+    "source_path": "/workspace/scratch/safepaws/cozy6/1500x750/1500x750-1.dxf",
+    "diameter": 4,
+    "candidates": 262,
+    "generated": 262,
+    "applied": 262,
+    "skipped": 0,
+    "tbones": 2,
+    "maxRadiusError": 1.4654943925052066e-13,
+    "closedCut": 57,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.2,
+      6.4
+    ],
+    "rectangular_holes": 47,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [],
+    "external_contours_with_unreachable_area": [
+      {
+        "id": "mvujhi1f-zry-dfev0a",
+        "lost_area_mm2": 0.34486249610407405,
+        "largest_component_mm2": 0.0862156240260401
+      },
+      {
+        "id": "mvujhi1f-zs7-ywfnap",
+        "lost_area_mm2": 0.34486249610408704,
+        "largest_component_mm2": 0.0862156240260342
+      }
+    ]
+  },
+  {
+    "key": "cozy-6mm-1500x750-1-D6",
+    "file": "cozy-6mm-1500x750-1",
+    "source_path": "/workspace/scratch/safepaws/cozy6/1500x750/1500x750-1.dxf",
+    "diameter": 6,
+    "candidates": 262,
+    "generated": 70,
+    "applied": 70,
+    "skipped": 192,
+    "tbones": 10,
+    "maxRadiusError": 6.439293542825908e-14,
+    "closedCut": 57,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.2,
+      6.4
+    ],
+    "rectangular_holes": 47,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [
+      {
+        "id": "mvujhi3c-1ff0-obg0tx",
+        "lost_area_mm2": 7.728504741605004,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1ff1-yqtrdu",
+        "lost_area_mm2": 7.728504741605004,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1ff2-dr7fi3",
+        "lost_area_mm2": 7.728504741604956,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1ff3-kfo0cn",
+        "lost_area_mm2": 7.728504741604956,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1ff4-q6buhj",
+        "lost_area_mm2": 7.728504741604956,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1ff5-dx7w3p",
+        "lost_area_mm2": 7.728504741605001,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1ff6-7soe9d",
+        "lost_area_mm2": 7.728504741605001,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1ff7-t5ziil",
+        "lost_area_mm2": 7.728504741605001,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1ff8-jx4xy9",
+        "lost_area_mm2": 7.72850474160505,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1ff9-0q5wwf",
+        "lost_area_mm2": 7.72850474160505,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1ffa-6d6fiy",
+        "lost_area_mm2": 7.728504741605046,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1ffb-8xs6ks",
+        "lost_area_mm2": 7.728504741605046,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1ffc-ox04ax",
+        "lost_area_mm2": 7.728504741604997,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1ffd-gelkov",
+        "lost_area_mm2": 7.728504741604997,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1ffe-sppyfd",
+        "lost_area_mm2": 7.728504741604997,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1ffo-nrxdby",
+        "lost_area_mm2": 7.728504741605001,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1ffp-rd3se1",
+        "lost_area_mm2": 7.728504741605025,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1ffq-vwncbh",
+        "lost_area_mm2": 7.728504741605043,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1ffr-z9uv5n",
+        "lost_area_mm2": 7.728504741605043,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1ffs-tr1ij5",
+        "lost_area_mm2": 7.728504741605042,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1fft-mmr4ge",
+        "lost_area_mm2": 7.728504741605043,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1ffu-u2qked",
+        "lost_area_mm2": 7.728504741605041,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1ffv-y16b6g",
+        "lost_area_mm2": 7.728504741605043,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1ffw-opxixz",
+        "lost_area_mm2": 7.728504741605042,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1ffx-ue01mx",
+        "lost_area_mm2": 7.728504741605043,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1ffy-2cv9qh",
+        "lost_area_mm2": 7.728504741605041,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1ffz-wcaaay",
+        "lost_area_mm2": 7.728504741605027,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1fg0-hxywjg",
+        "lost_area_mm2": 7.728504741605034,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1fg1-s6oi1u",
+        "lost_area_mm2": 7.728504741605038,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1fg2-6gdjsh",
+        "lost_area_mm2": 7.728504741605041,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1fg3-z81ejx",
+        "lost_area_mm2": 7.728504741605043,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1fg4-zzjq65",
+        "lost_area_mm2": 7.728504741605043,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1fg5-rmf6bq",
+        "lost_area_mm2": 7.728504741605029,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1fg6-0tz72g",
+        "lost_area_mm2": 7.728504741605043,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1fg7-tx0uby",
+        "lost_area_mm2": 7.728504741605042,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1fg8-7tx09l",
+        "lost_area_mm2": 7.728504741605043,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1fg9-mgh09i",
+        "lost_area_mm2": 7.728504741604956,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1fga-cugusj",
+        "lost_area_mm2": 7.728504741604976,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1fgb-d3oyeo",
+        "lost_area_mm2": 7.728504741604994,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1fgc-2mm2bb",
+        "lost_area_mm2": 7.728504741604993,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1fgd-y9abh6",
+        "lost_area_mm2": 7.728504741604999,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1fge-6ruoep",
+        "lost_area_mm2": 7.728504741604985,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1fgf-hbe4z3",
+        "lost_area_mm2": 7.728504741604992,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3c-1fgg-atpnu9",
+        "lost_area_mm2": 7.728504741604988,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3d-1fgh-0m6d7s",
+        "lost_area_mm2": 7.728504741605043,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3d-1fgi-ihgywb",
+        "lost_area_mm2": 7.728504741604993,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhi3d-1fgj-qc6b0s",
+        "lost_area_mm2": 7.728504741604996,
+        "reliefs": 0
+      }
+    ],
+    "external_contours_with_unreachable_area": [
+      {
+        "id": "mvujhi3d-1fgs-mx8b4c",
+        "lost_area_mm2": 3.864252370802489,
+        "largest_component_mm2": 1.9321261854012448
+      },
+      {
+        "id": "mvujhi3f-1fhh-tdy83u",
+        "lost_area_mm2": 0.7868200495388548,
+        "largest_component_mm2": 0.19398515405839653
+      },
+      {
+        "id": "mvujhi3f-1fhq-bf4laf",
+        "lost_area_mm2": 0.7868200495395546,
+        "largest_component_mm2": 0.19398515405856592
+      },
+      {
+        "id": "mvujhi3g-1fhy-eapgu8",
+        "lost_area_mm2": 3.864252370802513,
+        "largest_component_mm2": 1.9321261854012581
+      }
+    ]
+  },
+  {
+    "key": "cozy-6mm-1500x750-2-D3.175",
+    "file": "cozy-6mm-1500x750-2",
+    "source_path": "/workspace/scratch/safepaws/cozy6/1500x750/1500x750-2.dxf",
+    "diameter": 3.175,
+    "candidates": 224,
+    "generated": 224,
+    "applied": 224,
+    "skipped": 0,
+    "tbones": 0,
+    "maxRadiusError": 1.8096635301390052e-13,
+    "closedCut": 20,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.2
+    ],
+    "rectangular_holes": 4,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [],
+    "external_contours_with_unreachable_area": []
+  },
+  {
+    "key": "cozy-6mm-1500x750-2-D4",
+    "file": "cozy-6mm-1500x750-2",
+    "source_path": "/workspace/scratch/safepaws/cozy6/1500x750/1500x750-2.dxf",
+    "diameter": 4,
+    "candidates": 224,
+    "generated": 224,
+    "applied": 224,
+    "skipped": 0,
+    "tbones": 0,
+    "maxRadiusError": 1.4654943925052066e-13,
+    "closedCut": 20,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.2
+    ],
+    "rectangular_holes": 4,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [],
+    "external_contours_with_unreachable_area": []
+  },
+  {
+    "key": "cozy-6mm-1500x750-2-D6",
+    "file": "cozy-6mm-1500x750-2",
+    "source_path": "/workspace/scratch/safepaws/cozy6/1500x750/1500x750-2.dxf",
+    "diameter": 6,
+    "candidates": 224,
+    "generated": 168,
+    "applied": 168,
+    "skipped": 56,
+    "tbones": 16,
+    "maxRadiusError": 9.85878045867139e-14,
+    "closedCut": 20,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.2
+    ],
+    "rectangular_holes": 4,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [
+      {
+        "id": "mvujhifp-3eav-6lk5nx",
+        "lost_area_mm2": 7.7285047416050485,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhifp-3eaw-tpuh8v",
+        "lost_area_mm2": 7.728504741605043,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhifp-3eax-yx344g",
+        "lost_area_mm2": 7.7285047416050325,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhifp-3eay-yjw4en",
+        "lost_area_mm2": 7.728504741605049,
+        "reliefs": 0
+      }
+    ],
+    "external_contours_with_unreachable_area": [
+      {
+        "id": "mvujhifm-3eae-vt5b77",
+        "lost_area_mm2": 11.5927571124075,
+        "largest_component_mm2": 1.932126185401253
+      },
+      {
+        "id": "mvujhifn-3eam-48t5lv",
+        "lost_area_mm2": 11.592757112407496,
+        "largest_component_mm2": 1.9321261854012532
+      },
+      {
+        "id": "mvujhifq-3eb7-8td8xq",
+        "lost_area_mm2": 11.592757112407577,
+        "largest_component_mm2": 1.9321261854012646
+      },
+      {
+        "id": "mvujhifr-3ebf-6jsnvc",
+        "lost_area_mm2": 11.592757112407575,
+        "largest_component_mm2": 1.9321261854012635
+      },
+      {
+        "id": "mvujhifu-3ec9-wuc4jn",
+        "lost_area_mm2": 7.728504741604963,
+        "largest_component_mm2": 1.9321261854012444
+      },
+      {
+        "id": "mvujhifw-3ecu-alzhhi",
+        "lost_area_mm2": 7.728504741604963,
+        "largest_component_mm2": 1.9321261854012444
+      },
+      {
+        "id": "mvujhifx-3ed6-b5bg07",
+        "lost_area_mm2": 7.728504741604956,
+        "largest_component_mm2": 1.9321261854012444
+      },
+      {
+        "id": "mvujhify-3edv-8o858q",
+        "lost_area_mm2": 7.72850474160504,
+        "largest_component_mm2": 1.9321261854012601
+      }
+    ]
+  },
+  {
+    "key": "cozy-6mm-1500x750-3-D3.175",
+    "file": "cozy-6mm-1500x750-3",
+    "source_path": "/workspace/scratch/safepaws/cozy6/1500x750/1500x750-3.dxf",
+    "diameter": 3.175,
+    "candidates": 188,
+    "generated": 188,
+    "applied": 188,
+    "skipped": 0,
+    "tbones": 0,
+    "maxRadiusError": 3.7925218521195347e-13,
+    "closedCut": 14,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.2,
+      6.4
+    ],
+    "rectangular_holes": 5,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [],
+    "external_contours_with_unreachable_area": []
+  },
+  {
+    "key": "cozy-6mm-1500x750-3-D4",
+    "file": "cozy-6mm-1500x750-3",
+    "source_path": "/workspace/scratch/safepaws/cozy6/1500x750/1500x750-3.dxf",
+    "diameter": 4,
+    "candidates": 188,
+    "generated": 188,
+    "applied": 188,
+    "skipped": 0,
+    "tbones": 0,
+    "maxRadiusError": 2.1715962361668062e-13,
+    "closedCut": 14,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.2,
+      6.4
+    ],
+    "rectangular_holes": 5,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [],
+    "external_contours_with_unreachable_area": []
+  },
+  {
+    "key": "cozy-6mm-1500x750-3-D6",
+    "file": "cozy-6mm-1500x750-3",
+    "source_path": "/workspace/scratch/safepaws/cozy6/1500x750/1500x750-3.dxf",
+    "diameter": 6,
+    "candidates": 188,
+    "generated": 168,
+    "applied": 168,
+    "skipped": 20,
+    "tbones": 0,
+    "maxRadiusError": 1.949551631241775e-13,
+    "closedCut": 14,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.2,
+      6.4
+    ],
+    "rectangular_holes": 5,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [
+      {
+        "id": "mvujhikw-4os0-8mjkjl",
+        "lost_area_mm2": 0.011955096218841247,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhikx-4osf-a1qcan",
+        "lost_area_mm2": 0.01219131376700966,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhikx-4osp-cjq27w",
+        "lost_area_mm2": 0.011944938583154959,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhikx-4osq-8kdvrs",
+        "lost_area_mm2": 7.728504741604942,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhikx-4osr-l0hkyv",
+        "lost_area_mm2": 7.728504741604942,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhikx-4oss-q5i08a",
+        "lost_area_mm2": 7.728504741604956,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhikx-4ost-ykppej",
+        "lost_area_mm2": 7.728504741604949,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhikx-4osu-cmbiib",
+        "lost_area_mm2": 7.728504741604999,
+        "reliefs": 0
+      }
+    ],
+    "external_contours_with_unreachable_area": []
+  },
+  {
+    "key": "family-6mm-1500X750-1-D3.175",
+    "file": "family-6mm-1500X750-1",
+    "source_path": "/workspace/scratch/safepaws/family6/1500x750/1500X750-1.dxf",
+    "diameter": 3.175,
+    "candidates": 103,
+    "generated": 103,
+    "applied": 103,
+    "skipped": 0,
+    "tbones": 3,
+    "maxRadiusError": 2.2226664952995634e-13,
+    "closedCut": 30,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.4
+    ],
+    "rectangular_holes": 10,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [],
+    "external_contours_with_unreachable_area": [
+      {
+        "id": "mvujhiol-5890-yl883n",
+        "lost_area_mm2": 0.21727683558788188,
+        "largest_component_mm2": 0.054319221098731
+      },
+      {
+        "id": "mvujhioq-58a3-2gsmz3",
+        "lost_area_mm2": 0.21727684373671238,
+        "largest_component_mm2": 0.05431921093418506
+      },
+      {
+        "id": "mvujhiot-58b4-79704g",
+        "lost_area_mm2": 0.2172768033942083,
+        "largest_component_mm2": 0.05431921904637935
+      }
+    ]
+  },
+  {
+    "key": "family-6mm-1500X750-1-D4",
+    "file": "family-6mm-1500X750-1",
+    "source_path": "/workspace/scratch/safepaws/family6/1500x750/1500X750-1.dxf",
+    "diameter": 4,
+    "candidates": 103,
+    "generated": 103,
+    "applied": 103,
+    "skipped": 0,
+    "tbones": 3,
+    "maxRadiusError": 7.638334409421077e-14,
+    "closedCut": 30,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.4
+    ],
+    "rectangular_holes": 10,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [],
+    "external_contours_with_unreachable_area": [
+      {
+        "id": "mvujhiqt-5xmf-fggsj6",
+        "lost_area_mm2": 0.3448624831702043,
+        "largest_component_mm2": 0.08621564015924525
+      },
+      {
+        "id": "mvujhiqz-5xni-mlme9y",
+        "lost_area_mm2": 0.3448624961039831,
+        "largest_component_mm2": 0.08621562402601009
+      },
+      {
+        "id": "mvujhir2-5xoj-7iu9y8",
+        "lost_area_mm2": 0.34486243207217904,
+        "largest_component_mm2": 0.0862156369018078
+      }
+    ]
+  },
+  {
+    "key": "family-6mm-1500X750-1-D6",
+    "file": "family-6mm-1500X750-1",
+    "source_path": "/workspace/scratch/safepaws/family6/1500x750/1500X750-1.dxf",
+    "diameter": 6,
+    "candidates": 103,
+    "generated": 53,
+    "applied": 53,
+    "skipped": 50,
+    "tbones": 8,
+    "maxRadiusError": 5.684341886080802e-14,
+    "closedCut": 30,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.4
+    ],
+    "rectangular_holes": 10,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [
+      {
+        "id": "mvujhiua-6mzk-mlmd8k",
+        "lost_area_mm2": 0.011748257069400823,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhiue-6n05-8dl220",
+        "lost_area_mm2": 7.728504741605051,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhiue-6n06-89mq21",
+        "lost_area_mm2": 7.728504741605051,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhiue-6n07-d9wiu7",
+        "lost_area_mm2": 7.7285047416050325,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhiue-6n08-tr5m2y",
+        "lost_area_mm2": 7.728504741605039,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhiue-6n09-yy36vi",
+        "lost_area_mm2": 7.728504741605041,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhiue-6n0a-gn8rlq",
+        "lost_area_mm2": 7.72850474160504,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhiue-6n0b-3vuxyb",
+        "lost_area_mm2": 7.728504741605049,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhiue-6n0c-uf7n1l",
+        "lost_area_mm2": 7.728504741605049,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhiue-6n0d-s6mz4u",
+        "lost_area_mm2": 7.728504741605032,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhiue-6n0e-2b6rsr",
+        "lost_area_mm2": 7.728504741605007,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhiug-6n0n-5yfed5",
+        "lost_area_mm2": 0.011748257448201516,
+        "reliefs": 0
+      }
+    ],
+    "external_contours_with_unreachable_area": [
+      {
+        "id": "mvujhiu7-6mz8-aw8vlx",
+        "lost_area_mm2": 3.8642523708024967,
+        "largest_component_mm2": 1.9321261854012495
+      },
+      {
+        "id": "mvujhiua-6mzl-e9jzxf",
+        "lost_area_mm2": 7.728504749973229,
+        "largest_component_mm2": 1.9321265700245176
+      },
+      {
+        "id": "mvujhiub-6mzu-udmcbp",
+        "lost_area_mm2": 0.7868200206226714,
+        "largest_component_mm2": 0.19398519035818593
+      },
+      {
+        "id": "mvujhiug-6n0o-qykcsq",
+        "lost_area_mm2": 7.728505306766264,
+        "largest_component_mm2": 1.9321267763137921
+      },
+      {
+        "id": "mvujhiuh-6n0x-mocmgo",
+        "lost_area_mm2": 0.786820049539364,
+        "largest_component_mm2": 0.19398515405851535
+      },
+      {
+        "id": "mvujhiuk-6n1y-4d1vj8",
+        "lost_area_mm2": 0.7868199060855273,
+        "largest_component_mm2": 0.19398518302922688
+      }
+    ]
+  },
+  {
+    "key": "family-6mm-1500X750-2-D3.175",
+    "file": "family-6mm-1500X750-2",
+    "source_path": "/workspace/scratch/safepaws/family6/1500x750/1500X750-2.dxf",
+    "diameter": 3.175,
+    "candidates": 294,
+    "generated": 294,
+    "applied": 294,
+    "skipped": 0,
+    "tbones": 1,
+    "maxRadiusError": 3.128608483393691e-13,
+    "closedCut": 49,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.2,
+      6.4
+    ],
+    "rectangular_holes": 30,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [],
+    "external_contours_with_unreachable_area": [
+      {
+        "id": "mvujhizq-7fqp-b7z5wy",
+        "lost_area_mm2": 0.2172768437366699,
+        "largest_component_mm2": 0.05431921093416748
+      }
+    ]
+  },
+  {
+    "key": "family-6mm-1500X750-2-D4",
+    "file": "family-6mm-1500X750-2",
+    "source_path": "/workspace/scratch/safepaws/family6/1500x750/1500X750-2.dxf",
+    "diameter": 4,
+    "candidates": 294,
+    "generated": 294,
+    "applied": 294,
+    "skipped": 0,
+    "tbones": 1,
+    "maxRadiusError": 2.0516921495072893e-13,
+    "closedCut": 49,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.2,
+      6.4
+    ],
+    "rectangular_holes": 30,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [],
+    "external_contours_with_unreachable_area": [
+      {
+        "id": "mvujhj4l-8ccv-ofa597",
+        "lost_area_mm2": 0.3448624961039504,
+        "largest_component_mm2": 0.0862156240259885
+      }
+    ]
+  },
+  {
+    "key": "family-6mm-1500X750-2-D6",
+    "file": "family-6mm-1500X750-2",
+    "source_path": "/workspace/scratch/safepaws/family6/1500x750/1500X750-2.dxf",
+    "diameter": 6,
+    "candidates": 294,
+    "generated": 132,
+    "applied": 132,
+    "skipped": 162,
+    "tbones": 21,
+    "maxRadiusError": 1.247890679678676e-13,
+    "closedCut": 49,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.2,
+      6.4
+    ],
+    "rectangular_holes": 30,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [
+      {
+        "id": "mvujhjai-9904-qh824d",
+        "lost_area_mm2": 7.728504741605049,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjai-9905-zmsrz8",
+        "lost_area_mm2": 7.728504741605049,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjai-9906-y74ubn",
+        "lost_area_mm2": 7.72850474160505,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjai-9907-qsushs",
+        "lost_area_mm2": 7.72850474160503,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjai-9908-1e5t6b",
+        "lost_area_mm2": 7.728504741605048,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjal-990q-onne26",
+        "lost_area_mm2": 7.7285047416050405,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjal-990r-t3kzqw",
+        "lost_area_mm2": 7.728504741605034,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjal-990s-uqgwi5",
+        "lost_area_mm2": 7.728504741605026,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjal-990t-7p9rq0",
+        "lost_area_mm2": 7.728504741605043,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjal-990u-0ax3ch",
+        "lost_area_mm2": 7.728504741605026,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjal-990v-13sk7g",
+        "lost_area_mm2": 7.728504741605043,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjal-990w-eq4az5",
+        "lost_area_mm2": 7.728504741605041,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjal-990x-1tp6b8",
+        "lost_area_mm2": 7.728504741605043,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjal-990y-7son5d",
+        "lost_area_mm2": 7.728504741605041,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjal-990z-fmh5ur",
+        "lost_area_mm2": 7.728504741604993,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjal-9910-y2ijkc",
+        "lost_area_mm2": 7.728504741605,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjal-9911-aqvua7",
+        "lost_area_mm2": 7.728504741605001,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjal-9912-3womdd",
+        "lost_area_mm2": 7.728504741604949,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjal-9913-fy8tf4",
+        "lost_area_mm2": 7.728504741604981,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjal-9914-ewdyut",
+        "lost_area_mm2": 7.728504741605001,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjal-9915-9rvjtj",
+        "lost_area_mm2": 7.728504741604985,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjal-9916-m5f65h",
+        "lost_area_mm2": 7.728504741604983,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjal-9917-of8zik",
+        "lost_area_mm2": 7.728504741605001,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjal-9918-x8jvem",
+        "lost_area_mm2": 7.728504741604983,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjal-9919-in04dn",
+        "lost_area_mm2": 7.728504741604992,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjal-991a-i000s6",
+        "lost_area_mm2": 7.728504741604989,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjal-991b-el4gv6",
+        "lost_area_mm2": 7.728504741604985,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjal-991c-leq869",
+        "lost_area_mm2": 7.728504741604992,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjal-991d-vdsg9o",
+        "lost_area_mm2": 7.7285047416049935,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjal-991e-n3swui",
+        "lost_area_mm2": 7.728504741604942,
+        "reliefs": 0
+      }
+    ],
+    "external_contours_with_unreachable_area": [
+      {
+        "id": "mvujhja8-98z1-cvrql7",
+        "lost_area_mm2": 0.7868200498629355,
+        "largest_component_mm2": 0.19398515405850772
+      },
+      {
+        "id": "mvujhjab-98z9-8ldeny",
+        "lost_area_mm2": 3.8642523708024674,
+        "largest_component_mm2": 1.9321261854012373
+      },
+      {
+        "id": "mvujhjao-991v-n7v767",
+        "lost_area_mm2": 11.592757112407561,
+        "largest_component_mm2": 1.9321261854012604
+      },
+      {
+        "id": "mvujhjao-9923-ken3h7",
+        "lost_area_mm2": 11.592757112407565,
+        "largest_component_mm2": 1.9321261854012612
+      },
+      {
+        "id": "mvujhjap-992b-51ecvo",
+        "lost_area_mm2": 11.592757112407467,
+        "largest_component_mm2": 1.9321261854012448
+      },
+      {
+        "id": "mvujhjaq-992n-7coh3e",
+        "lost_area_mm2": 7.728504741604978,
+        "largest_component_mm2": 1.9321261854012448
+      },
+      {
+        "id": "mvujhjaq-992z-jc667v",
+        "lost_area_mm2": 7.728504741605043,
+        "largest_component_mm2": 1.9321261854012617
+      },
+      {
+        "id": "mvujhjar-993b-q0l9go",
+        "lost_area_mm2": 7.72850474160503,
+        "largest_component_mm2": 1.9321261854012581
+      },
+      {
+        "id": "mvujhjar-993j-nn2n6o",
+        "lost_area_mm2": 11.59275711240756,
+        "largest_component_mm2": 1.9321261854012601
+      },
+      {
+        "id": "mvujhjar-993v-n5eovn",
+        "lost_area_mm2": 7.72850474160504,
+        "largest_component_mm2": 1.9321261854012601
+      }
+    ]
+  },
+  {
+    "key": "family-6mm-1500X750-3-D3.175",
+    "file": "family-6mm-1500X750-3",
+    "source_path": "/workspace/scratch/safepaws/family6/1500x750/1500X750-3.dxf",
+    "diameter": 3.175,
+    "candidates": 79,
+    "generated": 79,
+    "applied": 79,
+    "skipped": 0,
+    "tbones": 0,
+    "maxRadiusError": 4.030109579389318e-13,
+    "closedCut": 13,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.2
+    ],
+    "rectangular_holes": 8,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [
+      {
+        "id": "mvujhjfi-9v8b-z0dwky",
+        "lost_area_mm2": 2.1675292825534047,
+        "reliefs": 0
+      }
+    ],
+    "external_contours_with_unreachable_area": []
+  },
+  {
+    "key": "family-6mm-1500X750-3-D4",
+    "file": "family-6mm-1500X750-3",
+    "source_path": "/workspace/scratch/safepaws/family6/1500x750/1500X750-3.dxf",
+    "diameter": 4,
+    "candidates": 79,
+    "generated": 79,
+    "applied": 79,
+    "skipped": 0,
+    "tbones": 0,
+    "maxRadiusError": 1.8474111129762605e-13,
+    "closedCut": 13,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.2
+    ],
+    "rectangular_holes": 8,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [
+      {
+        "id": "mvujhjgd-a6ft-7jua4w",
+        "lost_area_mm2": 3.4403093578878803,
+        "reliefs": 0
+      }
+    ],
+    "external_contours_with_unreachable_area": []
+  },
+  {
+    "key": "family-6mm-1500X750-3-D6",
+    "file": "family-6mm-1500X750-3",
+    "source_path": "/workspace/scratch/safepaws/family6/1500x750/1500X750-3.dxf",
+    "diameter": 6,
+    "candidates": 79,
+    "generated": 47,
+    "applied": 47,
+    "skipped": 32,
+    "tbones": 0,
+    "maxRadiusError": 1.0480505352461478e-13,
+    "closedCut": 13,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.2
+    ],
+    "rectangular_holes": 8,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [
+      {
+        "id": "mvujhjh4-ahmk-in4244",
+        "lost_area_mm2": 7.728504741605024,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjh4-ahml-afj9vr",
+        "lost_area_mm2": 7.728504741605024,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjh5-ahmv-861tkm",
+        "lost_area_mm2": 7.728504741604988,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjh5-ahmw-t6pgoz",
+        "lost_area_mm2": 7.7285047416050325,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjh6-ahnb-3xsozm",
+        "lost_area_mm2": 7.740696055247822,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjh6-ahnc-7f0qji",
+        "lost_area_mm2": 7.728504741605001,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjh6-ahnd-j0934m",
+        "lost_area_mm2": 7.728504741605001,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjh6-ahnn-l03sa4",
+        "lost_area_mm2": 7.728504741605028,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjh6-ahno-f5z15p",
+        "lost_area_mm2": 7.728504741605028,
+        "reliefs": 0
+      }
+    ],
+    "external_contours_with_unreachable_area": []
+  },
+  {
+    "key": "family-6mm-1500X750-4-D3.175",
+    "file": "family-6mm-1500X750-4",
+    "source_path": "/workspace/scratch/safepaws/family6/1500x750/1500X750-4.dxf",
+    "diameter": 3.175,
+    "candidates": 122,
+    "generated": 122,
+    "applied": 122,
+    "skipped": 0,
+    "tbones": 0,
+    "maxRadiusError": 5.03375119365046e-13,
+    "closedCut": 21,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.2,
+      6.4
+    ],
+    "rectangular_holes": 16,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [],
+    "external_contours_with_unreachable_area": []
+  },
+  {
+    "key": "family-6mm-1500X750-4-D4",
+    "file": "family-6mm-1500X750-4",
+    "source_path": "/workspace/scratch/safepaws/family6/1500x750/1500X750-4.dxf",
+    "diameter": 4,
+    "candidates": 122,
+    "generated": 122,
+    "applied": 122,
+    "skipped": 0,
+    "tbones": 0,
+    "maxRadiusError": 4.760636329592671e-13,
+    "closedCut": 21,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.2,
+      6.4
+    ],
+    "rectangular_holes": 16,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [],
+    "external_contours_with_unreachable_area": []
+  },
+  {
+    "key": "family-6mm-1500X750-4-D6",
+    "file": "family-6mm-1500X750-4",
+    "source_path": "/workspace/scratch/safepaws/family6/1500x750/1500X750-4.dxf",
+    "diameter": 6,
+    "candidates": 122,
+    "generated": 58,
+    "applied": 58,
+    "skipped": 64,
+    "tbones": 0,
+    "maxRadiusError": 2.7711166694643907e-13,
+    "closedCut": 21,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.2,
+      6.4
+    ],
+    "rectangular_holes": 16,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [
+      {
+        "id": "mvujhjk4-b9ql-eh5ucg",
+        "lost_area_mm2": 7.728504741605033,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjk4-b9qm-p6o3ud",
+        "lost_area_mm2": 7.72850474160502,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjk4-b9qn-3zo7rn",
+        "lost_area_mm2": 7.7285047416050325,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjk4-b9qo-5tu0tp",
+        "lost_area_mm2": 7.72850474160505,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjk4-b9qp-yj35t2",
+        "lost_area_mm2": 7.728504741605034,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjk4-b9qq-sb11cy",
+        "lost_area_mm2": 7.728504741605052,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjk4-b9qr-h30iu6",
+        "lost_area_mm2": 7.728504741605052,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjk4-b9qs-2aity9",
+        "lost_area_mm2": 0.012191313885494458,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjk5-b9r2-za40pf",
+        "lost_area_mm2": 7.728504741604985,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjk5-b9r3-ok1fi6",
+        "lost_area_mm2": 7.728504741604985,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjk5-b9r4-4ph2f0",
+        "lost_area_mm2": 7.7285047416049775,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjk5-b9r5-u5ugok",
+        "lost_area_mm2": 7.7285047416050086,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjk5-b9r6-qe0z53",
+        "lost_area_mm2": 7.728504741605025,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjk5-b9r7-t6o84i",
+        "lost_area_mm2": 7.7285047416049935,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjk5-b9r8-82xjq2",
+        "lost_area_mm2": 7.728504741605001,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjk5-b9r9-3jfrgt",
+        "lost_area_mm2": 7.728504741604956,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjk5-b9ra-fvthpg",
+        "lost_area_mm2": 7.728504741604949,
+        "reliefs": 0
+      }
+    ],
+    "external_contours_with_unreachable_area": []
+  },
+  {
+    "key": "family-6mm-1500X750-5-D3.175",
+    "file": "family-6mm-1500X750-5",
+    "source_path": "/workspace/scratch/safepaws/family6/1500x750/1500X750-5.dxf",
+    "diameter": 3.175,
+    "candidates": 128,
+    "generated": 128,
+    "applied": 128,
+    "skipped": 0,
+    "tbones": 0,
+    "maxRadiusError": 7.824851877558103e-13,
+    "closedCut": 26,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.2
+    ],
+    "rectangular_holes": 23,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [],
+    "external_contours_with_unreachable_area": []
+  },
+  {
+    "key": "family-6mm-1500X750-5-D4",
+    "file": "family-6mm-1500X750-5",
+    "source_path": "/workspace/scratch/safepaws/family6/1500x750/1500X750-5.dxf",
+    "diameter": 4,
+    "candidates": 128,
+    "generated": 128,
+    "applied": 128,
+    "skipped": 0,
+    "tbones": 0,
+    "maxRadiusError": 4.660716257376407e-13,
+    "closedCut": 26,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.2
+    ],
+    "rectangular_holes": 23,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [],
+    "external_contours_with_unreachable_area": []
+  },
+  {
+    "key": "family-6mm-1500X750-5-D6",
+    "file": "family-6mm-1500X750-5",
+    "source_path": "/workspace/scratch/safepaws/family6/1500x750/1500X750-5.dxf",
+    "diameter": 6,
+    "candidates": 128,
+    "generated": 36,
+    "applied": 36,
+    "skipped": 92,
+    "tbones": 0,
+    "maxRadiusError": 2.970956813896919e-13,
+    "closedCut": 26,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.2
+    ],
+    "rectangular_holes": 23,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [
+      {
+        "id": "mvujhjmy-c2h6-bbtzk8",
+        "lost_area_mm2": 7.728504741604983,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjmy-c2h7-hbetfa",
+        "lost_area_mm2": 7.728504741604956,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjmy-c2h8-hcylsb",
+        "lost_area_mm2": 7.728504741604999,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjmy-c2h9-wkuydt",
+        "lost_area_mm2": 7.728504741604999,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjmy-c2ha-xr13q9",
+        "lost_area_mm2": 7.728504741604993,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjmy-c2hb-o7k2xd",
+        "lost_area_mm2": 7.728504741604985,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjmy-c2hc-37oska",
+        "lost_area_mm2": 7.728504741604995,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjmy-c2hd-coaqrc",
+        "lost_area_mm2": 7.728504741604992,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjmy-c2he-zckpi3",
+        "lost_area_mm2": 7.728504741605003,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjmy-c2hf-p2hc74",
+        "lost_area_mm2": 7.728504741605,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjmy-c2hg-89zlo3",
+        "lost_area_mm2": 7.728504741605,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjmy-c2hh-x01pog",
+        "lost_area_mm2": 7.728504741605,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjmy-c2hi-hfs1z6",
+        "lost_area_mm2": 7.728504741605,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjmy-c2hj-ea94ae",
+        "lost_area_mm2": 7.728504741604992,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjmy-c2hk-yol5ol",
+        "lost_area_mm2": 7.728504741604993,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjmy-c2hl-mg5yxf",
+        "lost_area_mm2": 7.728504741604999,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjmy-c2hm-s0uc6u",
+        "lost_area_mm2": 7.728504741604999,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjmy-c2hn-8c5g0m",
+        "lost_area_mm2": 7.728504741605025,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjmy-c2ho-xt3soq",
+        "lost_area_mm2": 7.72850474160501,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjmy-c2hp-ngajt9",
+        "lost_area_mm2": 7.728504741604689,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjmy-c2hq-0s3xjw",
+        "lost_area_mm2": 7.728504741604989,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjmz-c2i0-ih0o32",
+        "lost_area_mm2": 7.728504741605027,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjmz-c2i1-62r08y",
+        "lost_area_mm2": 7.728504741605027,
+        "reliefs": 0
+      }
+    ],
+    "external_contours_with_unreachable_area": []
+  },
+  {
+    "key": "family-6mm-1500X750-6-D3.175",
+    "file": "family-6mm-1500X750-6",
+    "source_path": "/workspace/scratch/safepaws/family6/1500x750/1500X750-6.dxf",
+    "diameter": 3.175,
+    "candidates": 93,
+    "generated": 93,
+    "applied": 93,
+    "skipped": 0,
+    "tbones": 0,
+    "maxRadiusError": 7.824851877558103e-13,
+    "closedCut": 5,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.2
+    ],
+    "rectangular_holes": 2,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [],
+    "external_contours_with_unreachable_area": []
+  },
+  {
+    "key": "family-6mm-1500X750-6-D4",
+    "file": "family-6mm-1500X750-6",
+    "source_path": "/workspace/scratch/safepaws/family6/1500x750/1500X750-6.dxf",
+    "diameter": 4,
+    "candidates": 93,
+    "generated": 93,
+    "applied": 93,
+    "skipped": 0,
+    "tbones": 0,
+    "maxRadiusError": 4.660716257376407e-13,
+    "closedCut": 5,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.2
+    ],
+    "rectangular_holes": 2,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [],
+    "external_contours_with_unreachable_area": []
+  },
+  {
+    "key": "family-6mm-1500X750-6-D6",
+    "file": "family-6mm-1500X750-6",
+    "source_path": "/workspace/scratch/safepaws/family6/1500x750/1500X750-6.dxf",
+    "diameter": 6,
+    "candidates": 93,
+    "generated": 85,
+    "applied": 85,
+    "skipped": 8,
+    "tbones": 0,
+    "maxRadiusError": 3.375077994860476e-13,
+    "closedCut": 5,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.2
+    ],
+    "rectangular_holes": 2,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [
+      {
+        "id": "mvujhjow-co9p-m3k2sx",
+        "lost_area_mm2": 7.728504741605027,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjow-co9q-a13v8y",
+        "lost_area_mm2": 7.728504741605027,
+        "reliefs": 0
+      }
+    ],
+    "external_contours_with_unreachable_area": []
+  },
+  {
+    "key": "family-6mm-1500X750-7-D3.175",
+    "file": "family-6mm-1500X750-7",
+    "source_path": "/workspace/scratch/safepaws/family6/1500x750/1500X750-7.dxf",
+    "diameter": 3.175,
+    "candidates": 91,
+    "generated": 91,
+    "applied": 91,
+    "skipped": 0,
+    "tbones": 0,
+    "maxRadiusError": 8.253397965063414e-13,
+    "closedCut": 9,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.2
+    ],
+    "rectangular_holes": 4,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [
+      {
+        "id": "mvujhjq1-cwtt-f15x7y",
+        "lost_area_mm2": 2.1675292825536037,
+        "reliefs": 0
+      }
+    ],
+    "external_contours_with_unreachable_area": []
+  },
+  {
+    "key": "family-6mm-1500X750-7-D4",
+    "file": "family-6mm-1500X750-7",
+    "source_path": "/workspace/scratch/safepaws/family6/1500x750/1500X750-7.dxf",
+    "diameter": 4,
+    "candidates": 91,
+    "generated": 91,
+    "applied": 91,
+    "skipped": 0,
+    "tbones": 0,
+    "maxRadiusError": 8.881784197001252e-13,
+    "closedCut": 9,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.2
+    ],
+    "rectangular_holes": 4,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [
+      {
+        "id": "mvujhjqo-d77w-t0we1t",
+        "lost_area_mm2": 3.440309357887925,
+        "reliefs": 0
+      }
+    ],
+    "external_contours_with_unreachable_area": []
+  },
+  {
+    "key": "family-6mm-1500X750-7-D6",
+    "file": "family-6mm-1500X750-7",
+    "source_path": "/workspace/scratch/safepaws/family6/1500x750/1500X750-7.dxf",
+    "diameter": 6,
+    "candidates": 91,
+    "generated": 75,
+    "applied": 75,
+    "skipped": 16,
+    "tbones": 0,
+    "maxRadiusError": 6.483702463810914e-13,
+    "closedCut": 9,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.2
+    ],
+    "rectangular_holes": 4,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [
+      {
+        "id": "mvujhjra-dhlz-ig3qmd",
+        "lost_area_mm2": 7.740696055247867,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjra-dhm0-70mtb2",
+        "lost_area_mm2": 7.728504741604976,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjra-dhm1-cige85",
+        "lost_area_mm2": 7.7285047416049775,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjrb-dhmb-1s74fk",
+        "lost_area_mm2": 7.728504741605026,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjrb-dhmc-wl3brm",
+        "lost_area_mm2": 7.728504741605026,
+        "reliefs": 0
+      }
+    ],
+    "external_contours_with_unreachable_area": []
+  },
+  {
+    "key": "family-6mm-1500X750-8-D3.175",
+    "file": "family-6mm-1500X750-8",
+    "source_path": "/workspace/scratch/safepaws/family6/1500x750/1500X750-8.dxf",
+    "diameter": 3.175,
+    "candidates": 122,
+    "generated": 122,
+    "applied": 122,
+    "skipped": 0,
+    "tbones": 0,
+    "maxRadiusError": 5.639932965095795e-13,
+    "closedCut": 20,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.2
+    ],
+    "rectangular_holes": 15,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [],
+    "external_contours_with_unreachable_area": []
+  },
+  {
+    "key": "family-6mm-1500X750-8-D4",
+    "file": "family-6mm-1500X750-8",
+    "source_path": "/workspace/scratch/safepaws/family6/1500x750/1500X750-8.dxf",
+    "diameter": 4,
+    "candidates": 122,
+    "generated": 122,
+    "applied": 122,
+    "skipped": 0,
+    "tbones": 0,
+    "maxRadiusError": 1.2922996006636822e-12,
+    "closedCut": 20,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.2
+    ],
+    "rectangular_holes": 15,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [],
+    "external_contours_with_unreachable_area": []
+  },
+  {
+    "key": "family-6mm-1500X750-8-D6",
+    "file": "family-6mm-1500X750-8",
+    "source_path": "/workspace/scratch/safepaws/family6/1500x750/1500X750-8.dxf",
+    "diameter": 6,
+    "candidates": 122,
+    "generated": 62,
+    "applied": 62,
+    "skipped": 60,
+    "tbones": 0,
+    "maxRadiusError": 4.1744385725905886e-13,
+    "closedCut": 20,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.2
+    ],
+    "rectangular_holes": 15,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [
+      {
+        "id": "mvujhjut-eld7-38uby1",
+        "lost_area_mm2": 7.728504741605033,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjut-eld8-2hv216",
+        "lost_area_mm2": 7.7285047416050165,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjut-eld9-7va4pv",
+        "lost_area_mm2": 7.7285047416050325,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjuu-eldj-i92275",
+        "lost_area_mm2": 7.728504741604949,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjuu-eldk-iq5wrh",
+        "lost_area_mm2": 7.728504741604956,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjuu-eldl-jrxorh",
+        "lost_area_mm2": 7.728504741605006,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjuv-eldv-w30i01",
+        "lost_area_mm2": 7.72850474160505,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjuv-eldw-o04mnk",
+        "lost_area_mm2": 7.7285047416050014,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjuv-eldx-uad1j7",
+        "lost_area_mm2": 7.7285047416050014,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjuv-eldy-hids1s",
+        "lost_area_mm2": 7.728504741604985,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjuv-eldz-uh72hr",
+        "lost_area_mm2": 7.728504741604985,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjuv-ele0-kpvvq4",
+        "lost_area_mm2": 7.728504741605034,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjuw-elej-2vzpvw",
+        "lost_area_mm2": 7.728504741604985,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjuw-elek-b28ene",
+        "lost_area_mm2": 7.728504741604985,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhjuw-elel-74mn7b",
+        "lost_area_mm2": 7.728504741605029,
+        "reliefs": 0
+      }
+    ],
+    "external_contours_with_unreachable_area": []
+  }
+]

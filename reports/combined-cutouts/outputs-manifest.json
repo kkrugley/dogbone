@@ -1,0 +1,392 @@
+[
+  {
+    "file": "outputs/cozy-3mm/D3/cozy-3mm-Sheet_1.dxf",
+    "tool_diameter_mm": 3,
+    "units": "mm",
+    "sha256": "e56a16fa265812cecc678cdc20d2353bd77cfcc3fa8def4dfa0f96524f479ad0",
+    "dogbones": 154,
+    "tbones": 166,
+    "arc_reliefs": 2,
+    "verified": true
+  },
+  {
+    "file": "outputs/cozy-3mm/D3.175/cozy-3mm-Sheet_1.dxf",
+    "tool_diameter_mm": 3.175,
+    "units": "mm",
+    "sha256": "10d3b0b5534963237936bf5f0ba4ba46dabc44233be60df197dbc000aead4893",
+    "dogbones": 152,
+    "tbones": 168,
+    "arc_reliefs": 2,
+    "verified": true
+  },
+  {
+    "file": "outputs/cozy-3mm/D3/cozy-3mm-Sheet_2.dxf",
+    "tool_diameter_mm": 3,
+    "units": "mm",
+    "sha256": "307504e36b7e4f417c2a7ea1060f9d5fd88d17364d8c0b097af0c4d6584f9f86",
+    "dogbones": 70,
+    "tbones": 112,
+    "arc_reliefs": 0,
+    "verified": true
+  },
+  {
+    "file": "outputs/cozy-3mm/D3.175/cozy-3mm-Sheet_2.dxf",
+    "tool_diameter_mm": 3.175,
+    "units": "mm",
+    "sha256": "bdccb9a9355aa0f8f1a8368f681e9dccbf89387876aae01db4ab3705b7c5469b",
+    "dogbones": 50,
+    "tbones": 132,
+    "arc_reliefs": 0,
+    "verified": true
+  },
+  {
+    "file": "outputs/cozy-3mm/D3/cozy-3mm-Sheet_3.dxf",
+    "tool_diameter_mm": 3,
+    "units": "mm",
+    "sha256": "707028baf3f687a5df77254a81daef35051a83e3eea204d3a29bd936cff9c12b",
+    "dogbones": 58,
+    "tbones": 124,
+    "arc_reliefs": 0,
+    "verified": true
+  },
+  {
+    "file": "outputs/cozy-3mm/D3.175/cozy-3mm-Sheet_3.dxf",
+    "tool_diameter_mm": 3.175,
+    "units": "mm",
+    "sha256": "41c08c09dbc0b086aec3b27fe11a8967d943c4d26ac3643de77bc332694b30af",
+    "dogbones": 58,
+    "tbones": 124,
+    "arc_reliefs": 0,
+    "verified": true
+  },
+  {
+    "file": "outputs/cozy-6mm/D3.175/cozy-6mm-1500x750-1.dxf",
+    "tool_diameter_mm": 3.175,
+    "units": "mm",
+    "sha256": "65bf954d358549566a82412a8576f4d856076bcbe7000b2c52d89507f9a14f88",
+    "dogbones": 270,
+    "tbones": 2,
+    "arc_reliefs": 0,
+    "verified": true
+  },
+  {
+    "file": "outputs/cozy-6mm/D4/cozy-6mm-1500x750-1.dxf",
+    "tool_diameter_mm": 4,
+    "units": "mm",
+    "sha256": "eb4fd9ab78675f7766742061874ed0fe584562c284e0a9da5181a294f7313463",
+    "dogbones": 270,
+    "tbones": 2,
+    "arc_reliefs": 0,
+    "verified": true
+  },
+  {
+    "file": "outputs/cozy-6mm/D6/cozy-6mm-1500x750-1.dxf",
+    "tool_diameter_mm": 6,
+    "units": "mm",
+    "sha256": "4ce3c553393c999dd01b293cd1465cd5c4094aca8667e52bc7e58c4f076a9723",
+    "dogbones": 166,
+    "tbones": 106,
+    "arc_reliefs": 0,
+    "verified": true
+  },
+  {
+    "file": "outputs/cozy-6mm/D3.175/cozy-6mm-1500x750-2.dxf",
+    "tool_diameter_mm": 3.175,
+    "units": "mm",
+    "sha256": "4d65838aa3e8314df446fac79e2a78b4bd0b64ae54bbf8a79c447711db48b740",
+    "dogbones": 224,
+    "tbones": 0,
+    "arc_reliefs": 0,
+    "verified": true
+  },
+  {
+    "file": "outputs/cozy-6mm/D4/cozy-6mm-1500x750-2.dxf",
+    "tool_diameter_mm": 4,
+    "units": "mm",
+    "sha256": "7ada7d2cc1140726552cd5994ca889dcce6f4b45991a3715012f29860cd5ac33",
+    "dogbones": 224,
+    "tbones": 0,
+    "arc_reliefs": 0,
+    "verified": true
+  },
+  {
+    "file": "outputs/cozy-6mm/D6/cozy-6mm-1500x750-2.dxf",
+    "tool_diameter_mm": 6,
+    "units": "mm",
+    "sha256": "3473f3531e63bf56cff1be4d3574c0754de3e0463bf1e69a7a5f59ad28ba3e96",
+    "dogbones": 200,
+    "tbones": 24,
+    "arc_reliefs": 0,
+    "verified": true
+  },
+  {
+    "file": "outputs/cozy-6mm/D3.175/cozy-6mm-1500x750-3.dxf",
+    "tool_diameter_mm": 3.175,
+    "units": "mm",
+    "sha256": "2bb828d070a7085ad45a20df36fdef22f87803a962c51b9efd9a449345ba766d",
+    "dogbones": 188,
+    "tbones": 0,
+    "arc_reliefs": 0,
+    "verified": true
+  },
+  {
+    "file": "outputs/cozy-6mm/D4/cozy-6mm-1500x750-3.dxf",
+    "tool_diameter_mm": 4,
+    "units": "mm",
+    "sha256": "efa1ea972d542b281b6997aeaeb875dfc87c3681732c40e9fbf6077ed274ad54",
+    "dogbones": 188,
+    "tbones": 0,
+    "arc_reliefs": 0,
+    "verified": true
+  },
+  {
+    "file": "outputs/cozy-6mm/D6/cozy-6mm-1500x750-3.dxf",
+    "tool_diameter_mm": 6,
+    "units": "mm",
+    "sha256": "fa5e2525f6039402197a1d90ac7788db5042d8d12a40957341642f0889aafccc",
+    "dogbones": 178,
+    "tbones": 10,
+    "arc_reliefs": 0,
+    "verified": true
+  },
+  {
+    "file": "outputs/family-6mm/D3.175/family-6mm-1500X750-1.dxf",
+    "tool_diameter_mm": 3.175,
+    "units": "mm",
+    "sha256": "19882dd2f4129caa8f2249a315e75c7ac2e73bfb3496911392d9420002dc1d27",
+    "dogbones": 115,
+    "tbones": 3,
+    "arc_reliefs": 0,
+    "verified": true
+  },
+  {
+    "file": "outputs/family-6mm/D4/family-6mm-1500X750-1.dxf",
+    "tool_diameter_mm": 4,
+    "units": "mm",
+    "sha256": "eaf418d10d203eca95337768094752527544d40bd69598dd66be7f198304bb14",
+    "dogbones": 115,
+    "tbones": 3,
+    "arc_reliefs": 0,
+    "verified": true
+  },
+  {
+    "file": "outputs/family-6mm/D6/family-6mm-1500X750-1.dxf",
+    "tool_diameter_mm": 6,
+    "units": "mm",
+    "sha256": "c038cf10eda63bf958cb7a1768f6887067febb6c15382c60f53971e7495c8c4a",
+    "dogbones": 85,
+    "tbones": 33,
+    "arc_reliefs": 0,
+    "verified": true
+  },
+  {
+    "file": "outputs/family-6mm/D3.175/family-6mm-1500X750-2.dxf",
+    "tool_diameter_mm": 3.175,
+    "units": "mm",
+    "sha256": "459c65c11825b98db7e5e5bb1cc4c5356445655c72c981f9dd8bb53ed405ceb3",
+    "dogbones": 298,
+    "tbones": 1,
+    "arc_reliefs": 0,
+    "verified": true
+  },
+  {
+    "file": "outputs/family-6mm/D4/family-6mm-1500X750-2.dxf",
+    "tool_diameter_mm": 4,
+    "units": "mm",
+    "sha256": "4f0b498a53f74c3c126312fde31989a6bc72f961f6080fa6caa9179931995c76",
+    "dogbones": 298,
+    "tbones": 1,
+    "arc_reliefs": 0,
+    "verified": true
+  },
+  {
+    "file": "outputs/family-6mm/D6/family-6mm-1500X750-2.dxf",
+    "tool_diameter_mm": 6,
+    "units": "mm",
+    "sha256": "bb31f1c83ba0a5e6015e089e83d99c320230e25500b4c29a0688aa369b47c0a0",
+    "dogbones": 217,
+    "tbones": 82,
+    "arc_reliefs": 0,
+    "verified": true
+  },
+  {
+    "file": "outputs/family-6mm/D3.175/family-6mm-1500X750-3.dxf",
+    "tool_diameter_mm": 3.175,
+    "units": "mm",
+    "sha256": "c7edcb1f2090070ea4615a4a1f4061ea59bccd8317d38c434de9291e86ebb68f",
+    "dogbones": 83,
+    "tbones": 0,
+    "arc_reliefs": 0,
+    "verified": true
+  },
+  {
+    "file": "outputs/family-6mm/D4/family-6mm-1500X750-3.dxf",
+    "tool_diameter_mm": 4,
+    "units": "mm",
+    "sha256": "02d9928701e022c8e1e3dea1a17c106e195fa43a7786cf4381f5fddb990501b1",
+    "dogbones": 83,
+    "tbones": 0,
+    "arc_reliefs": 0,
+    "verified": true
+  },
+  {
+    "file": "outputs/family-6mm/D6/family-6mm-1500X750-3.dxf",
+    "tool_diameter_mm": 6,
+    "units": "mm",
+    "sha256": "c485775d005a6e649ecfee226986c04677fa32872f272ed44608ba449e0c3642",
+    "dogbones": 67,
+    "tbones": 16,
+    "arc_reliefs": 0,
+    "verified": true
+  },
+  {
+    "file": "outputs/family-6mm/D3.175/family-6mm-1500X750-4.dxf",
+    "tool_diameter_mm": 3.175,
+    "units": "mm",
+    "sha256": "a920492c2a986c8a62cfde40586fa0e4e81794fa803380d04c7f92f260597c84",
+    "dogbones": 122,
+    "tbones": 0,
+    "arc_reliefs": 0,
+    "verified": true
+  },
+  {
+    "file": "outputs/family-6mm/D4/family-6mm-1500X750-4.dxf",
+    "tool_diameter_mm": 4,
+    "units": "mm",
+    "sha256": "4120ddf1b57ed7d1bde63d781ee33f1fc757b655b3d45233b11a7961bf2dbfcc",
+    "dogbones": 122,
+    "tbones": 0,
+    "arc_reliefs": 0,
+    "verified": true
+  },
+  {
+    "file": "outputs/family-6mm/D6/family-6mm-1500X750-4.dxf",
+    "tool_diameter_mm": 6,
+    "units": "mm",
+    "sha256": "cb680fd400d1337d9aa7fa40e54889461012888d353466656f0cb222a06c6e3c",
+    "dogbones": 90,
+    "tbones": 32,
+    "arc_reliefs": 0,
+    "verified": true
+  },
+  {
+    "file": "outputs/family-6mm/D3.175/family-6mm-1500X750-5.dxf",
+    "tool_diameter_mm": 3.175,
+    "units": "mm",
+    "sha256": "5032c77f0efa218ddbc0f05401d3f1de359334cb18ba79896e54e7581fd4a2d2",
+    "dogbones": 128,
+    "tbones": 0,
+    "arc_reliefs": 0,
+    "verified": true
+  },
+  {
+    "file": "outputs/family-6mm/D4/family-6mm-1500X750-5.dxf",
+    "tool_diameter_mm": 4,
+    "units": "mm",
+    "sha256": "f2098ff62d44a53204de26555999728cfeaadb1dddf269cc6ffdd705017acdc9",
+    "dogbones": 128,
+    "tbones": 0,
+    "arc_reliefs": 0,
+    "verified": true
+  },
+  {
+    "file": "outputs/family-6mm/D6/family-6mm-1500X750-5.dxf",
+    "tool_diameter_mm": 6,
+    "units": "mm",
+    "sha256": "3e6a204d102ee609615da8f86b207ee9486a6bcf217d445a94cf212451a8b30c",
+    "dogbones": 82,
+    "tbones": 46,
+    "arc_reliefs": 0,
+    "verified": true
+  },
+  {
+    "file": "outputs/family-6mm/D3.175/family-6mm-1500X750-6.dxf",
+    "tool_diameter_mm": 3.175,
+    "units": "mm",
+    "sha256": "6bcd593103afdd28e6a33de4f8f6386735102c258d16be2e84f309fda5ce4941",
+    "dogbones": 93,
+    "tbones": 0,
+    "arc_reliefs": 0,
+    "verified": true
+  },
+  {
+    "file": "outputs/family-6mm/D4/family-6mm-1500X750-6.dxf",
+    "tool_diameter_mm": 4,
+    "units": "mm",
+    "sha256": "c05b2c336ffbb5c949e5abc9a990bab1f9fd49e71fca5e924ee3c3e09409678a",
+    "dogbones": 93,
+    "tbones": 0,
+    "arc_reliefs": 0,
+    "verified": true
+  },
+  {
+    "file": "outputs/family-6mm/D6/family-6mm-1500X750-6.dxf",
+    "tool_diameter_mm": 6,
+    "units": "mm",
+    "sha256": "ed92f165bd96c4397fbe0645afd82b118fd37d96f4b86f1f0a7da4674ed178e0",
+    "dogbones": 89,
+    "tbones": 4,
+    "arc_reliefs": 0,
+    "verified": true
+  },
+  {
+    "file": "outputs/family-6mm/D3.175/family-6mm-1500X750-7.dxf",
+    "tool_diameter_mm": 3.175,
+    "units": "mm",
+    "sha256": "6ee4f278c80fca3d9cf0b3ce366bf3324308958fc6cd8ceadadf889df33a1a7b",
+    "dogbones": 95,
+    "tbones": 0,
+    "arc_reliefs": 0,
+    "verified": true
+  },
+  {
+    "file": "outputs/family-6mm/D4/family-6mm-1500X750-7.dxf",
+    "tool_diameter_mm": 4,
+    "units": "mm",
+    "sha256": "e15d5367f83414e901bc43afed0c73214927436d087a18907abfcdd5adb249cc",
+    "dogbones": 95,
+    "tbones": 0,
+    "arc_reliefs": 0,
+    "verified": true
+  },
+  {
+    "file": "outputs/family-6mm/D6/family-6mm-1500X750-7.dxf",
+    "tool_diameter_mm": 6,
+    "units": "mm",
+    "sha256": "485e7077fbc2d1735bea4f7056b7f05f8fbb56ce4d6c334dc0ea69b9b718f64c",
+    "dogbones": 87,
+    "tbones": 8,
+    "arc_reliefs": 0,
+    "verified": true
+  },
+  {
+    "file": "outputs/family-6mm/D3.175/family-6mm-1500X750-8.dxf",
+    "tool_diameter_mm": 3.175,
+    "units": "mm",
+    "sha256": "6695cf94a88ccb09c793fa26d11989b5d20c054a74adbbd06b85e402c623c68a",
+    "dogbones": 122,
+    "tbones": 0,
+    "arc_reliefs": 0,
+    "verified": true
+  },
+  {
+    "file": "outputs/family-6mm/D4/family-6mm-1500X750-8.dxf",
+    "tool_diameter_mm": 4,
+    "units": "mm",
+    "sha256": "dd07a77959fa8a283ef2d136aa70e79da28168e7a8f26d20774ac8a3f5d3642e",
+    "dogbones": 122,
+    "tbones": 0,
+    "arc_reliefs": 0,
+    "verified": true
+  },
+  {
+    "file": "outputs/family-6mm/D6/family-6mm-1500X750-8.dxf",
+    "tool_diameter_mm": 6,
+    "units": "mm",
+    "sha256": "aa01542591282f608fd7ae19bbd9cb78b5ab919336bf88972ddb8fb7e32fdb0c",
+    "dogbones": 92,
+    "tbones": 30,
+    "arc_reliefs": 0,
+    "verified": true
+  }
+]

@@ -24,6 +24,10 @@ const statusConfig: Record<
     className:
       "border-transparent bg-green-500/15 text-green-600 dark:bg-green-500/20 dark:text-green-400",
   },
+  review: {
+    label: "Needs review",
+    className: "border-transparent bg-amber-500/15 text-amber-700",
+  },
   error: {
     label: "Error",
     className:

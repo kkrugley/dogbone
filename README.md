@@ -34,3 +34,20 @@ npm run build    # production build → dist/
 npm test         # vitest unit tests
 npx playwright test  # E2E tests (add .dxf to test-files/)
 ```
+
+## SafePaws regression verification
+
+Run `npm ci`, `npm test`, and `npm run build`. Three original SafePaws DXF
+fixtures and their download URLs/checksums are in `tests/fixtures/safepaws`.
+The Russian investigation report, browser evidence, and Ø2 mm output drawings
+are in [reports/REPORT.ru.md](reports/REPORT.ru.md).
+
+## Combined dogbone / T-bone processing
+
+The latest implementation and validation report is
+[reports/combined-cutouts/REPORT.ru.md](reports/combined-cutouts/REPORT.ru.md).
+It covers 14 SafePaws sheets and 39 larger-cutter scenarios.
+Run `npm test` and, after `npm run build`, `npm run test:browser`.
+Use `CHROMIUM_PATH` to choose a browser, or install Chromium through Playwright.
+
+If Chromium is not installed, run `npx playwright install chromium` before the browser checks.

@@ -1,0 +1,1208 @@
+[
+  {
+    "key": "cozy-3mm-sheet-1-D2",
+    "file": "cozy-3mm-sheet-1",
+    "source_path": "tests/fixtures/safepaws/cozy-3mm-sheet-1.dxf",
+    "diameter": 2,
+    "candidates": 320,
+    "generated": 320,
+    "applied": 320,
+    "skipped": 0,
+    "arcReliefs": 0,
+    "booleanReliefs": 0,
+    "machining": {
+      "complete": true,
+      "toolDiameter": 2,
+      "issues": []
+    },
+    "tbones": 20,
+    "maxRadiusError": 4.747313653297169e-13,
+    "closedCut": 63,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      3.2,
+      3.4
+    ],
+    "rectangular_holes": 47,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [],
+    "external_contours_with_unreachable_area": [],
+    "unapplied_relief_circles": [],
+    "new_contour_crossings": []
+  },
+  {
+    "key": "cozy-3mm-sheet-1-D2.5",
+    "file": "cozy-3mm-sheet-1",
+    "source_path": "tests/fixtures/safepaws/cozy-3mm-sheet-1.dxf",
+    "diameter": 2.5,
+    "candidates": 320,
+    "generated": 322,
+    "applied": 322,
+    "skipped": 0,
+    "arcReliefs": 2,
+    "booleanReliefs": 2,
+    "machining": {
+      "complete": true,
+      "toolDiameter": 2.5,
+      "issues": []
+    },
+    "tbones": 116,
+    "maxRadiusError": 2.2737367544323206e-13,
+    "closedCut": 63,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      3.2,
+      3.4
+    ],
+    "rectangular_holes": 47,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [],
+    "external_contours_with_unreachable_area": [],
+    "unapplied_relief_circles": [],
+    "new_contour_crossings": []
+  },
+  {
+    "key": "cozy-3mm-sheet-1-D3",
+    "file": "cozy-3mm-sheet-1",
+    "source_path": "tests/fixtures/safepaws/cozy-3mm-sheet-1.dxf",
+    "diameter": 3,
+    "candidates": 320,
+    "generated": 322,
+    "applied": 322,
+    "skipped": 0,
+    "arcReliefs": 2,
+    "booleanReliefs": 2,
+    "machining": {
+      "complete": true,
+      "toolDiameter": 3,
+      "issues": []
+    },
+    "tbones": 166,
+    "maxRadiusError": 4.75175454539567e-13,
+    "closedCut": 63,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      3.2,
+      3.4
+    ],
+    "rectangular_holes": 47,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [],
+    "external_contours_with_unreachable_area": [],
+    "unapplied_relief_circles": [],
+    "new_contour_crossings": []
+  },
+  {
+    "key": "cozy-3mm-sheet-1-D3.175",
+    "file": "cozy-3mm-sheet-1",
+    "source_path": "tests/fixtures/safepaws/cozy-3mm-sheet-1.dxf",
+    "diameter": 3.175,
+    "candidates": 320,
+    "generated": 322,
+    "applied": 322,
+    "skipped": 0,
+    "arcReliefs": 2,
+    "booleanReliefs": 2,
+    "machining": {
+      "complete": true,
+      "toolDiameter": 3.175,
+      "issues": []
+    },
+    "tbones": 168,
+    "maxRadiusError": 3.3728575488112256e-13,
+    "closedCut": 63,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      3.2,
+      3.4
+    ],
+    "rectangular_holes": 47,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [],
+    "external_contours_with_unreachable_area": [],
+    "unapplied_relief_circles": [],
+    "new_contour_crossings": []
+  },
+  {
+    "key": "cozy-3mm-sheet-1-D4",
+    "file": "cozy-3mm-sheet-1",
+    "source_path": "tests/fixtures/safepaws/cozy-3mm-sheet-1.dxf",
+    "diameter": 4,
+    "candidates": 320,
+    "generated": 322,
+    "applied": 322,
+    "skipped": 0,
+    "arcReliefs": 2,
+    "booleanReliefs": 2,
+    "machining": {
+      "complete": false,
+      "toolDiameter": 4,
+      "issues": [
+        {
+          "contourId": "mvukzlx7-dzn-phhfi9",
+          "code": "unreachable",
+          "missedArea": 107.6660208077192,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx7-dzo-k4gwis",
+          "code": "unreachable",
+          "missedArea": 107.66602080771932,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx7-dzp-tj3s5l",
+          "code": "unreachable",
+          "missedArea": 107.66602080771932,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx7-dzq-sgw388",
+          "code": "unreachable",
+          "missedArea": 107.6660241877122,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx7-dzr-8g5ptt",
+          "code": "unreachable",
+          "missedArea": 107.66602080771945,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx7-dzs-m8spmo",
+          "code": "unreachable",
+          "missedArea": 107.66602080771987,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx7-dzt-cqx2ep",
+          "code": "unreachable",
+          "missedArea": 107.66602418771257,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx7-dzu-scdbii",
+          "code": "unreachable",
+          "missedArea": 107.66602080771945,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx7-dzv-7b271s",
+          "code": "unreachable",
+          "missedArea": 107.66602080771945,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx7-dzw-qzazfs",
+          "code": "unreachable",
+          "missedArea": 107.6660208077199,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx7-dzx-9ky1ru",
+          "code": "unreachable",
+          "missedArea": 107.66602418771262,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx7-dzy-ji6zi7",
+          "code": "unreachable",
+          "missedArea": 107.66602080771993,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx7-dzz-4m9t14",
+          "code": "unreachable",
+          "missedArea": 107.66602080771993,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx7-e00-z623hv",
+          "code": "unreachable",
+          "missedArea": 107.66602080771973,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx7-e01-gfmdix",
+          "code": "unreachable",
+          "missedArea": 107.6660208077196,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx8-e08-p84se2",
+          "code": "unreachable",
+          "missedArea": 101.52342981994322,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx8-e09-bt6fdz",
+          "code": "unreachable",
+          "missedArea": 101.52343299993902,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx8-e0a-dwie42",
+          "code": "unreachable",
+          "missedArea": 37.92367207634462,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx8-e0b-rfjw4f",
+          "code": "unreachable",
+          "missedArea": 101.52343299993808,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx8-e0c-8qz8ql",
+          "code": "unreachable",
+          "missedArea": 101.52340487662646,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx8-e0d-yb910a",
+          "code": "unreachable",
+          "missedArea": 101.52340169663381,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx8-e0e-o8fx5j",
+          "code": "unreachable",
+          "missedArea": 101.52340487662381,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx8-e0f-q8zdvv",
+          "code": "unreachable",
+          "missedArea": 37.92367207634462,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx8-e0g-8x52ni",
+          "code": "unreachable",
+          "missedArea": 101.52342981994443,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx8-e0h-8c0hvy",
+          "code": "unreachable",
+          "missedArea": 101.52343299993808,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx8-e0i-c4g0mm",
+          "code": "unreachable",
+          "missedArea": 101.5234048766236,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx8-e0j-g87v6x",
+          "code": "unreachable",
+          "missedArea": 101.52340487662413,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx8-e0k-jzpfqz",
+          "code": "unreachable",
+          "missedArea": 101.52343299993925,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx8-e0l-4mno6i",
+          "code": "unreachable",
+          "missedArea": 101.523404876624,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx8-e0m-1u560f",
+          "code": "unreachable",
+          "missedArea": 101.52340169663496,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx8-e0n-yc6vy2",
+          "code": "unreachable",
+          "missedArea": 101.52340487662465,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx8-e0o-59kj2l",
+          "code": "unreachable",
+          "missedArea": 101.52340169663205,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx8-e0p-ifhx48",
+          "code": "unreachable",
+          "missedArea": 101.52340169663124,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx8-e0q-42zeso",
+          "code": "unreachable",
+          "missedArea": 101.52343299993812,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx8-e0r-woa8p8",
+          "code": "unreachable",
+          "missedArea": 101.52342981994416,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx8-e0s-8tghlh",
+          "code": "unreachable",
+          "missedArea": 101.52340169663358,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx8-e0t-2d6whc",
+          "code": "unreachable",
+          "missedArea": 101.52342981994285,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx8-e0u-twcrc0",
+          "code": "unreachable",
+          "missedArea": 101.52343299993566,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx8-e0v-ivgvnf",
+          "code": "unreachable",
+          "missedArea": 101.52340169663286,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx8-e0w-8ketst",
+          "code": "unreachable",
+          "missedArea": 101.52342981994344,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx8-e0x-87l9yx",
+          "code": "unreachable",
+          "missedArea": 101.52342981994185,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx8-e0y-8lfyro",
+          "code": "unreachable",
+          "missedArea": 101.52342981994185,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx8-e0z-j7wi33",
+          "code": "unreachable",
+          "missedArea": 101.52343299993599,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx8-e10-8wp1of",
+          "code": "unreachable",
+          "missedArea": 101.523401696631,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx8-e11-g7e8x4",
+          "code": "unreachable",
+          "missedArea": 101.5234016966317,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx8-e12-q3hjv8",
+          "code": "unreachable",
+          "missedArea": 101.52340169663461,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx8-e13-545gkd",
+          "code": "unreachable",
+          "missedArea": 101.52343299993618,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx8-e1a-p3t3n6",
+          "code": "unreachable",
+          "missedArea": 60.588531551544655,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        },
+        {
+          "contourId": "mvukzlx9-e1n-g4c1cg",
+          "code": "unreachable",
+          "missedArea": 60.588542888005875,
+          "message": "A \u00d84 mm cutter cannot clear this contour. Use a smaller cutter or adjust the slot; corner reliefs alone are insufficient."
+        }
+      ]
+    },
+    "tbones": 168,
+    "maxRadiusError": 1.7053025658242404e-13,
+    "closedCut": 63,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      3.2,
+      3.4
+    ],
+    "rectangular_holes": 47,
+    "holes_narrower_than_tool": [
+      {
+        "id": "mvukzlx7-dzn-phhfi9",
+        "width": 3.399992999999995
+      },
+      {
+        "id": "mvukzlx7-dzo-k4gwis",
+        "width": 3.399993000000002
+      },
+      {
+        "id": "mvukzlx7-dzp-tj3s5l",
+        "width": 3.399993000000002
+      },
+      {
+        "id": "mvukzlx7-dzq-sgw388",
+        "width": 3.399993000000002
+      },
+      {
+        "id": "mvukzlx7-dzr-8g5ptt",
+        "width": 3.399993000000009
+      },
+      {
+        "id": "mvukzlx7-dzs-m8spmo",
+        "width": 3.399992999999995
+      },
+      {
+        "id": "mvukzlx7-dzt-cqx2ep",
+        "width": 3.399992999999995
+      },
+      {
+        "id": "mvukzlx7-dzu-scdbii",
+        "width": 3.399992999999995
+      },
+      {
+        "id": "mvukzlx7-dzv-7b271s",
+        "width": 3.399992999999995
+      },
+      {
+        "id": "mvukzlx7-dzw-qzazfs",
+        "width": 3.3999929999998812
+      },
+      {
+        "id": "mvukzlx7-dzx-9ky1ru",
+        "width": 3.3999929999998812
+      },
+      {
+        "id": "mvukzlx7-dzy-ji6zi7",
+        "width": 3.399992999999995
+      },
+      {
+        "id": "mvukzlx7-dzz-4m9t14",
+        "width": 3.399992999999995
+      },
+      {
+        "id": "mvukzlx7-e00-z623hv",
+        "width": 3.3999929999998812
+      },
+      {
+        "id": "mvukzlx7-e01-gfmdix",
+        "width": 3.399992999999995
+      },
+      {
+        "id": "mvukzlx8-e08-p84se2",
+        "width": 3.199994000000004
+      },
+      {
+        "id": "mvukzlx8-e09-bt6fdz",
+        "width": 3.1999940000000606
+      },
+      {
+        "id": "mvukzlx8-e0a-dwie42",
+        "width": 3.1999929999999495
+      },
+      {
+        "id": "mvukzlx8-e0b-rfjw4f",
+        "width": 3.199994000000004
+      },
+      {
+        "id": "mvukzlx8-e0c-8qz8ql",
+        "width": 3.1999930000000063
+      },
+      {
+        "id": "mvukzlx8-e0d-yb910a",
+        "width": 3.1999930000000063
+      },
+      {
+        "id": "mvukzlx8-e0e-o8fx5j",
+        "width": 3.1999929999999495
+      },
+      {
+        "id": "mvukzlx8-e0f-q8zdvv",
+        "width": 3.1999929999999495
+      },
+      {
+        "id": "mvukzlx8-e0g-8x52ni",
+        "width": 3.199994000000004
+      },
+      {
+        "id": "mvukzlx8-e0h-8c0hvy",
+        "width": 3.199994000000004
+      },
+      {
+        "id": "mvukzlx8-e0i-c4g0mm",
+        "width": 3.1999929999999495
+      },
+      {
+        "id": "mvukzlx8-e0j-g87v6x",
+        "width": 3.1999929999999495
+      },
+      {
+        "id": "mvukzlx8-e0k-jzpfqz",
+        "width": 3.1999940000000606
+      },
+      {
+        "id": "mvukzlx8-e0l-4mno6i",
+        "width": 3.1999929999999495
+      },
+      {
+        "id": "mvukzlx8-e0m-1u560f",
+        "width": 3.199993000000063
+      },
+      {
+        "id": "mvukzlx8-e0n-yc6vy2",
+        "width": 3.1999929999999495
+      },
+      {
+        "id": "mvukzlx8-e0o-59kj2l",
+        "width": 3.1999929999999495
+      },
+      {
+        "id": "mvukzlx8-e0p-ifhx48",
+        "width": 3.1999929999999495
+      },
+      {
+        "id": "mvukzlx8-e0q-42zeso",
+        "width": 3.199994000000004
+      },
+      {
+        "id": "mvukzlx8-e0r-woa8p8",
+        "width": 3.199994000000004
+      },
+      {
+        "id": "mvukzlx8-e0s-8tghlh",
+        "width": 3.1999930000000063
+      },
+      {
+        "id": "mvukzlx8-e0t-2d6whc",
+        "width": 3.199994000000004
+      },
+      {
+        "id": "mvukzlx8-e0u-twcrc0",
+        "width": 3.199993999999947
+      },
+      {
+        "id": "mvukzlx8-e0v-ivgvnf",
+        "width": 3.1999930000000063
+      },
+      {
+        "id": "mvukzlx8-e0w-8ketst",
+        "width": 3.199994000000004
+      },
+      {
+        "id": "mvukzlx8-e0x-87l9yx",
+        "width": 3.1999939999998332
+      },
+      {
+        "id": "mvukzlx8-e0y-8lfyro",
+        "width": 3.1999939999998332
+      },
+      {
+        "id": "mvukzlx8-e0z-j7wi33",
+        "width": 3.1999939999998332
+      },
+      {
+        "id": "mvukzlx8-e10-8wp1of",
+        "width": 3.1999929999999495
+      },
+      {
+        "id": "mvukzlx8-e11-g7e8x4",
+        "width": 3.1999929999999495
+      },
+      {
+        "id": "mvukzlx8-e12-q3hjv8",
+        "width": 3.199993000000063
+      },
+      {
+        "id": "mvukzlx8-e13-545gkd",
+        "width": 3.1999940000000606
+      }
+    ],
+    "holes_with_unreachable_area": [
+      {
+        "id": "mvukzlx7-dzn-phhfi9",
+        "lost_area_mm2": 108.35129805740095,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx7-dzo-k4gwis",
+        "lost_area_mm2": 108.35129853212646,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx7-dzp-tj3s5l",
+        "lost_area_mm2": 108.35129853212646,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx7-dzq-sgw388",
+        "lost_area_mm2": 108.3513019321195,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx7-dzr-8g5ptt",
+        "lost_area_mm2": 108.35129805740107,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx7-dzs-m8spmo",
+        "lost_area_mm2": 108.35129805740088,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx7-dzt-cqx2ep",
+        "lost_area_mm2": 108.35130193211928,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx7-dzu-scdbii",
+        "lost_area_mm2": 108.35129853212636,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx7-dzv-7b271s",
+        "lost_area_mm2": 108.35129853212636,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx7-dzw-qzazfs",
+        "lost_area_mm2": 108.35129805740101,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx7-dzx-9ky1ru",
+        "lost_area_mm2": 108.3513019321191,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx7-dzy-ji6zi7",
+        "lost_area_mm2": 108.35129853212655,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx7-dzz-4m9t14",
+        "lost_area_mm2": 108.35129853212655,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx7-e00-z623hv",
+        "lost_area_mm2": 108.35129805740078,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx7-e01-gfmdix",
+        "lost_area_mm2": 108.35129805740061,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx8-e08-p84se2",
+        "lost_area_mm2": 102.20019691651376,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx8-e09-bt6fdz",
+        "lost_area_mm2": 102.20020001148762,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx8-e0a-dwie42",
+        "lost_area_mm2": 38.2004398595784,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx8-e0b-rfjw4f",
+        "lost_area_mm2": 102.20020011650813,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx8-e0c-8qz8ql",
+        "lost_area_mm2": 102.20017196487926,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx8-e0d-yb910a",
+        "lost_area_mm2": 102.20016876488664,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx8-e0e-o8fx5j",
+        "lost_area_mm2": 102.20017185985687,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx8-e0f-q8zdvv",
+        "lost_area_mm2": 38.2004398595784,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx8-e0g-8x52ni",
+        "lost_area_mm2": 102.20019691651441,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx8-e0h-8c0hvy",
+        "lost_area_mm2": 102.20020011650813,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx8-e0i-c4g0mm",
+        "lost_area_mm2": 102.20017185985705,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx8-e0j-g87v6x",
+        "lost_area_mm2": 102.2001714368606,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx8-e0k-jzpfqz",
+        "lost_area_mm2": 102.20019958843854,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx8-e0l-4mno6i",
+        "lost_area_mm2": 102.20017201028914,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx8-e0m-1u560f",
+        "lost_area_mm2": 102.20016876488789,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx8-e0n-yc6vy2",
+        "lost_area_mm2": 102.20017196487899,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx8-e0o-59kj2l",
+        "lost_area_mm2": 102.20016876488631,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx8-e0p-ifhx48",
+        "lost_area_mm2": 102.20016823686773,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx8-e0q-42zeso",
+        "lost_area_mm2": 102.20020011650848,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx8-e0r-woa8p8",
+        "lost_area_mm2": 102.20019691651413,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx8-e0s-8tghlh",
+        "lost_area_mm2": 102.20016876488705,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx8-e0t-2d6whc",
+        "lost_area_mm2": 102.20019706694562,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx8-e0u-twcrc0",
+        "lost_area_mm2": 102.20020001148404,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx8-e0v-ivgvnf",
+        "lost_area_mm2": 102.20016891531944,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx8-e0w-8ketst",
+        "lost_area_mm2": 102.20019706694603,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx8-e0x-87l9yx",
+        "lost_area_mm2": 102.20019638844131,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx8-e0y-8lfyro",
+        "lost_area_mm2": 102.20019638844131,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx8-e0z-j7wi33",
+        "lost_area_mm2": 102.2002001619164,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx8-e10-8wp1of",
+        "lost_area_mm2": 102.20016891531755,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx8-e11-g7e8x4",
+        "lost_area_mm2": 102.20016876488594,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx8-e12-q3hjv8",
+        "lost_area_mm2": 102.2001689153205,
+        "reliefs": 4
+      },
+      {
+        "id": "mvukzlx8-e13-545gkd",
+        "lost_area_mm2": 102.20019958843548,
+        "reliefs": 4
+      }
+    ],
+    "external_contours_with_unreachable_area": [
+      {
+        "id": "mvukzlx8-e1a-p3t3n6",
+        "lost_area_mm2": 61.01323766952725,
+        "largest_component_mm2": 61.01323766952725
+      },
+      {
+        "id": "mvukzlx9-e1n-g4c1cg",
+        "lost_area_mm2": 61.013248873238666,
+        "largest_component_mm2": 61.013248873238666
+      }
+    ],
+    "unapplied_relief_circles": [],
+    "new_contour_crossings": []
+  },
+  {
+    "key": "cozy-6mm-sheet-1-D2",
+    "file": "cozy-6mm-sheet-1",
+    "source_path": "tests/fixtures/safepaws/cozy-6mm-sheet-1.dxf",
+    "diameter": 2,
+    "candidates": 272,
+    "generated": 272,
+    "applied": 272,
+    "skipped": 0,
+    "arcReliefs": 0,
+    "booleanReliefs": 0,
+    "machining": {
+      "complete": true,
+      "toolDiameter": 2,
+      "issues": []
+    },
+    "tbones": 2,
+    "maxRadiusError": 2.566835632933362e-13,
+    "closedCut": 57,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.2,
+      6.4
+    ],
+    "rectangular_holes": 47,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [],
+    "external_contours_with_unreachable_area": [],
+    "unapplied_relief_circles": [],
+    "new_contour_crossings": []
+  },
+  {
+    "key": "cozy-6mm-sheet-1-D3",
+    "file": "cozy-6mm-sheet-1",
+    "source_path": "tests/fixtures/safepaws/cozy-6mm-sheet-1.dxf",
+    "diameter": 3,
+    "candidates": 272,
+    "generated": 272,
+    "applied": 272,
+    "skipped": 0,
+    "arcReliefs": 0,
+    "booleanReliefs": 0,
+    "machining": {
+      "complete": true,
+      "toolDiameter": 3,
+      "issues": []
+    },
+    "tbones": 2,
+    "maxRadiusError": 1.638689184346731e-13,
+    "closedCut": 57,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.2,
+      6.4
+    ],
+    "rectangular_holes": 47,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [],
+    "external_contours_with_unreachable_area": [],
+    "unapplied_relief_circles": [],
+    "new_contour_crossings": []
+  },
+  {
+    "key": "cozy-6mm-sheet-1-D3.175",
+    "file": "cozy-6mm-sheet-1",
+    "source_path": "tests/fixtures/safepaws/cozy-6mm-sheet-1.dxf",
+    "diameter": 3.175,
+    "candidates": 272,
+    "generated": 272,
+    "applied": 272,
+    "skipped": 0,
+    "arcReliefs": 0,
+    "booleanReliefs": 0,
+    "machining": {
+      "complete": true,
+      "toolDiameter": 3.175,
+      "issues": []
+    },
+    "tbones": 2,
+    "maxRadiusError": 3.126388037344441e-13,
+    "closedCut": 57,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.2,
+      6.4
+    ],
+    "rectangular_holes": 47,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [],
+    "external_contours_with_unreachable_area": [],
+    "unapplied_relief_circles": [],
+    "new_contour_crossings": []
+  },
+  {
+    "key": "cozy-6mm-sheet-1-D4",
+    "file": "cozy-6mm-sheet-1",
+    "source_path": "tests/fixtures/safepaws/cozy-6mm-sheet-1.dxf",
+    "diameter": 4,
+    "candidates": 272,
+    "generated": 272,
+    "applied": 272,
+    "skipped": 0,
+    "arcReliefs": 0,
+    "booleanReliefs": 0,
+    "machining": {
+      "complete": true,
+      "toolDiameter": 4,
+      "issues": []
+    },
+    "tbones": 2,
+    "maxRadiusError": 1.9317880628477724e-13,
+    "closedCut": 57,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.2,
+      6.4
+    ],
+    "rectangular_holes": 47,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [],
+    "external_contours_with_unreachable_area": [],
+    "unapplied_relief_circles": [],
+    "new_contour_crossings": []
+  },
+  {
+    "key": "cozy-6mm-sheet-1-D6",
+    "file": "cozy-6mm-sheet-1",
+    "source_path": "tests/fixtures/safepaws/cozy-6mm-sheet-1.dxf",
+    "diameter": 6,
+    "candidates": 272,
+    "generated": 272,
+    "applied": 272,
+    "skipped": 0,
+    "arcReliefs": 0,
+    "booleanReliefs": 0,
+    "machining": {
+      "complete": true,
+      "toolDiameter": 6,
+      "issues": []
+    },
+    "tbones": 106,
+    "maxRadiusError": 6.439293542825908e-14,
+    "closedCut": 57,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.2,
+      6.4
+    ],
+    "rectangular_holes": 47,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [],
+    "external_contours_with_unreachable_area": [],
+    "unapplied_relief_circles": [],
+    "new_contour_crossings": []
+  },
+  {
+    "key": "family-6mm-sheet-1-D2",
+    "file": "family-6mm-sheet-1",
+    "source_path": "tests/fixtures/safepaws/family-6mm-sheet-1.dxf",
+    "diameter": 2,
+    "candidates": 118,
+    "generated": 118,
+    "applied": 118,
+    "skipped": 0,
+    "arcReliefs": 0,
+    "booleanReliefs": 0,
+    "machining": {
+      "complete": true,
+      "toolDiameter": 2,
+      "issues": []
+    },
+    "tbones": 3,
+    "maxRadiusError": 4.39648317751562e-13,
+    "closedCut": 30,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.4
+    ],
+    "rectangular_holes": 10,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [],
+    "external_contours_with_unreachable_area": [],
+    "unapplied_relief_circles": [],
+    "new_contour_crossings": []
+  },
+  {
+    "key": "family-6mm-sheet-1-D3",
+    "file": "family-6mm-sheet-1",
+    "source_path": "tests/fixtures/safepaws/family-6mm-sheet-1.dxf",
+    "diameter": 3,
+    "candidates": 118,
+    "generated": 118,
+    "applied": 118,
+    "skipped": 0,
+    "arcReliefs": 0,
+    "booleanReliefs": 0,
+    "machining": {
+      "complete": true,
+      "toolDiameter": 3,
+      "issues": []
+    },
+    "tbones": 3,
+    "maxRadiusError": 7.838174553853605e-14,
+    "closedCut": 30,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.4
+    ],
+    "rectangular_holes": 10,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [],
+    "external_contours_with_unreachable_area": [],
+    "unapplied_relief_circles": [],
+    "new_contour_crossings": []
+  },
+  {
+    "key": "family-6mm-sheet-1-D3.175",
+    "file": "family-6mm-sheet-1",
+    "source_path": "tests/fixtures/safepaws/family-6mm-sheet-1.dxf",
+    "diameter": 3.175,
+    "candidates": 118,
+    "generated": 118,
+    "applied": 118,
+    "skipped": 0,
+    "arcReliefs": 0,
+    "booleanReliefs": 0,
+    "machining": {
+      "complete": true,
+      "toolDiameter": 3.175,
+      "issues": []
+    },
+    "tbones": 3,
+    "maxRadiusError": 2.2226664952995634e-13,
+    "closedCut": 30,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.4
+    ],
+    "rectangular_holes": 10,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [],
+    "external_contours_with_unreachable_area": [],
+    "unapplied_relief_circles": [],
+    "new_contour_crossings": []
+  },
+  {
+    "key": "family-6mm-sheet-1-D4",
+    "file": "family-6mm-sheet-1",
+    "source_path": "tests/fixtures/safepaws/family-6mm-sheet-1.dxf",
+    "diameter": 4,
+    "candidates": 118,
+    "generated": 118,
+    "applied": 118,
+    "skipped": 0,
+    "arcReliefs": 0,
+    "booleanReliefs": 0,
+    "machining": {
+      "complete": true,
+      "toolDiameter": 4,
+      "issues": []
+    },
+    "tbones": 3,
+    "maxRadiusError": 1.5409895581797173e-13,
+    "closedCut": 30,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.4
+    ],
+    "rectangular_holes": 10,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [],
+    "external_contours_with_unreachable_area": [],
+    "unapplied_relief_circles": [],
+    "new_contour_crossings": []
+  },
+  {
+    "key": "family-6mm-sheet-1-D6",
+    "file": "family-6mm-sheet-1",
+    "source_path": "tests/fixtures/safepaws/family-6mm-sheet-1.dxf",
+    "diameter": 6,
+    "candidates": 118,
+    "generated": 118,
+    "applied": 118,
+    "skipped": 0,
+    "arcReliefs": 0,
+    "booleanReliefs": 0,
+    "machining": {
+      "complete": true,
+      "toolDiameter": 6,
+      "issues": []
+    },
+    "tbones": 33,
+    "maxRadiusError": 1.616484723854228e-13,
+    "closedCut": 30,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.4
+    ],
+    "rectangular_holes": 10,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [],
+    "external_contours_with_unreachable_area": [],
+    "unapplied_relief_circles": [],
+    "new_contour_crossings": []
+  }
+]

@@ -79,27 +79,17 @@ export function buildContour(
   id: string,
   layer: string,
 ): Contour {
-  const raw = extractVertices(segments)
-  let vertices = raw.vertices
-  let edgeTypes = raw.edgeTypes
-
-  const wasClosed =
-    vertices.length > 2 &&
-    distance(vertices[0], vertices[vertices.length - 1]) < 0.01
-
-  if (wasClosed && vertices.length > 2) {
-    vertices = vertices.slice(0, -1)
-    edgeTypes = edgeTypes.slice(0, -1)
+  const vertices = segments.map((s) => ({ ...s.start }))
+  const bulges = segments.map((s) => s.bulge ?? 0)
+  const closed = segments.length > 0 &&
+    distance(segments[0].start, segments[segments.length - 1].end) < 0.01
+  if (!closed && segments.length) {
+    vertices.push({ ...segments[segments.length - 1].end })
+    bulges.push(0)
   }
+  return { id, closed, layer: segments[0]?.layer ?? layer, segments, vertices,
+    bulges, edgeTypes: bulges.map((b) => b ? "arc" : "line") }
 
-  return {
-    id,
-    closed: wasClosed,
-    layer,
-    segments,
-    vertices,
-    edgeTypes,
-  }
 }
 
 export function splitIntoSeparateContours(
@@ -111,49 +101,31 @@ export function splitIntoSeparateContours(
 
   const remaining = [...segments]
   const contours: Contour[] = []
-
-  while (remaining.length > 0) {
-    const chain: Segment[] = [remaining.shift()!]
-
-    let grown: boolean
-    do {
-      grown = false
-      const chainEnd = chain[chain.length - 1].end
-      const chainStart = chain[0].start
-
-      for (let i = remaining.length - 1; i >= 0; i--) {
-        const seg = remaining[i]
-
-        if (distance(chainEnd, seg.start) < tolerance) {
-          chain.push(seg)
+  const reverse = (s: Segment): Segment => ({ ...s, start: s.end, end: s.start,
+    bulge: -(s.bulge ?? 0), vertices: s.vertices?.slice().reverse() })
+  while (remaining.length) {
+    const chain = [remaining.shift()!]
+    if (chain[0].type !== "circle") {
+      while (distance(chain[0].start, chain[chain.length - 1].end) >= 0.01) {
+        const end = chain[chain.length - 1].end
+        const start = chain[0].start
+        let found = false
+        for (let i = 0; i < remaining.length; i++) {
+          const s = remaining[i]
+          if (s.layer !== chain[0].layer || s.type === "circle") continue
+          if (distance(end, s.start) < tolerance) chain.push(s)
+          else if (distance(end, s.end) < tolerance) chain.push(reverse(s))
+          else if (distance(start, s.end) < tolerance) chain.unshift(s)
+          else if (distance(start, s.start) < tolerance) chain.unshift(reverse(s))
+          else continue
           remaining.splice(i, 1)
-          grown = true
-        } else if (distance(chainEnd, seg.end) < tolerance) {
-          chain.push({
-            ...seg,
-            start: { ...seg.end },
-            end: { ...seg.start },
-          })
-          remaining.splice(i, 1)
-          grown = true
-        } else if (distance(chainStart, seg.end) < tolerance) {
-          chain.unshift(seg)
-          remaining.splice(i, 1)
-          grown = true
-        } else if (distance(chainStart, seg.start) < tolerance) {
-          chain.unshift({
-            ...seg,
-            start: { ...seg.end },
-            end: { ...seg.start },
-          })
-          remaining.splice(i, 1)
-          grown = true
+          found = true
+          break // Recompute both endpoints after every addition.
         }
+        if (!found) break
       }
-    } while (grown)
-
-    const contour = buildContour(chain, uid(), layer)
-    contours.push(contour)
+    }
+    contours.push(buildContour(chain, uid(), layer))
   }
 
   return contours

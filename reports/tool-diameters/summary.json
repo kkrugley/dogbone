@@ -1,0 +1,2027 @@
+[
+  {
+    "key": "cozy-3mm-sheet-1-D2",
+    "file": "cozy-3mm-sheet-1",
+    "source_path": "tests/fixtures/safepaws/cozy-3mm-sheet-1.dxf",
+    "diameter": 2,
+    "candidates": 310,
+    "generated": 310,
+    "applied": 310,
+    "skipped": 0,
+    "tbones": 20,
+    "maxRadiusError": 2.2737367544323206e-13,
+    "closedCut": 63,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      3.2,
+      3.4
+    ],
+    "rectangular_holes": 47,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [],
+    "external_contours_with_unreachable_area": [
+      {
+        "id": "mvujhkmv-11b-efm9ot",
+        "lost_area_mm2": 0.08621562402589172,
+        "largest_component_mm2": 0.021553906006500277
+      },
+      {
+        "id": "mvujhkmv-11o-v03wtj",
+        "lost_area_mm2": 0.08621562402582514,
+        "largest_component_mm2": 0.021553906006466984
+      }
+    ]
+  },
+  {
+    "key": "cozy-3mm-sheet-1-D2.5",
+    "file": "cozy-3mm-sheet-1",
+    "source_path": "tests/fixtures/safepaws/cozy-3mm-sheet-1.dxf",
+    "diameter": 2.5,
+    "candidates": 310,
+    "generated": 118,
+    "applied": 118,
+    "skipped": 192,
+    "tbones": 20,
+    "maxRadiusError": 2.2737367544323206e-13,
+    "closedCut": 63,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      3.2,
+      3.4
+    ],
+    "rectangular_holes": 47,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [
+      {
+        "id": "mvujhko5-3pr-49clza",
+        "lost_area_mm2": 1.3417542954175423,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko5-3ps-ijypu8",
+        "lost_area_mm2": 1.341754295417542,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko5-3pt-corimd",
+        "lost_area_mm2": 1.341754295417542,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko5-3pu-kk3ja5",
+        "lost_area_mm2": 1.3417542954175423,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko5-3pv-f90t1s",
+        "lost_area_mm2": 1.3417542954175383,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko5-3pw-5c9j0d",
+        "lost_area_mm2": 1.341754295417542,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko6-3px-6pwvho",
+        "lost_area_mm2": 1.341754295417546,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko6-3py-g3l43b",
+        "lost_area_mm2": 1.3417542954175465,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko6-3pz-ulwn6w",
+        "lost_area_mm2": 1.3417542954175465,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko6-3q0-c5tss7",
+        "lost_area_mm2": 1.3417542954175432,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko6-3q1-x51j6k",
+        "lost_area_mm2": 1.3417542954175474,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko6-3q2-q7ze1w",
+        "lost_area_mm2": 1.341754295417547,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko6-3q3-ew9fb9",
+        "lost_area_mm2": 1.341754295417547,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko6-3q4-wvas3v",
+        "lost_area_mm2": 1.3417542954175472,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko6-3q5-01fhe2",
+        "lost_area_mm2": 1.3417542954175465,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko6-3qc-fclduh",
+        "lost_area_mm2": 1.3417542954176023,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko6-3qd-z6sjm3",
+        "lost_area_mm2": 1.3417542954175967,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko6-3qe-7wvxyq",
+        "lost_area_mm2": 1.3417542954176027,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko6-3qf-sm6l1y",
+        "lost_area_mm2": 1.3417542954176023,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko6-3qg-0kw6j8",
+        "lost_area_mm2": 1.3417542954176027,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko6-3qh-dv7e8l",
+        "lost_area_mm2": 1.3417542954176027,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko6-3qi-v6dr5w",
+        "lost_area_mm2": 1.3417542954176034,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko6-3qj-13wuvw",
+        "lost_area_mm2": 1.3417542954176027,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko6-3qk-0gz1do",
+        "lost_area_mm2": 1.3417542954176023,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko6-3ql-al6du8",
+        "lost_area_mm2": 1.3417542954176023,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko6-3qm-0iq3fg",
+        "lost_area_mm2": 1.3417542954176023,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko6-3qn-8d71yg",
+        "lost_area_mm2": 1.3417542954176023,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko6-3qo-7ad9iq",
+        "lost_area_mm2": 1.341754295417603,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko6-3qp-oxijo2",
+        "lost_area_mm2": 1.341754295417603,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko6-3qq-ogtpd3",
+        "lost_area_mm2": 1.3417542954176036,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko6-3qr-cje8gz",
+        "lost_area_mm2": 1.3417542954176034,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko6-3qs-j4q7tx",
+        "lost_area_mm2": 1.3417542954176034,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko6-3qt-tn9m9a",
+        "lost_area_mm2": 1.3417542954176023,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko6-3qu-bo3qvu",
+        "lost_area_mm2": 1.3417542954175745,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko6-3qv-hrzwi1",
+        "lost_area_mm2": 1.3417542954175745,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko6-3qw-n16dcd",
+        "lost_area_mm2": 1.3417542954175752,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko6-3qx-u5czwu",
+        "lost_area_mm2": 1.3417542954175463,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko6-3qy-hwypyy",
+        "lost_area_mm2": 1.341754295417541,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko6-3qz-jp0a07",
+        "lost_area_mm2": 1.3417542954175472,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko6-3r0-5uh285",
+        "lost_area_mm2": 1.3417542954175468,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko6-3r1-mroskd",
+        "lost_area_mm2": 1.3417542954175468,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko6-3r2-zyzp7w",
+        "lost_area_mm2": 1.3417542954175468,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko6-3r3-xb90in",
+        "lost_area_mm2": 1.3417542954175472,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko6-3r4-ah7cza",
+        "lost_area_mm2": 1.3417542954175472,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko6-3r5-2co1a5",
+        "lost_area_mm2": 1.3417542954175752,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko6-3r6-c8y0ya",
+        "lost_area_mm2": 1.3417542954175472,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhko6-3r7-czxyml",
+        "lost_area_mm2": 1.3417542954175472,
+        "reliefs": 0
+      }
+    ],
+    "external_contours_with_unreachable_area": [
+      {
+        "id": "mvujhko7-3re-sogyc8",
+        "lost_area_mm2": 0.6708771477087736,
+        "largest_component_mm2": 0.3354385738543868
+      },
+      {
+        "id": "mvujhko7-3rl-pq1k3m",
+        "lost_area_mm2": 0.13471191254062112,
+        "largest_component_mm2": 0.0336779781351589
+      },
+      {
+        "id": "mvujhko7-3rr-x8l60h",
+        "lost_area_mm2": 0.6708771477087736,
+        "largest_component_mm2": 0.3354385738543868
+      },
+      {
+        "id": "mvujhko7-3ry-ybi7u8",
+        "lost_area_mm2": 0.13471191254053788,
+        "largest_component_mm2": 0.033677978135151665
+      }
+    ]
+  },
+  {
+    "key": "cozy-3mm-sheet-1-D3",
+    "file": "cozy-3mm-sheet-1",
+    "source_path": "tests/fixtures/safepaws/cozy-3mm-sheet-1.dxf",
+    "diameter": 3,
+    "candidates": 310,
+    "generated": 118,
+    "applied": 118,
+    "skipped": 192,
+    "tbones": 70,
+    "maxRadiusError": 2.2737367544323206e-13,
+    "closedCut": 63,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      3.2,
+      3.4
+    ],
+    "rectangular_holes": 47,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [
+      {
+        "id": "mvujhkp4-6g1-o92ur2",
+        "lost_area_mm2": 1.932126185401252,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6g2-snbxuv",
+        "lost_area_mm2": 1.9321261854012484,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6g3-oq0cib",
+        "lost_area_mm2": 1.9321261854012484,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6g4-cfcaxt",
+        "lost_area_mm2": 1.9321261854012604,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6g5-ffkttp",
+        "lost_area_mm2": 1.9321261854012581,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6g6-yqlbdm",
+        "lost_area_mm2": 1.932126185401248,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6g7-xixcaf",
+        "lost_area_mm2": 1.9321261854012493,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6g8-2n6dby",
+        "lost_area_mm2": 1.9321261854012373,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6g9-c47851",
+        "lost_area_mm2": 1.9321261854012373,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6ga-fafasx",
+        "lost_area_mm2": 1.9321261854012581,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6gb-vq87zy",
+        "lost_area_mm2": 1.9321261854012604,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6gc-cvhr2h",
+        "lost_area_mm2": 1.932126185401248,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6gd-6ki30n",
+        "lost_area_mm2": 1.932126185401248,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6ge-l7azx8",
+        "lost_area_mm2": 1.9321261854012515,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6gf-dcq0v6",
+        "lost_area_mm2": 1.9321261854012408,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6gm-8mahvh",
+        "lost_area_mm2": 1.9321261854013183,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6gn-f4pbmh",
+        "lost_area_mm2": 1.9321261854013154,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6go-k110pt",
+        "lost_area_mm2": 1.9321261854013192,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6gp-j4j94x",
+        "lost_area_mm2": 1.932126185401307,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6gq-zi8l16",
+        "lost_area_mm2": 1.9321261854013192,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6gr-f9e0vl",
+        "lost_area_mm2": 1.9321261854013192,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6gs-yvx4p2",
+        "lost_area_mm2": 1.9321261854013196,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6gt-5d9kn3",
+        "lost_area_mm2": 1.9321261854013192,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6gu-8y1hb9",
+        "lost_area_mm2": 1.932126185401307,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6gv-b9fx3q",
+        "lost_area_mm2": 1.9321261854013088,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6gw-yqvlpb",
+        "lost_area_mm2": 1.9321261854013088,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6gx-fqlxz5",
+        "lost_area_mm2": 1.932126185401307,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6gy-tmlv5c",
+        "lost_area_mm2": 1.9321261854013139,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6gz-9u3g6p",
+        "lost_area_mm2": 1.9321261854013139,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6h0-nake72",
+        "lost_area_mm2": 1.9321261854013176,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6h1-3gfuw4",
+        "lost_area_mm2": 1.9321261854013176,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6h2-100usv",
+        "lost_area_mm2": 1.9321261854013176,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6h3-yp5w4b",
+        "lost_area_mm2": 1.932126185401307,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6h4-nmqzmv",
+        "lost_area_mm2": 1.9321261854012795,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6h5-8sn44b",
+        "lost_area_mm2": 1.9321261854012777,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6h6-6x7u7w",
+        "lost_area_mm2": 1.9321261854012899,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6h7-psibrt",
+        "lost_area_mm2": 1.9321261854012595,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6h8-xef9wg",
+        "lost_area_mm2": 1.9321261854012564,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6h9-090sux",
+        "lost_area_mm2": 1.9321261854012606,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6ha-66qz5k",
+        "lost_area_mm2": 1.9321261854012484,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6hb-jnu9sp",
+        "lost_area_mm2": 1.9321261854012484,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6hc-wqd43s",
+        "lost_area_mm2": 1.9321261854012484,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6hd-afabzz",
+        "lost_area_mm2": 1.932126185401255,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6he-yyk3qo",
+        "lost_area_mm2": 1.9321261854012586,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6hf-rusl3q",
+        "lost_area_mm2": 1.9321261854012879,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6hg-w65la1",
+        "lost_area_mm2": 1.9321261854012586,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkp4-6hh-zjkw67",
+        "lost_area_mm2": 1.932126185401255,
+        "reliefs": 0
+      }
+    ],
+    "external_contours_with_unreachable_area": [
+      {
+        "id": "mvujhkp5-6ho-ydvn5i",
+        "lost_area_mm2": 0.9660630927006293,
+        "largest_component_mm2": 0.4830315463503147
+      },
+      {
+        "id": "mvujhkp5-6hv-c4927p",
+        "lost_area_mm2": 0.20796226388609307,
+        "largest_component_mm2": 0.048496288514599806
+      },
+      {
+        "id": "mvujhkp5-6i1-cw6kt4",
+        "lost_area_mm2": 0.9660630927006293,
+        "largest_component_mm2": 0.4830315463503147
+      },
+      {
+        "id": "mvujhkp5-6i8-4dh743",
+        "lost_area_mm2": 0.2079622619996671,
+        "largest_component_mm2": 0.048496288514599806
+      }
+    ]
+  },
+  {
+    "key": "cozy-3mm-sheet-1-D3.175",
+    "file": "cozy-3mm-sheet-1",
+    "source_path": "tests/fixtures/safepaws/cozy-3mm-sheet-1.dxf",
+    "diameter": 3.175,
+    "candidates": 310,
+    "generated": 118,
+    "applied": 118,
+    "skipped": 192,
+    "tbones": 72,
+    "maxRadiusError": 1.8207657603852567e-13,
+    "closedCut": 63,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      3.2,
+      3.4
+    ],
+    "rectangular_holes": 47,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [
+      {
+        "id": "mvujhkpy-96b-kjq3yy",
+        "lost_area_mm2": 2.1641155030787953,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpy-96c-52grk0",
+        "lost_area_mm2": 2.164115503078764,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpy-96d-nysb6j",
+        "lost_area_mm2": 2.164115503078764,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpy-96e-lmx46r",
+        "lost_area_mm2": 2.1641155030789756,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpy-96f-0we16q",
+        "lost_area_mm2": 2.1641155030789805,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpy-96g-6rn4h5",
+        "lost_area_mm2": 2.1641155030788135,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpy-96h-egf0yz",
+        "lost_area_mm2": 2.164115503078809,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpy-96i-qaz80e",
+        "lost_area_mm2": 2.164115503078598,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpy-96j-1obzyh",
+        "lost_area_mm2": 2.164115503078598,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpy-96k-6g7c53",
+        "lost_area_mm2": 2.1641155030788752,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpy-96l-dpgr61",
+        "lost_area_mm2": 2.1641155030788704,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpy-96m-fbx1zb",
+        "lost_area_mm2": 2.1641155030786594,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpy-96n-q0hftr",
+        "lost_area_mm2": 2.1641155030786594,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpy-96o-gmiksi",
+        "lost_area_mm2": 2.1641155030786896,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpy-96p-3dpv2i",
+        "lost_area_mm2": 2.1641155030786283,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpz-96w-4r977w",
+        "lost_area_mm2": 2.1641155030795773,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpz-96x-dkmg87",
+        "lost_area_mm2": 2.164115503079623,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpz-96y-cvs0xt",
+        "lost_area_mm2": 2.164115503079616,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpz-96z-h67daq",
+        "lost_area_mm2": 2.164115503079405,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpz-970-k5yspa",
+        "lost_area_mm2": 2.164115503079616,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpz-971-4x4u39",
+        "lost_area_mm2": 2.164115503079616,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpz-972-c5ilq6",
+        "lost_area_mm2": 2.164115503079616,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpz-973-if5v5m",
+        "lost_area_mm2": 2.164115503079616,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpz-974-pvogqw",
+        "lost_area_mm2": 2.164115503079405,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpz-975-wloyzs",
+        "lost_area_mm2": 2.164115503079405,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpz-976-l48blx",
+        "lost_area_mm2": 2.164115503079405,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpz-977-k5d4a9",
+        "lost_area_mm2": 2.164115503079405,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpz-978-ka9qkb",
+        "lost_area_mm2": 2.1641155030794357,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpz-979-vhkniz",
+        "lost_area_mm2": 2.1641155030794357,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpz-97a-c6vijb",
+        "lost_area_mm2": 2.164115503079466,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpz-97b-kikzmk",
+        "lost_area_mm2": 2.164115503079466,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpz-97c-13evrf",
+        "lost_area_mm2": 2.164115503079466,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpz-97d-ffmidb",
+        "lost_area_mm2": 2.164115503079405,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpz-97e-iebapd",
+        "lost_area_mm2": 2.164115503079032,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpz-97f-6961oq",
+        "lost_area_mm2": 2.164115503079032,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpz-97g-811iti",
+        "lost_area_mm2": 2.164115503079243,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpz-97h-wbwdai",
+        "lost_area_mm2": 2.16411550307883,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpz-97i-kc0duz",
+        "lost_area_mm2": 2.1641155030788766,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpz-97j-v283o9",
+        "lost_area_mm2": 2.16411550307887,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpz-97k-gj2w3a",
+        "lost_area_mm2": 2.164115503078659,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpz-97l-mvd152",
+        "lost_area_mm2": 2.164115503078659,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpz-97m-7iauhf",
+        "lost_area_mm2": 2.164115503078659,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpz-97n-wmlm1o",
+        "lost_area_mm2": 2.1641155030786896,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpz-97o-gwjnuw",
+        "lost_area_mm2": 2.1641155030787202,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpz-97p-d9lywb",
+        "lost_area_mm2": 2.1641155030790933,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpz-97q-a1wl2z",
+        "lost_area_mm2": 2.1641155030787202,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkpz-97r-n6inl5",
+        "lost_area_mm2": 2.1641155030786896,
+        "reliefs": 0
+      }
+    ],
+    "external_contours_with_unreachable_area": [
+      {
+        "id": "mvujhkpz-97y-hhw1i8",
+        "lost_area_mm2": 1.0820577515393601,
+        "largest_component_mm2": 0.5410288757696802
+      },
+      {
+        "id": "mvujhkpz-985-g6merx",
+        "lost_area_mm2": 0.23366418608783435,
+        "largest_component_mm2": 0.05431921093426007
+      },
+      {
+        "id": "mvujhkq0-98b-dk4ybz",
+        "lost_area_mm2": 1.0820577515393601,
+        "largest_component_mm2": 0.5410288757696802
+      },
+      {
+        "id": "mvujhkq0-98i-xpor5x",
+        "lost_area_mm2": 0.23366418622829002,
+        "largest_component_mm2": 0.05431921093426007
+      }
+    ]
+  },
+  {
+    "key": "cozy-3mm-sheet-1-D4",
+    "file": "cozy-3mm-sheet-1",
+    "source_path": "tests/fixtures/safepaws/cozy-3mm-sheet-1.dxf",
+    "diameter": 4,
+    "candidates": 310,
+    "generated": 118,
+    "applied": 118,
+    "skipped": 192,
+    "tbones": 72,
+    "maxRadiusError": 1.7053025658242404e-13,
+    "closedCut": 63,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      3.2,
+      3.4
+    ],
+    "rectangular_holes": 47,
+    "holes_narrower_than_tool": [
+      {
+        "id": "mvujhkql-bwl-2rcmbw",
+        "width": 3.399992999999995
+      },
+      {
+        "id": "mvujhkql-bwm-nd6g26",
+        "width": 3.399993000000002
+      },
+      {
+        "id": "mvujhkql-bwn-rt1pch",
+        "width": 3.399993000000002
+      },
+      {
+        "id": "mvujhkql-bwo-lltydh",
+        "width": 3.399993000000002
+      },
+      {
+        "id": "mvujhkql-bwp-p2scez",
+        "width": 3.399993000000009
+      },
+      {
+        "id": "mvujhkql-bwq-urbh6r",
+        "width": 3.399992999999995
+      },
+      {
+        "id": "mvujhkql-bwr-aqevgj",
+        "width": 3.399992999999995
+      },
+      {
+        "id": "mvujhkql-bws-por2rf",
+        "width": 3.399992999999995
+      },
+      {
+        "id": "mvujhkql-bwt-25mc1v",
+        "width": 3.399992999999995
+      },
+      {
+        "id": "mvujhkql-bwu-ez1xwy",
+        "width": 3.3999929999998812
+      },
+      {
+        "id": "mvujhkql-bwv-7xkk3l",
+        "width": 3.3999929999998812
+      },
+      {
+        "id": "mvujhkql-bww-wfhghj",
+        "width": 3.399992999999995
+      },
+      {
+        "id": "mvujhkql-bwx-8d90q4",
+        "width": 3.399992999999995
+      },
+      {
+        "id": "mvujhkql-bwy-1vs3ft",
+        "width": 3.3999929999998812
+      },
+      {
+        "id": "mvujhkql-bwz-wc99lc",
+        "width": 3.399992999999995
+      },
+      {
+        "id": "mvujhkql-bx6-77o5jv",
+        "width": 3.199994000000004
+      },
+      {
+        "id": "mvujhkql-bx7-9kxfgj",
+        "width": 3.1999940000000606
+      },
+      {
+        "id": "mvujhkql-bx8-ae7tup",
+        "width": 3.1999929999999495
+      },
+      {
+        "id": "mvujhkql-bx9-1hk1ho",
+        "width": 3.199994000000004
+      },
+      {
+        "id": "mvujhkql-bxa-7afghl",
+        "width": 3.1999930000000063
+      },
+      {
+        "id": "mvujhkql-bxb-uwn95v",
+        "width": 3.1999930000000063
+      },
+      {
+        "id": "mvujhkql-bxc-7jc4ld",
+        "width": 3.1999929999999495
+      },
+      {
+        "id": "mvujhkql-bxd-aqt7qn",
+        "width": 3.1999929999999495
+      },
+      {
+        "id": "mvujhkql-bxe-ck5sd0",
+        "width": 3.199994000000004
+      },
+      {
+        "id": "mvujhkql-bxf-6yek1u",
+        "width": 3.199994000000004
+      },
+      {
+        "id": "mvujhkql-bxg-pm02w2",
+        "width": 3.1999929999999495
+      },
+      {
+        "id": "mvujhkql-bxh-a6slbc",
+        "width": 3.1999929999999495
+      },
+      {
+        "id": "mvujhkql-bxi-vhy5y9",
+        "width": 3.1999940000000606
+      },
+      {
+        "id": "mvujhkql-bxj-tfzno8",
+        "width": 3.1999929999999495
+      },
+      {
+        "id": "mvujhkql-bxk-cun64j",
+        "width": 3.199993000000063
+      },
+      {
+        "id": "mvujhkql-bxl-9tsyj0",
+        "width": 3.1999929999999495
+      },
+      {
+        "id": "mvujhkql-bxm-3neths",
+        "width": 3.1999929999999495
+      },
+      {
+        "id": "mvujhkql-bxn-3kki6r",
+        "width": 3.1999929999999495
+      },
+      {
+        "id": "mvujhkql-bxo-hojw5x",
+        "width": 3.199994000000004
+      },
+      {
+        "id": "mvujhkql-bxp-irhu60",
+        "width": 3.199994000000004
+      },
+      {
+        "id": "mvujhkql-bxq-q5yzcx",
+        "width": 3.1999930000000063
+      },
+      {
+        "id": "mvujhkql-bxr-7dph78",
+        "width": 3.199994000000004
+      },
+      {
+        "id": "mvujhkql-bxs-aeun30",
+        "width": 3.199993999999947
+      },
+      {
+        "id": "mvujhkql-bxt-byw3vp",
+        "width": 3.1999930000000063
+      },
+      {
+        "id": "mvujhkql-bxu-krclby",
+        "width": 3.199994000000004
+      },
+      {
+        "id": "mvujhkql-bxv-u5jwe9",
+        "width": 3.1999939999998332
+      },
+      {
+        "id": "mvujhkql-bxw-mm9wtt",
+        "width": 3.1999939999998332
+      },
+      {
+        "id": "mvujhkql-bxx-5t9sz2",
+        "width": 3.1999939999998332
+      },
+      {
+        "id": "mvujhkql-bxy-608vtk",
+        "width": 3.1999929999999495
+      },
+      {
+        "id": "mvujhkql-bxz-ar1z14",
+        "width": 3.1999929999999495
+      },
+      {
+        "id": "mvujhkql-by0-q9rjf8",
+        "width": 3.199993000000063
+      },
+      {
+        "id": "mvujhkql-by1-wztihp",
+        "width": 3.1999940000000606
+      }
+    ],
+    "holes_with_unreachable_area": [
+      {
+        "id": "mvujhkql-bwl-2rcmbw",
+        "lost_area_mm2": 137.35944180056694,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bwm-nd6g26",
+        "lost_area_mm2": 137.3594418005671,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bwn-rt1pch",
+        "lost_area_mm2": 137.3594418005671,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bwo-lltydh",
+        "lost_area_mm2": 137.35944520056,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bwp-p2scez",
+        "lost_area_mm2": 137.35944180056703,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bwq-urbh6r",
+        "lost_area_mm2": 137.3594418005668,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bwr-aqevgj",
+        "lost_area_mm2": 137.35944520055983,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bws-por2rf",
+        "lost_area_mm2": 137.35944180056683,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bwt-25mc1v",
+        "lost_area_mm2": 137.35944180056683,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bwu-ez1xwy",
+        "lost_area_mm2": 137.35944180056674,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bwv-7xkk3l",
+        "lost_area_mm2": 137.35944520055972,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bww-wfhghj",
+        "lost_area_mm2": 137.35944180056683,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bwx-8d90q4",
+        "lost_area_mm2": 137.35944180056683,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bwy-1vs3ft",
+        "lost_area_mm2": 137.35944180056663,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bwz-wc99lc",
+        "lost_area_mm2": 137.35944180056663,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bx6-77o5jv",
+        "lost_area_mm2": 128.63949960048586,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bx7-9kxfgj",
+        "lost_area_mm2": 128.6395028004824,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bx8-ae7tup",
+        "lost_area_mm2": 64.639730600279,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bx9-1hk1ho",
+        "lost_area_mm2": 128.63950280048022,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bxa-7afghl",
+        "lost_area_mm2": 128.6394626005603,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bxb-uwn95v",
+        "lost_area_mm2": 128.6394594005677,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bxc-7jc4ld",
+        "lost_area_mm2": 128.63946260055795,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bxd-aqt7qn",
+        "lost_area_mm2": 64.639730600279,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bxe-ck5sd0",
+        "lost_area_mm2": 128.6394996004866,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bxf-6yek1u",
+        "lost_area_mm2": 128.63950280048022,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bxg-pm02w2",
+        "lost_area_mm2": 128.63946260055786,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bxh-a6slbc",
+        "lost_area_mm2": 128.63946260055803,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bxi-vhy5y9",
+        "lost_area_mm2": 128.6395028004825,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bxj-tfzno8",
+        "lost_area_mm2": 128.63946260055786,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bxk-cun64j",
+        "lost_area_mm2": 128.63945940056925,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bxl-9tsyj0",
+        "lost_area_mm2": 128.63946260055803,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bxm-3neths",
+        "lost_area_mm2": 128.6394594005654,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bxn-3kki6r",
+        "lost_area_mm2": 128.63945940056485,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bxo-hojw5x",
+        "lost_area_mm2": 128.63950280048059,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bxp-irhu60",
+        "lost_area_mm2": 128.6394996004866,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bxq-q5yzcx",
+        "lost_area_mm2": 128.6394594005677,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bxr-7dph78",
+        "lost_area_mm2": 128.63949960048623,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bxs-aeun30",
+        "lost_area_mm2": 128.63950280047783,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bxt-byw3vp",
+        "lost_area_mm2": 128.63945940056732,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bxu-krclby",
+        "lost_area_mm2": 128.63949960048623,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bxv-u5jwe9",
+        "lost_area_mm2": 128.63949960048393,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bxw-mm9wtt",
+        "lost_area_mm2": 128.63949960048393,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bxx-5t9sz2",
+        "lost_area_mm2": 128.63950280047774,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bxy-608vtk",
+        "lost_area_mm2": 128.63945940056504,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-bxz-ar1z14",
+        "lost_area_mm2": 128.6394594005654,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-by0-q9rjf8",
+        "lost_area_mm2": 128.63945940056962,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkql-by1-wztihp",
+        "lost_area_mm2": 128.63950280047794,
+        "reliefs": 0
+      }
+    ],
+    "external_contours_with_unreachable_area": [
+      {
+        "id": "mvujhkql-by8-l2l8v2",
+        "lost_area_mm2": 74.23369830596921,
+        "largest_component_mm2": 74.23369830596921
+      },
+      {
+        "id": "mvujhkql-byf-zzyjpr",
+        "lost_area_mm2": 0.37320993897212873,
+        "largest_component_mm2": 0.08621562402604954
+      },
+      {
+        "id": "mvujhkql-byl-1viisf",
+        "lost_area_mm2": 74.23286779956057,
+        "largest_component_mm2": 74.23286779956057
+      },
+      {
+        "id": "mvujhkql-bys-7z0jem",
+        "lost_area_mm2": 0.37320996086883185,
+        "largest_component_mm2": 0.0862156240260401
+      }
+    ]
+  },
+  {
+    "key": "cozy-6mm-sheet-1-D2",
+    "file": "cozy-6mm-sheet-1",
+    "source_path": "tests/fixtures/safepaws/cozy-6mm-sheet-1.dxf",
+    "diameter": 2,
+    "candidates": 262,
+    "generated": 262,
+    "applied": 262,
+    "skipped": 0,
+    "tbones": 2,
+    "maxRadiusError": 2.091660178393795e-13,
+    "closedCut": 57,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.2,
+      6.4
+    ],
+    "rectangular_holes": 47,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [],
+    "external_contours_with_unreachable_area": [
+      {
+        "id": "mvujhksi-l8r-m0ds2b",
+        "lost_area_mm2": 0.08621562402581598,
+        "largest_component_mm2": 0.021553906006466984
+      },
+      {
+        "id": "mvujhksj-l90-006nxh",
+        "lost_area_mm2": 0.08621562402601321,
+        "largest_component_mm2": 0.02155390600652336
+      }
+    ]
+  },
+  {
+    "key": "cozy-6mm-sheet-1-D3",
+    "file": "cozy-6mm-sheet-1",
+    "source_path": "tests/fixtures/safepaws/cozy-6mm-sheet-1.dxf",
+    "diameter": 3,
+    "candidates": 262,
+    "generated": 262,
+    "applied": 262,
+    "skipped": 0,
+    "tbones": 2,
+    "maxRadiusError": 1.4854784069484595e-13,
+    "closedCut": 57,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.2,
+      6.4
+    ],
+    "rectangular_holes": 47,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [],
+    "external_contours_with_unreachable_area": [
+      {
+        "id": "mvujhkuc-10ya-zw62ls",
+        "lost_area_mm2": 0.1939851540583688,
+        "largest_component_mm2": 0.048496288514599806
+      },
+      {
+        "id": "mvujhkud-10yj-pf0ji5",
+        "lost_area_mm2": 0.19398515405841837,
+        "largest_component_mm2": 0.04849628851461257
+      }
+    ]
+  },
+  {
+    "key": "cozy-6mm-sheet-1-D3.175",
+    "file": "cozy-6mm-sheet-1",
+    "source_path": "tests/fixtures/safepaws/cozy-6mm-sheet-1.dxf",
+    "diameter": 3.175,
+    "candidates": 262,
+    "generated": 262,
+    "applied": 262,
+    "skipped": 0,
+    "tbones": 2,
+    "maxRadiusError": 1.0169642905566434e-13,
+    "closedCut": 57,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.2,
+      6.4
+    ],
+    "rectangular_holes": 47,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [],
+    "external_contours_with_unreachable_area": [
+      {
+        "id": "mvujhkvs-1gnt-nsjzt8",
+        "lost_area_mm2": 0.21727684373676756,
+        "largest_component_mm2": 0.05431921093426007
+      },
+      {
+        "id": "mvujhkvt-1go2-0cc6st",
+        "lost_area_mm2": 0.21727684373685402,
+        "largest_component_mm2": 0.05431921093425606
+      }
+    ]
+  },
+  {
+    "key": "cozy-6mm-sheet-1-D4",
+    "file": "cozy-6mm-sheet-1",
+    "source_path": "tests/fixtures/safepaws/cozy-6mm-sheet-1.dxf",
+    "diameter": 4,
+    "candidates": 262,
+    "generated": 262,
+    "applied": 262,
+    "skipped": 0,
+    "tbones": 2,
+    "maxRadiusError": 1.4654943925052066e-13,
+    "closedCut": 57,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.2,
+      6.4
+    ],
+    "rectangular_holes": 47,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [],
+    "external_contours_with_unreachable_area": [
+      {
+        "id": "mvujhkxd-1wdc-fprgif",
+        "lost_area_mm2": 0.34486249610407405,
+        "largest_component_mm2": 0.0862156240260401
+      },
+      {
+        "id": "mvujhkxe-1wdl-o2ai1c",
+        "lost_area_mm2": 0.34486249610408704,
+        "largest_component_mm2": 0.0862156240260342
+      }
+    ]
+  },
+  {
+    "key": "cozy-6mm-sheet-1-D6",
+    "file": "cozy-6mm-sheet-1",
+    "source_path": "tests/fixtures/safepaws/cozy-6mm-sheet-1.dxf",
+    "diameter": 6,
+    "candidates": 262,
+    "generated": 70,
+    "applied": 70,
+    "skipped": 192,
+    "tbones": 10,
+    "maxRadiusError": 6.439293542825908e-14,
+    "closedCut": 57,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.2,
+      6.4
+    ],
+    "rectangular_holes": 47,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [
+      {
+        "id": "mvujhkyy-2c0e-p9klvx",
+        "lost_area_mm2": 7.728504741605004,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyy-2c0f-253pbp",
+        "lost_area_mm2": 7.728504741605004,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyy-2c0g-3f09j5",
+        "lost_area_mm2": 7.728504741604956,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyy-2c0h-s9tsym",
+        "lost_area_mm2": 7.728504741604956,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyy-2c0i-8xvwhv",
+        "lost_area_mm2": 7.728504741604956,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyy-2c0j-xm9tpk",
+        "lost_area_mm2": 7.728504741605001,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyy-2c0k-up2dwy",
+        "lost_area_mm2": 7.728504741605001,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyy-2c0l-i00tkp",
+        "lost_area_mm2": 7.728504741605001,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyy-2c0m-947w6r",
+        "lost_area_mm2": 7.72850474160505,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyy-2c0n-x1sl6u",
+        "lost_area_mm2": 7.72850474160505,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyy-2c0o-n9b2xe",
+        "lost_area_mm2": 7.728504741605046,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyy-2c0p-i7y9dv",
+        "lost_area_mm2": 7.728504741605046,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyy-2c0q-tm44rg",
+        "lost_area_mm2": 7.728504741604997,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyy-2c0r-kl71ks",
+        "lost_area_mm2": 7.728504741604997,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyy-2c0s-kcvk89",
+        "lost_area_mm2": 7.728504741604997,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyz-2c12-3hi25a",
+        "lost_area_mm2": 7.728504741605001,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyz-2c13-dn300s",
+        "lost_area_mm2": 7.728504741605025,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyz-2c14-q0564z",
+        "lost_area_mm2": 7.728504741605043,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyz-2c15-3d85re",
+        "lost_area_mm2": 7.728504741605043,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyz-2c16-wm3696",
+        "lost_area_mm2": 7.728504741605042,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyz-2c17-myxf7j",
+        "lost_area_mm2": 7.728504741605043,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyz-2c18-eli4yz",
+        "lost_area_mm2": 7.728504741605041,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyz-2c19-8b2nd3",
+        "lost_area_mm2": 7.728504741605043,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyz-2c1a-b6bzpt",
+        "lost_area_mm2": 7.728504741605042,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyz-2c1b-aiurfj",
+        "lost_area_mm2": 7.728504741605043,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyz-2c1c-oph7ia",
+        "lost_area_mm2": 7.728504741605041,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyz-2c1d-oswm93",
+        "lost_area_mm2": 7.728504741605027,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyz-2c1e-76zt0j",
+        "lost_area_mm2": 7.728504741605034,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyz-2c1f-zsrkxa",
+        "lost_area_mm2": 7.728504741605038,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyz-2c1g-7tcc1i",
+        "lost_area_mm2": 7.728504741605041,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyz-2c1h-7muo5p",
+        "lost_area_mm2": 7.728504741605043,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyz-2c1i-096ktm",
+        "lost_area_mm2": 7.728504741605043,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyz-2c1j-pigy99",
+        "lost_area_mm2": 7.728504741605029,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyz-2c1k-gu0z76",
+        "lost_area_mm2": 7.728504741605043,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyz-2c1l-t2yfrx",
+        "lost_area_mm2": 7.728504741605042,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyz-2c1m-ud5bkk",
+        "lost_area_mm2": 7.728504741605043,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyz-2c1n-6c8ogt",
+        "lost_area_mm2": 7.728504741604956,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyz-2c1o-9918ya",
+        "lost_area_mm2": 7.728504741604976,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyz-2c1p-b2qjgz",
+        "lost_area_mm2": 7.728504741604994,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyz-2c1q-ylba3t",
+        "lost_area_mm2": 7.728504741604993,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyz-2c1r-zopqk5",
+        "lost_area_mm2": 7.728504741604999,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyz-2c1s-x2gaq7",
+        "lost_area_mm2": 7.728504741604985,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyz-2c1t-uyphkt",
+        "lost_area_mm2": 7.728504741604992,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyz-2c1u-zhcswl",
+        "lost_area_mm2": 7.728504741604988,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyz-2c1v-w52xai",
+        "lost_area_mm2": 7.728504741605043,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyz-2c1w-q919pm",
+        "lost_area_mm2": 7.728504741604993,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhkyz-2c1x-qiuo40",
+        "lost_area_mm2": 7.728504741604996,
+        "reliefs": 0
+      }
+    ],
+    "external_contours_with_unreachable_area": [
+      {
+        "id": "mvujhkz0-2c26-71wnyz",
+        "lost_area_mm2": 3.864252370802489,
+        "largest_component_mm2": 1.9321261854012448
+      },
+      {
+        "id": "mvujhkz2-2c2v-hw3zmn",
+        "lost_area_mm2": 0.7868200495388548,
+        "largest_component_mm2": 0.19398515405839653
+      },
+      {
+        "id": "mvujhkz2-2c34-i749hh",
+        "lost_area_mm2": 0.7868200495395546,
+        "largest_component_mm2": 0.19398515405856592
+      },
+      {
+        "id": "mvujhkz2-2c3c-petnb7",
+        "lost_area_mm2": 3.864252370802513,
+        "largest_component_mm2": 1.9321261854012581
+      }
+    ]
+  },
+  {
+    "key": "family-6mm-sheet-1-D2",
+    "file": "family-6mm-sheet-1",
+    "source_path": "tests/fixtures/safepaws/family-6mm-sheet-1.dxf",
+    "diameter": 2,
+    "candidates": 103,
+    "generated": 103,
+    "applied": 103,
+    "skipped": 0,
+    "tbones": 3,
+    "maxRadiusError": 2.1294077612310502e-13,
+    "closedCut": 30,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.4
+    ],
+    "rectangular_holes": 10,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [],
+    "external_contours_with_unreachable_area": [
+      {
+        "id": "mvujhl2g-2wow-99bvs3",
+        "lost_area_mm2": 0.08621562079249225,
+        "largest_component_mm2": 0.021553910039771106
+      },
+      {
+        "id": "mvujhl2m-2wpz-bf3t1y",
+        "lost_area_mm2": 0.08621562402602066,
+        "largest_component_mm2": 0.02155390600650855
+      },
+      {
+        "id": "mvujhl2q-2wr0-ljo1do",
+        "lost_area_mm2": 0.08621560801807238,
+        "largest_component_mm2": 0.021553909225445582
+      }
+    ]
+  },
+  {
+    "key": "family-6mm-sheet-1-D3",
+    "file": "family-6mm-sheet-1",
+    "source_path": "tests/fixtures/safepaws/family-6mm-sheet-1.dxf",
+    "diameter": 3,
+    "candidates": 103,
+    "generated": 103,
+    "applied": 103,
+    "skipped": 0,
+    "tbones": 3,
+    "maxRadiusError": 7.238654120556021e-14,
+    "closedCut": 30,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.4
+    ],
+    "rectangular_holes": 10,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [],
+    "external_contours_with_unreachable_area": [
+      {
+        "id": "mvujhl55-3m2b-06c0dl",
+        "lost_area_mm2": 0.19398514678315362,
+        "largest_component_mm2": 0.04849629758957217
+      },
+      {
+        "id": "mvujhl5d-3m3e-c3cptv",
+        "lost_area_mm2": 0.19398515405837063,
+        "largest_component_mm2": 0.04849628851459804
+      },
+      {
+        "id": "mvujhl5h-3m4f-q4a27l",
+        "lost_area_mm2": 0.1939851180405124,
+        "largest_component_mm2": 0.048496295757274266
+      }
+    ]
+  },
+  {
+    "key": "family-6mm-sheet-1-D3.175",
+    "file": "family-6mm-sheet-1",
+    "source_path": "tests/fixtures/safepaws/family-6mm-sheet-1.dxf",
+    "diameter": 3.175,
+    "candidates": 103,
+    "generated": 103,
+    "applied": 103,
+    "skipped": 0,
+    "tbones": 3,
+    "maxRadiusError": 2.2226664952995634e-13,
+    "closedCut": 30,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.4
+    ],
+    "rectangular_holes": 10,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [],
+    "external_contours_with_unreachable_area": [
+      {
+        "id": "mvujhl84-4bfq-9qzn4u",
+        "lost_area_mm2": 0.21727683558788188,
+        "largest_component_mm2": 0.054319221098731
+      },
+      {
+        "id": "mvujhl89-4bgt-sdu8uq",
+        "lost_area_mm2": 0.21727684373671238,
+        "largest_component_mm2": 0.05431921093418506
+      },
+      {
+        "id": "mvujhl8c-4bhu-dk3bvr",
+        "lost_area_mm2": 0.2172768033942083,
+        "largest_component_mm2": 0.05431921904637935
+      }
+    ]
+  },
+  {
+    "key": "family-6mm-sheet-1-D4",
+    "file": "family-6mm-sheet-1",
+    "source_path": "tests/fixtures/safepaws/family-6mm-sheet-1.dxf",
+    "diameter": 4,
+    "candidates": 103,
+    "generated": 103,
+    "applied": 103,
+    "skipped": 0,
+    "tbones": 3,
+    "maxRadiusError": 7.638334409421077e-14,
+    "closedCut": 30,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.4
+    ],
+    "rectangular_holes": 10,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [],
+    "external_contours_with_unreachable_area": [
+      {
+        "id": "mvujhlae-50t5-s8fgyp",
+        "lost_area_mm2": 0.3448624831702043,
+        "largest_component_mm2": 0.08621564015924525
+      },
+      {
+        "id": "mvujhlaj-50u8-5rjste",
+        "lost_area_mm2": 0.3448624961039831,
+        "largest_component_mm2": 0.08621562402601009
+      },
+      {
+        "id": "mvujhlan-50v9-gzlyt7",
+        "lost_area_mm2": 0.34486243207217904,
+        "largest_component_mm2": 0.0862156369018078
+      }
+    ]
+  },
+  {
+    "key": "family-6mm-sheet-1-D6",
+    "file": "family-6mm-sheet-1",
+    "source_path": "tests/fixtures/safepaws/family-6mm-sheet-1.dxf",
+    "diameter": 6,
+    "candidates": 103,
+    "generated": 53,
+    "applied": 53,
+    "skipped": 50,
+    "tbones": 8,
+    "maxRadiusError": 5.684341886080802e-14,
+    "closedCut": 30,
+    "reimportDogbones": 0,
+    "invalid_polygons": [],
+    "rectangular_hole_widths_mm": [
+      6.4
+    ],
+    "rectangular_holes": 10,
+    "holes_narrower_than_tool": [],
+    "holes_with_unreachable_area": [
+      {
+        "id": "mvujhlde-5q6a-a9byy1",
+        "lost_area_mm2": 0.011748257069400823,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhldi-5q6v-xaps6i",
+        "lost_area_mm2": 7.728504741605051,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhldi-5q6w-9ivxuv",
+        "lost_area_mm2": 7.728504741605051,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhldi-5q6x-vm38u9",
+        "lost_area_mm2": 7.7285047416050325,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhldi-5q6y-oysjt0",
+        "lost_area_mm2": 7.728504741605039,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhldi-5q6z-gou2hl",
+        "lost_area_mm2": 7.728504741605041,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhldi-5q70-ptdn6r",
+        "lost_area_mm2": 7.72850474160504,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhldi-5q71-cbb1b7",
+        "lost_area_mm2": 7.728504741605049,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhldi-5q72-4z5g0t",
+        "lost_area_mm2": 7.728504741605049,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhldi-5q73-7y8bg9",
+        "lost_area_mm2": 7.728504741605032,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhldi-5q74-cmeegl",
+        "lost_area_mm2": 7.728504741605007,
+        "reliefs": 0
+      },
+      {
+        "id": "mvujhldk-5q7d-eq8sv5",
+        "lost_area_mm2": 0.011748257448201516,
+        "reliefs": 0
+      }
+    ],
+    "external_contours_with_unreachable_area": [
+      {
+        "id": "mvujhldb-5q5y-nyaocb",
+        "lost_area_mm2": 3.8642523708024967,
+        "largest_component_mm2": 1.9321261854012495
+      },
+      {
+        "id": "mvujhlde-5q6b-g51xax",
+        "lost_area_mm2": 7.728504749973229,
+        "largest_component_mm2": 1.9321265700245176
+      },
+      {
+        "id": "mvujhldg-5q6k-911cnj",
+        "lost_area_mm2": 0.7868200206226714,
+        "largest_component_mm2": 0.19398519035818593
+      },
+      {
+        "id": "mvujhldk-5q7e-cma5bn",
+        "lost_area_mm2": 7.728505306766264,
+        "largest_component_mm2": 1.9321267763137921
+      },
+      {
+        "id": "mvujhldm-5q7n-wpj18j",
+        "lost_area_mm2": 0.786820049539364,
+        "largest_component_mm2": 0.19398515405851535
+      },
+      {
+        "id": "mvujhldp-5q8o-4pw07k",
+        "lost_area_mm2": 0.7868199060855273,
+        "largest_component_mm2": 0.19398518302922688
+      }
+    ]
+  }
+]

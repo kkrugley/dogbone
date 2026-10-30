@@ -25,17 +25,19 @@ function computeReport(): ValidationReport | null {
   const openContours = totalContours - closedContours
   const gaps = file.gaps.length
   const fixableGaps = file.gaps.filter((g) => g.canAutoFix).length
-  const dogbonesAdded = file.dogbones.length
-  const warnings: string[] = []
+  const dogbonesAdded = file.dogbones.filter((d) => d.enabled).length
+  const warnings: string[] = [...(file.errorMessage ? [file.errorMessage] : []), ...(file.warnings ?? []), ...(file.machining?.issues.map((i) => i.message) ?? [])]
 
-  if (openContours > 0) {
+  const ignored = new Set(useCADStore.getState().toolParams.ignoredLayers.map((name) => name.toLowerCase()))
+  const openCutContours = file.contours.filter((c) => !c.closed && !ignored.has(c.layer.toLowerCase())).length
+  if (openCutContours > 0) {
     warnings.push(
-      `${openContours} contour${openContours > 1 ? "s" : ""} not closed`,
+      `${openCutContours} cutting contour${openCutContours > 1 ? "s" : ""} not closed`,
     )
   }
 
   file.contours.forEach((c) => {
-    if (c.vertices.length < 3) {
+    if (!ignored.has(c.layer.toLowerCase()) && c.vertices.length < 3 && c.segments[0]?.type !== "circle") {
       warnings.push(`Contour ${c.id} has fewer than 3 vertices`)
     }
   })
@@ -78,6 +80,9 @@ export function ReportDialog() {
 
         {report && (
           <div className="space-y-4">
+            <div role="status" className={file.machining?.complete ? "text-sm text-green-700" : "text-sm text-amber-700"}>
+              {file.machining?.complete ? `Cutter clearance verified for Ø${file.machining.toolDiameter} mm.` : "Processing is incomplete. Review the warnings before exporting."}
+            </div>
             <div className="grid grid-cols-2 gap-3">
               <div className="rounded-lg border p-3">
                 <div className="text-xs text-muted-foreground">

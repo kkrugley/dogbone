@@ -1,0 +1,23 @@
+[
+  {
+    "file": "cozy-3mm-sheet-1.dxf",
+    "url": "https://safepaws.ru/files/SafePawsCozyShelter_3mm.zip",
+    "archive_path": "Parts-Ready-to-cut/DXF/Sheet_1.dxf",
+    "sha256": "53f1d64dfe7a4a1a58549ea84f210704be561f474f085b8fffb601eb077c0ab5",
+    "retrieved": "2026-10-30"
+  },
+  {
+    "file": "cozy-6mm-sheet-1.dxf",
+    "url": "https://safepaws.ru/files/SafePawsCozyShelter_6mm.zip",
+    "archive_path": "1500x750/1500x750-1.dxf",
+    "sha256": "a4b723d1723b15afee2b7cfaf695f9e2781b4113f1b435b994a12d69f2c105b1",
+    "retrieved": "2026-10-30"
+  },
+  {
+    "file": "family-6mm-sheet-1.dxf",
+    "url": "https://safepaws.ru/files/SafePawsFamilyShelter_6mm.zip",
+    "archive_path": "1500x750/1500X750-1.dxf",
+    "sha256": "f2507a0f9741fe70feb45aeeb88ef4c0bad4f341327065a3fbd457ff7d93a363",
+    "retrieved": "2026-10-30"
+  }
+]

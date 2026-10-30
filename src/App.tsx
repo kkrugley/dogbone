@@ -16,7 +16,7 @@ import {
 } from "@phosphor-icons/react"
 import { exportToDxfFile } from "@/features/export/writer"
 import { createZipArchive, downloadZip } from "@/features/export/zipper"
-import { parseDxf } from "@/features/import/parser"
+import { parseDxfFromBuffer, readDxfText } from "@/features/import/parser"
 import { convertDxfToFileState, getDxfLayers } from "@/features/import/converter"
 import type { FileState } from "@/types/cad"
 import { useCallback, useState, useRef } from "react"
@@ -90,9 +90,10 @@ function App() {
                     variant="ghost"
                     size="sm"
                     onClick={handleExportAll}
+                    disabled={!files.some((f) => f.status === "ready")}
                   >
                     <Download size={16} className="mr-1" />
-                    Export All (ZIP)
+                    Export Ready Files (ZIP)
                   </Button>
                 )}
 
@@ -105,6 +106,11 @@ function App() {
         </header>
           )}
 
+        {files.some((f) => f.status === "review") && (
+          <div role="alert" className="border-b bg-amber-50 px-4 py-2 text-sm text-amber-900">
+            Some files need review. Open Report for details; only verified files can be exported.
+          </div>
+        )}
         <main className="flex-1 overflow-hidden">
           {files.length === 0 ? (
             <EmptyState />
@@ -176,8 +182,8 @@ function EmptyState() {
       addFile(placeholder)
 
       try {
-        const rawText = await file.text()
-        const dxfData = await parseDxf(file)
+        const rawText = await readDxfText(file)
+        const dxfData = parseDxfFromBuffer(rawText)
         if (!dxfData) { setFileStatus(fileId, "error"); continue }
         const layerNames = getDxfLayers(dxfData as any)
         const fileState = convertDxfToFileState(
@@ -191,13 +197,12 @@ function EmptyState() {
           id: fileId,
           name: file.name.replace(".dxf", ""),
           originalName: file.name,
-          status: "ready",
-          rawDxfData: JSON.stringify(dxfData),
+          status: fileState.status,
           rawDxfText: rawText,
         })
       } catch (err) {
         console.error("Failed to parse DXF:", err)
-        setFileStatus(fileId, "error")
+        updateFile(fileId, { status: "error", errorMessage: err instanceof Error ? err.message : "Unable to read this DXF file." })
       }
     }
   }, [addFile, setFileStatus, updateFile, toolParams])
